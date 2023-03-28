@@ -5,18 +5,18 @@ import {
   ContactsInput,
   ContactsInputs,
 } from './ContactsForm.styled.jsx';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { nanoid } from 'nanoid';
 import { useState } from 'react';
 import { addContacts } from 'redux/operations';
-import { getContacts } from 'redux/selectors';
+// import { getContacts } from 'redux/selectors';
 
 
 export const  ContactsForm = () => {
     const [name, setName] = useState('');
     const [number, setNumber] = useState('');
 
-    const contacts = useSelector(getContacts);
+    // const contacts = useSelector(getContacts);
     const dispatch = useDispatch();
 
         

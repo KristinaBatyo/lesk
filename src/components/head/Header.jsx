@@ -1,6 +1,5 @@
 import {
   HeaderStyled,
-  Container,
   Nav,
   LogoColor,
   ContactList,

@@ -1,6 +1,6 @@
 import { ContactsListRender } from "../list/ContactsList"; 
 import { ContactsForm } from "components/form/ContactsForm";
-import { Filter } from "components/filter/Filter";
+// import { Filter } from "components/filter/Filter";
 import{AppContainer, Title} from './App.styled';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
