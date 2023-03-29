@@ -55,11 +55,11 @@ export const Nav = styled.div`
 export const ContactList = styled.ul`
 //   display: flex;
   margin-left: auto;
+  
 `;
 
 export const ContactItem = styled.li`
   list-style: none;
-  
 `;
 
 export const Mail = styled.a`
@@ -73,11 +73,11 @@ export const Mail = styled.a`
   transition: color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    color: blue;
+    color: #e6ba95;
   }
-  margin-right: 50px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-right: 50px;
+  //   padding-top: 32px;
+  //   padding-bottom: 32px;
 `;
 
 export const Number = styled.a`
@@ -91,8 +91,8 @@ export const Number = styled.a`
   transition: color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    color: blue;
+    color: #e6ba95;
   }
-  padding-top: 32px;
-  padding-bottom: 32px;
+//   padding-top: 32px;
+//   padding-bottom: 32px;
 `;

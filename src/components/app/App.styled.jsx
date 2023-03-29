@@ -19,12 +19,12 @@ export const AppContainer = styled.div`
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   margin-top: 20px;
-
+  box-sizing: border-box;
   width: 1200px;
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
-    ${mq({
+  ${mq({
     width: ['480px', '768px', '1200px'],
   })};
 `;
