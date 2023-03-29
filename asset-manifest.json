@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/viza/static/css/main.7acaea2f.css",
-    "main.js": "/viza/static/js/main.7010a8ee.js",
+    "main.js": "/viza/static/js/main.6d6f078f.js",
     "static/media/logo.jpg": "/viza/static/media/logo.b73a6347558df4674d45.jpg",
     "index.html": "/viza/index.html",
     "main.7acaea2f.css.map": "/viza/static/css/main.7acaea2f.css.map",
-    "main.7010a8ee.js.map": "/viza/static/js/main.7010a8ee.js.map"
+    "main.6d6f078f.js.map": "/viza/static/js/main.6d6f078f.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.7010a8ee.js"
+    "static/js/main.6d6f078f.js"
   ]
 }
