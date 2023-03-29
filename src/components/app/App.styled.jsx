@@ -1,10 +1,19 @@
 import styled from '@emotion/styled';
+import facepaint from 'facepaint';
+
+const mq = facepaint(
+  [
+    '@media(min-width: 420px)',
+    '@media(min-width: 768px)',
+    '@media(min-width: 1120px)',
+  ],
+  { literal: true }
+);
 
 export const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 600px;
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
@@ -15,6 +24,9 @@ export const AppContainer = styled.div`
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
+    ${mq({
+    width: ['480px', '768px', '1200px'],
+  })};
 `;
 
 export const Title = styled.h1`

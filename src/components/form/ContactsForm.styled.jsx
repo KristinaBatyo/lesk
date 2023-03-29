@@ -1,21 +1,32 @@
 import styled from '@emotion/styled';
+import facepaint from 'facepaint';
+
+const mq = facepaint(
+  [
+    '@media(min-width: 420px)',
+    '@media(min-width: 768px)',
+    '@media(min-width: 1120px)',
+  ],
+  { literal: true }
+);
 
 export const ContactsContainer = styled.form`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 500px;
-    margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+${mq({
+    width: ['480px', '768px', '1200px'],
+  })};
 `;
 
 
 export const ContactsLabel = styled.label`
-    display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  font-size: ${mq([14, 16, 18])}px;
+  font-weight: 500;
+  margin-bottom: 20px;
 `;
 
 
