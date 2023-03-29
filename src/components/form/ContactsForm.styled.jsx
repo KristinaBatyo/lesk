@@ -16,7 +16,7 @@ export const ContactsContainer = styled.form`
   align-items: center;
   margin: 20px auto;
 ${mq({
-    width: ['480px', '768px', '1200px'],
+    width: ['420px', '768px', '1200px'],
   })};
 `;
 

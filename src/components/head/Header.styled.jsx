@@ -19,7 +19,7 @@ export const HeaderStyled = styled.header`
   border-color: #ececec;
   background-color: #025260;
   ${mq({
-    width: ['480px', '768px', '1200px'],
+    width: ['420px', '768px', '1200px'],
   })};
 `;
 

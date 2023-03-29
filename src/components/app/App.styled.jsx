@@ -25,7 +25,7 @@ export const AppContainer = styled.div`
   padding-left: 15px;
   padding-right: 15px;
   ${mq({
-    width: ['480px', '768px', '1200px'],
+    width: ['420px', '768px', '1200px'],
   })};
 `;
 
