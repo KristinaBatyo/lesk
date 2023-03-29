@@ -3,7 +3,8 @@ import facepaint from 'facepaint';
 
 const mq = facepaint(
   [
-    '@media(min-width: 420px)',
+    '@media(min-width: 320px)',
+    '@media(min-width: 480px)',
     '@media(min-width: 768px)',
     '@media(min-width: 1120px)',
   ],
@@ -15,8 +16,8 @@ export const ContactsContainer = styled.form`
   flex-direction: column;
   align-items: center;
   margin: 20px auto;
-${mq({
-    width: ['420px', '768px', '1200px'],
+  ${mq({
+    width: ['320px', '480px', '768px', '1200px'],
   })};
 `;
 
@@ -55,18 +56,19 @@ export const ContactsButton = styled.button`
 `;
 
 export const ContactsInput = styled.input`
-width: 300px;
-padding: 5px;
-border: 1px solid #000;
-border-radius: 5px;
-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-&:focus {
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  &:focus {
     outline: none;
-}
+  }
+  ${mq({
+    width: ['220px', '300px', '368px', '368px'],
+  })};
 `;
 
 export const ContactsInputs = styled.input`
-  width: 300px;
   height: 200px;
   padding: px;
   border: 1px solid #000;
@@ -75,6 +77,9 @@ export const ContactsInputs = styled.input`
   &:focus {
     outline: none;
   }
+  ${mq({
+    width: ['220px', '300px', '368px', '368px'],
+  })};
 `;
 
 

@@ -3,7 +3,8 @@ import facepaint from 'facepaint'
 
 const mq = facepaint(
   [
-    '@media(min-width: 420px)',
+    '@media(min-width: 320px)',
+    '@media(min-width: 480px)',
     '@media(min-width: 768px)',
     '@media(min-width: 1200px)',
   ],
@@ -11,7 +12,6 @@ const mq = facepaint(
 );
 
 export const HeaderStyled = styled.header`
-  width: 600px;
   display: flex;
   align-items: center;
   border-width: 1px;
@@ -19,18 +19,18 @@ export const HeaderStyled = styled.header`
   border-color: #ececec;
   background-color: #025260;
   ${mq({
-    width: ['420px', '768px', '1200px'],
+    width: ['320px', '480px', '768px', '1200px'],
   })};
 `;
 
 export const Nav = styled.div`
   font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 48px;
+//   font-weight: 700;
+//   font-size: 24px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  margin-right: 93px;
+//   margin-right: 93px;
   padding-top: 25px;
   padding-bottom: 25px;
   display: flex;
@@ -53,9 +53,11 @@ export const Nav = styled.div`
 
 
 export const ContactList = styled.ul`
-//   display: flex;
+  //   display: flex;
   margin-left: auto;
-  
+  ${mq({
+    padding: ['0px'],
+  })};
 `;
 
 export const ContactItem = styled.li`

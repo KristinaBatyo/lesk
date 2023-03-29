@@ -3,7 +3,8 @@ import facepaint from 'facepaint';
 
 const mq = facepaint(
   [
-    '@media(min-width: 420px)',
+    '@media(min-width: 320px)',
+    '@media(min-width: 480px)',
     '@media(min-width: 768px)',
     '@media(min-width: 1120px)',
   ],
@@ -14,18 +15,16 @@ export const AppContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   margin-top: 20px;
   box-sizing: border-box;
-  width: 1200px;
   margin: auto;
   padding-left: 15px;
   padding-right: 15px;
   ${mq({
-    width: ['420px', '768px', '1200px'],
+    width: ['320px', '480px', '768px', '1200px'],
   })};
 `;
 
