@@ -21,6 +21,11 @@ export const HeaderStyled = styled.header`
   width: 100%;
 
 `;
+export const Img = styled.img`
+  ${mq({
+    width: ['140px', '140px', '240px', '300px'],
+  })};
+`;
 
 export const Nav = styled.div`
   font-family: Raleway, sans-serif;
@@ -36,17 +41,6 @@ export const Nav = styled.div`
   align-items: center;
 `;
 
-// export const NavLogo = styled.p`
-//   font-family: Raleway, sans-serif;
-//   font-weight: 700;
-//   font-size: 48px;
-//   line-height: 1.19;
-//   letter-spacing: 0.03em;
-//   text-decoration: none;
-//   margin-right: 93px;
-//   padding-top: 25px;
-//   padding-bottom: 25px;
-// `;
 
 
 
@@ -54,9 +48,7 @@ export const Nav = styled.div`
 export const ContactList = styled.ul`
   //   display: flex;
   margin-left: auto;
-  ${mq({
-    padding: ['0px'],
-  })};
+  padding: 0px;
 `;
 
 export const ContactItem = styled.li`

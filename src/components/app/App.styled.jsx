@@ -1,15 +1,6 @@
 import styled from '@emotion/styled';
-import facepaint from 'facepaint';
 
-const mq = facepaint(
-  [
-    '@media(min-width: 320px)',
-    '@media(min-width: 480px)',
-    '@media(min-width: 768px)',
-    '@media(min-width: 1120px)',
-  ],
-  { literal: true }
-);
+
 
 export const AppContainer = styled.div`
   display: flex;

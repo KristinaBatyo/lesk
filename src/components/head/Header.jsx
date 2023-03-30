@@ -6,14 +6,15 @@ import {
   ContactItem,
   Mail,
   Number,
-//   NavLogo,
+  Img,
+  //   NavLogo,
 } from './Header.styled';
 
 export const Head = () => {
     return (
       <HeaderStyled>
         <Nav>
-          <img
+          <Img
             src={require('../image/logo.jpg')}
             alt="Tacos With Lime"
             width="140"
