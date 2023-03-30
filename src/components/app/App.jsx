@@ -19,15 +19,17 @@ export const App = () => {
     }, [dispatch]);
   
     return (
-      <AppContainer>
+      <div>
         <Head></Head>
-        <Title>Написати відгук</Title>
-        <ContactsForm />
-        <Title>Відгуки</Title>
-        {/* <Filter /> */}
-        {isLoading && <p>Завантаження відгуків...</p>}
-        {error && <p>{error}</p>}
-        {contacts.length > 0 && <ContactsListRender />}
-      </AppContainer>
+        <AppContainer>
+          <Title>Написати відгук</Title>
+          <ContactsForm />
+          <Title>Відгуки</Title>
+          {/* <Filter /> */}
+          {isLoading && <p>Завантаження відгуків...</p>}
+          {error && <p>{error}</p>}
+          {contacts.length > 0 && <ContactsListRender />}
+        </AppContainer>
+      </div>
     );
   }

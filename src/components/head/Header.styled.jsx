@@ -18,9 +18,8 @@ export const HeaderStyled = styled.header`
   border-style: solid;
   border-color: #ececec;
   background-color: #025260;
-  ${mq({
-    width: ['320px', '480px', '768px', '1200px'],
-  })};
+  width: 100%;
+
 `;
 
 export const Nav = styled.div`
