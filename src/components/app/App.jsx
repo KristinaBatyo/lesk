@@ -1,12 +1,13 @@
 import { ContactsListRender } from "../list/ContactsList"; 
 import { ContactsForm } from "components/form/ContactsForm";
 // import { Filter } from "components/filter/Filter";
-import{AppContainer, Title} from './App.styled';
+import { AppContainer, Title, Container } from './App.styled';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchContacts } from "redux/operations";
 import { getLoading, getError, getContacts } from 'redux/selectors';
 import { Head } from "components/head/Header";
+import { Hero } from "components/main/Main";
 
 export const App = () => {
     const dispatch = useDispatch();
@@ -19,9 +20,10 @@ export const App = () => {
     }, [dispatch]);
   
     return (
-      <div>
+      <Container>
         <Head></Head>
         <AppContainer>
+          <Hero/>
           <Title>Написати відгук</Title>
           <ContactsForm />
           <Title>Відгуки</Title>
@@ -30,6 +32,6 @@ export const App = () => {
           {error && <p>{error}</p>}
           {contacts.length > 0 && <ContactsListRender />}
         </AppContainer>
-      </div>
+      </Container>
     );
   }

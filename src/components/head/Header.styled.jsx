@@ -3,7 +3,7 @@ import facepaint from 'facepaint'
 
 const mq = facepaint(
   [
-    '@media(min-width: 320px)',
+    '@media(max-width: 479px)',
     '@media(min-width: 480px)',
     '@media(min-width: 768px)',
     '@media(min-width: 1200px)',
@@ -19,11 +19,18 @@ export const HeaderStyled = styled.header`
   border-color: #ececec;
   background-color: #025260;
   width: 100%;
+  // height: 350px;
 
+  ${mq({
+    height: ['140px', '200px', '200px', '200px'],
+  })};
+  position: fixed;
+  z-index: 2;
+  top: 0;
 `;
 export const Img = styled.img`
   ${mq({
-    width: ['140px', '140px', '240px', '300px'],
+    width: ['140px', '200px', '200px', '200px'],
   })};
 `;
 
