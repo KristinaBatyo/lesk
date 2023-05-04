@@ -25,7 +25,6 @@ export const ContactsContainer = styled.form`
 export const ContactsLabel = styled.label`
   display: flex;
   flex-direction: column;
-  font-size: ${mq([14, 16, 18])}px;
   font-weight: 500;
   margin-bottom: 20px;
 `;
@@ -33,53 +32,71 @@ export const ContactsLabel = styled.label`
 
 
 export const ContactsButton = styled.button`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-    width: 100px;
-    height: 30px;
-    margin-left: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-    border: none;
-    cursor: pointer;
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-        background-color: #f5f5f5;
-        transform: scale(1.03);
-        outline: none;
-    }
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  width: 100px;
+  height: 30px;
+  margin-left: 20px;
+  background-color: #025260;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #f5f5f5;
+    transform: scale(1.03);
+    outline: none;
+  }
+  ${mq({
+    width: ['220px', '300px', '568px', '568px'],
+    height: ['50px', '50px', '50px', '50px'],
+  })};
 `;
 
 export const ContactsInput = styled.input`
   padding: 5px;
-  border: 1px solid #000;
+  border: 1px solid #025260;
   border-radius: 5px;
+  font-size: 20px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
   &:focus {
     outline: none;
   }
   ${mq({
-    width: ['220px', '300px', '368px', '368px'],
+    width: ['220px', '300px', '568px', '568px'],
+    height: ['30px', '30px', '30px', '40px'],
   })};
 `;
 
-export const ContactsInputs = styled.input`
+export const ContactsInputs = styled.textarea`
   height: 200px;
-  padding: px;
-  border: 1px solid #000;
+  // padding: px;
+  font-size: 20px;
+  border: 1px solid #025260;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
   &:focus {
     outline: none;
   }
   ${mq({
-    width: ['220px', '300px', '368px', '368px'],
+    width: ['220px', '300px', '568px', '568px'],
   })};
 `;
 
+
+export const Paragraph = styled.p`
+  font-size: 20px;
+  margin: 0;
+  color: #025260;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+`;
 

@@ -8,6 +8,7 @@ import { fetchContacts } from "redux/operations";
 import { getLoading, getError, getContacts } from 'redux/selectors';
 import { Head } from "components/head/Header";
 import { Hero } from "components/main/Main";
+import { Footer } from "components/footer/Footer";
 
 export const App = () => {
     const dispatch = useDispatch();
@@ -21,17 +22,19 @@ export const App = () => {
   
     return (
       <Container>
-        <Head></Head>
+        <Head/>
         <AppContainer>
-          <Hero/>
-          <Title>Написати відгук</Title>
+          <Hero />
+          <Title>Napsat recenzi</Title>
           <ContactsForm />
-          <Title>Відгуки</Title>
+          <Title>Recenze</Title>
           {/* <Filter /> */}
-          {isLoading && <p>Завантаження відгуків...</p>}
+          {isLoading && <p>Načítání recenzí...</p>}
           {error && <p>{error}</p>}
           {contacts.length > 0 && <ContactsListRender />}
+          
         </AppContainer>
+        <Footer />
       </Container>
     );
   }

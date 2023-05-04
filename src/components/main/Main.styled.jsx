@@ -57,6 +57,16 @@ export const List = styled.ul`
 
 export const Item = styled.li`
   list-style: none;
+
+  line-height: 22px;
+  ${mq({
+    fontSize: ['', '', '20px'],
+    fontWeight: ['', '', '400'],
+    fontFamily: ['Montserrat'],
+    fontStyle: ['normal'],
+    lineHeight: ['', '', '42px'],
+
+  })};
 `;
 
 export const HeroContainer = styled.div`
@@ -86,7 +96,7 @@ export const TextContainer = styled.div`
     top: ['', '', '100px'],
     color: ['', '', '#FFFFFF'],
     backgroundColor: ['', '#FFFFFF', '#006778'],
-    height: ['', '', '270px', '200px'],
+    height: ['', '', '470px', '470px'],
     width: ['', '', '470px', ''],
     left: ['', '', '0px'],
     padding: ['', '', '10px', '50px'],

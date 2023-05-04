@@ -4,6 +4,7 @@ import {
   ContactsButton,
   ContactsInput,
   ContactsInputs,
+  Paragraph,
 } from './ContactsForm.styled.jsx';
 import { useDispatch } from 'react-redux';
 import { nanoid } from 'nanoid';
@@ -34,13 +35,6 @@ export const  ContactsForm = () => {
         }
         function hendleSubmit(event) {
             event.preventDefault();
-            // if (
-            // contacts.find(
-            //     contact => contact.name.toLowerCase() === name.toLowerCase()
-            // )
-            // ) {
-            // return alert(`${name} is already in contacts.`);
-            // }
             dispatch(addContacts({ name, number }));
             reset();
         }
@@ -53,7 +47,7 @@ export const  ContactsForm = () => {
         return (
           <ContactsContainer onSubmit={hendleSubmit}>
             <ContactsLabel>
-               Ім'я
+              <Paragraph>Název</Paragraph>
               <ContactsInput
                 type="text"
                 name="name"
@@ -66,7 +60,7 @@ export const  ContactsForm = () => {
               />
             </ContactsLabel>
             <ContactsLabel>
-              Відгук
+              <Paragraph>Odezva</Paragraph>
               <ContactsInputs
                 type="text"
                 name="number"
@@ -75,7 +69,7 @@ export const  ContactsForm = () => {
                 onChange={hendleChange}
               />
             </ContactsLabel>
-            <ContactsButton type="submit">Додати відгук</ContactsButton>
+            <ContactsButton type="submit">Přidat recenzi</ContactsButton>
           </ContactsContainer>
         );
         }
