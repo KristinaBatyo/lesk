@@ -19,8 +19,8 @@ export const Img = styled.img`
   margin-left: auto;
   margin-right: auto;
   ${mq({
-    width: ['243px', '320px', '486px', '972px'],
-    height: ['175px', '233px', '350px', '700px'],
+    width: ['243px', '243px', '486px', '972px'],
+    height: ['175px', '175px', '350px', '700px'],
     marginTop: ['', 'auto', '', ''],
     marginBottom: ['', 'auto', '', ''],
     marginLeft: ['', 'auto', '-130px', '-200px'],
@@ -44,13 +44,19 @@ export const Title = styled.h1`
     width: ['', '', 'inherit', 'inherit'],
   })};
 `;
-export const Paragraph = styled.p`
+export const List = styled.ul`
   position: static;
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 17px;
+  width: 100%;
+  padding: 0px;
+`;
+
+export const Item = styled.li`
+  list-style: none;
 `;
 
 export const HeroContainer = styled.div`
@@ -79,11 +85,12 @@ export const TextContainer = styled.div`
     marginTop: ['140', ''],
     top: ['', '', '100px'],
     color: ['', '', '#FFFFFF'],
-    backgroundColor: ['', '', '#006778'],
-    height: ['', '', '200px', '200px'],
+    backgroundColor: ['', '#FFFFFF', '#006778'],
+    height: ['', '', '270px', '200px'],
     width: ['', '', '470px', ''],
     left: ['', '', '0px'],
     padding: ['', '', '10px', '50px'],
+    zIndex: ['', 1, ''],
     //   top:[ '120px'],
   })};
 `;
