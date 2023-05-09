@@ -119,3 +119,31 @@ export const Number = styled.a`
   //   padding-top: 32px;
   //   padding-bottom: 32px;
 `;
+
+export const NavList = styled.ul`
+  display: flex;
+  list-style: none;
+  ${mq({
+    opacity: ['0', '0', '1', '1'],
+    visibility: ['hidden', 'hidden', 'visible', 'visible'],
+    display: ['none', 'none', 'block', 'block'],
+  })};
+`;
+
+export const NavItem = styled.li`
+  font-family: Raleway, sans-serif;
+  font-size: 15px;
+  width: auto;
+  margin-right: 15px;
+
+`;
+
+export const NavLink = styled.a`
+  color: white;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: #e6ba95;
+    cursor: pointer;
+  }
+`;

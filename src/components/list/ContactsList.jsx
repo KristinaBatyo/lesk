@@ -1,12 +1,15 @@
+
+
+import { SliderTrack } from 'components/slider/ContactsSlider';
+
 import {
-  ContactsList,
   ContactsItem,
   ContactsTitle,
   DeleteButton,
   ContactsText,
+  Container,
 } from './ContactsList.styled';
 import { useDispatch, useSelector } from 'react-redux';
-// import { setDeleteContacts } from '../../redux/contacts';
 import { nanoid } from 'nanoid';
 import { getContacts, getFilter } from 'redux/selectors';
 import { deleteContacts } from 'redux/operations';
@@ -27,17 +30,21 @@ export const ContactsListRender = () => {
   }
 
   const contactsData = hendleFind();
+
   return (
-    <ContactsList>
-      {contactsData.map(({ name, number, id }, index) => (
-        <ContactsItem key={nanoid()}>
-          <ContactsTitle>{name}</ContactsTitle>
-          <ContactsText>{number}</ContactsText>
-          <DeleteButton onClick={() => onDelete(id)} key={index}>
-            Delete
-          </DeleteButton>
-        </ContactsItem>
-      ))}
-    </ContactsList>
+    <Container>
+      <SliderTrack>
+        {contactsData.map(({ name, number, id }, index) => (
+          <ContactsItem key={nanoid()}>
+            <ContactsTitle>{name}</ContactsTitle>
+            <ContactsText>{number}</ContactsText>
+            <DeleteButton onClick={() => onDelete(id)} key={index}>
+              Delete
+            </DeleteButton>
+          </ContactsItem>
+        ))}
+      </SliderTrack>
+    </Container>
   );
 };
+

@@ -10,6 +10,9 @@ import {
   Number,
   Img,
   MenuBtn,
+  NavList,
+  NavItem,
+  NavLink,
   //   NavLogo,
 } from './Header.styled';
 import { MobileMenu } from 'components/mobile-menu/MobileMenu';
@@ -40,6 +43,14 @@ export const Head = () => {
           />
         </a>
       </Nav>
+      <NavList>
+        <NavItem>
+          <NavLink href="#nabizime"> Nabizime pro vas</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="#recenze">Recenze</NavLink>
+        </NavItem>
+      </NavList>
       <ContactList>
         <ContactItem>
           <Mail href="mailto:leskablesk1@seznam.cz">leskablesk1@seznam.cz</Mail>
