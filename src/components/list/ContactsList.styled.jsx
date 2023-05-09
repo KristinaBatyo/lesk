@@ -58,5 +58,6 @@ export const DeleteButton = styled.button`
     background-color: #f5f5f5;
     transform: scale(1.03);
     outline: none;
+    color: #025260;
   }
 `;

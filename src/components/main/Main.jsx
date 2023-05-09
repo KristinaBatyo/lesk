@@ -9,9 +9,9 @@ import {
 
 export const Hero = () => {
   return (
-    <HeroContainer>
+    <HeroContainer id="nabizime">
       <TextContainer>
-        <Title>Nabizime pro vas:</Title>
+        <Title >Nabizime pro vas:</Title>
         <List>
           <Item>
             {' '}

@@ -19,10 +19,11 @@ export const HeaderStyled = styled.header`
   border-color: #ececec;
   background-color: #025260;
   width: 100%;
-  // height: 350px;
+  marginTop: 0px;
 
   ${mq({
-    height: ['140px', '200px', '200px', '200px'],
+    height: ['80px', '130px', '200px', '200px'],
+    justifyContent: ['space-between', 'space-between', ''],
   })};
   position: fixed;
   z-index: 2;
@@ -30,7 +31,7 @@ export const HeaderStyled = styled.header`
 `;
 export const Img = styled.img`
   ${mq({
-    width: ['140px', '200px', '200px', '200px'],
+    width: ['70px', '120px', '190px', '190px'],
   })};
 `;
 
@@ -48,6 +49,20 @@ export const Nav = styled.div`
   align-items: center;
 `;
 
+export const MenuBtn = styled.button`
+  width: 40px;
+  height: 40px;
+  border: none;
+  margin-left: 15px;
+  padding: 0;
+  background-color: #025260;
+  ${mq({
+    opacity: ['', '', '0', '0'],
+    visibility: ['', '', 'hidden', 'hidden'],
+    display: ['', '', 'none', 'none'],
+  })};
+`;
+
 
 
 
@@ -56,10 +71,16 @@ export const ContactList = styled.ul`
   //   display: flex;
   margin-left: auto;
   padding: 0px;
+  ${mq({
+    opacity: ['0', '0', '1', '1'],
+    visibility: ['hidden', 'hidden', 'visible', 'visible'],
+    display: ['none', 'none', 'block', 'block'],
+  })};
 `;
 
 export const ContactItem = styled.li`
   list-style: none;
+  cursor: pointer;
 `;
 
 export const Mail = styled.a`
@@ -73,6 +94,7 @@ export const Mail = styled.a`
   transition: color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
+    cursor: pointer;
     color: #e6ba95;
   }
   padding-right: 50px;
@@ -92,7 +114,8 @@ export const Number = styled.a`
   &:hover,
   &:focus {
     color: #e6ba95;
+    cursor: pointer;
   }
-//   padding-top: 32px;
-//   padding-bottom: 32px;
+  //   padding-top: 32px;
+  //   padding-bottom: 32px;
 `;

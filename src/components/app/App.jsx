@@ -10,6 +10,7 @@ import { Head } from "components/head/Header";
 import { Hero } from "components/main/Main";
 import { Footer } from "components/footer/Footer";
 
+
 export const App = () => {
     const dispatch = useDispatch();
     const contacts = useSelector(getContacts);
@@ -19,20 +20,19 @@ export const App = () => {
     useEffect(() => {
       dispatch(fetchContacts());
     }, [dispatch]);
-  
+
     return (
       <Container>
-        <Head/>
+        <Head />
         <AppContainer>
           <Hero />
           <Title>Napsat recenzi</Title>
           <ContactsForm />
-          <Title>Recenze</Title>
+          <Title id="recenze">Recenze</Title>
           {/* <Filter /> */}
           {isLoading && <p>Načítání recenzí...</p>}
           {error && <p>{error}</p>}
           {contacts.length > 0 && <ContactsListRender />}
-          
         </AppContainer>
         <Footer />
       </Container>

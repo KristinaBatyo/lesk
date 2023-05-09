@@ -44,13 +44,13 @@ export const ContactsButton = styled.button`
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   border: none;
   color: #ffffff;
-  cursor: pointer;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: #f5f5f5;
     transform: scale(1.03);
     outline: none;
+    color: #025260;
   }
   ${mq({
     width: ['220px', '300px', '568px', '568px'],

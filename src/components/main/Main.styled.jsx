@@ -78,7 +78,7 @@ export const HeroContainer = styled.div`
   ${mq({
     display: ['block', 'flex', 'flex'],
     flexDirection: ['', 'row'],
-    marginTop: ['140px', '200px'],
+    marginTop: ['100px', '120px'],
     top: ['', '350px', '200px', '200px'],
   })};
 `;
