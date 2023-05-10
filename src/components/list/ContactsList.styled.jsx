@@ -62,7 +62,9 @@ export const ContactsList = styled.ul`
 export const ContactsItem = styled.li`
   max-width: 100%;
   height: auto;
+  padding: 10px;
   list-style: none;
+  overflow: hidden;
   border-bottom: 1px solid #f5f5f5;
   &:last-child {
     border-bottom: none;
@@ -72,20 +74,22 @@ export const ContactsTitle = styled.h2`
   height: auto;
   background-color: #025260;
   color: #fff;
-  font-size: 20px;
-  font-weight: 700;
-  // margin: 10px;
-  width: auto;
+  padding: 5px;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  ${mq({
+    fontSize: ['1.2rem', '1.3rem', '1.4rem', '1.5rem'],
+  })}
 `;
 export const ContactsText = styled.p`
-  // -webkit-hyphens: auto;
-  // -ms-hyphens: auto;
-  // hyphens: auto;
   flex-wrap: wrap;
   height: auto;
   font-size: 20px;
   font-weight: 500;
-  // margin: 10px;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
   background-color: #fff;
   color: #025260;
   ${mq({
