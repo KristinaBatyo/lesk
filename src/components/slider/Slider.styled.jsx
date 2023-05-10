@@ -36,7 +36,6 @@ export const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  flex-wrap: wrap;
   overflow: hidden;
   ${mq({
     padding: ['1rem', '2rem', '3rem', '4rem'],
@@ -89,9 +88,6 @@ export const LeftButtonContainer = styled.div`
   margin-right: auto;
   position: absolute;
   left: 0;
-  ${mq({
-    margin: ['0.5rem', '0.75rem', '1rem', '1.25rem'],
-  })}
 `;
 
 export const RightButtonContainer = styled.div`
@@ -101,7 +97,4 @@ export const RightButtonContainer = styled.div`
   margin-left: auto;
   position: absolute;
   right: 0;
-  ${mq({
-    margin: ['0.5rem', '0.75rem', '1rem', '1.25rem'],
-  })}
 `;
