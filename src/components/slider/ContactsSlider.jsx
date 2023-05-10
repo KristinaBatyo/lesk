@@ -33,13 +33,13 @@ export const SliderTrack = ({ children }) => {
   });
 
   return (
-    <Handlers{...handlers}>
+    <Handlers {...handlers}>
+      <LeftButtonContainer>
+        <Buttom onClick={handlePrevious}>
+          <ButtonLeft fill="white" width="20px" />
+        </Buttom>
+      </LeftButtonContainer>
       <Container>
-        <LeftButtonContainer>
-          <Buttom onClick={handlePrevious}>
-            <ButtonLeft fill="white" width="20px" />
-          </Buttom>
-        </LeftButtonContainer>
         <SliderContainer>
           <ContactsList>
             {React.Children.map(children, (child, index) => {
@@ -49,12 +49,12 @@ export const SliderTrack = ({ children }) => {
             })}
           </ContactsList>
         </SliderContainer>
-        <RightButtonContainer>
-          <Buttom onClick={handleNext}>
-            <ButtonRight fill="white" width="20px" />
-          </Buttom>
-        </RightButtonContainer>
       </Container>
+      <RightButtonContainer>
+        <Buttom onClick={handleNext}>
+          <ButtonRight fill="white" width="20px" />
+        </Buttom>
+      </RightButtonContainer>
     </Handlers>
   );
 };

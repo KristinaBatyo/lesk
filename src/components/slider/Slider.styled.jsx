@@ -28,12 +28,14 @@ export const Container = styled.div`
 
 export const Handlers = styled.div`
   max-width: 100%;
+  display: flex;
 `;
 
 export const SliderItem = styled.div`
   max-width: 100%;
   flex-shrink: 0;
   margin: 10px;
+  margin-top: 0;
   transition: all 0.3s ease;
   ${mq({
     // maxWidth: ['300px', '400px', '500px', '600px'],
@@ -78,6 +80,7 @@ export const RightButtonContainer = styled.div`
 
 export const ContactsList = styled.ul`
   padding-left: 0px;
+  margin: 0;
   ${mq({
     maxWidth: ['200px'],
   })}
