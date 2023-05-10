@@ -1,7 +1,13 @@
-
 import { useState } from 'react';
-import { SliderContainer, SliderItem } from './Slider.styled';
+import {
+  SliderContainer,
+  SliderItem,
+  Buttom,
+  Container,
+} from './Slider.styled';
 import React from 'react';
+import { ReactComponent as ButtonLeft } from '../image/circleleft.svg';
+import { ReactComponent as ButtonRight } from '../image/circleright.svg';
 
 export const SliderTrack = ({ children }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -17,16 +23,22 @@ export const SliderTrack = ({ children }) => {
   };
 
   return (
-    <SliderContainer>
-      <button onClick={handlePrevious}>Previous</button>
-      <ul>
-        {React.Children.map(children, (child, index) => {
-          if (index === currentIndex) {
-            return <SliderItem>{child}</SliderItem>;
-          }
-        })}
-      </ul>
-      <button onClick={handleNext}>Next</button>
-    </SliderContainer>
+    <Container>
+      <Buttom onClick={handlePrevious}>
+        <ButtonLeft fill="white" width="20px" />
+      </Buttom>
+      <SliderContainer>
+        <ul>
+          {React.Children.map(children, (child, index) => {
+            if (index === currentIndex) {
+              return <SliderItem>{child}</SliderItem>;
+            }
+          })}
+        </ul>
+      </SliderContainer>
+      <Buttom onClick={handleNext}>
+        <ButtonRight fill="white" width="20px" />
+      </Buttom>
+    </Container>
   );
 };

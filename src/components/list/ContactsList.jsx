@@ -1,5 +1,3 @@
-
-
 import { SliderTrack } from 'components/slider/ContactsSlider';
 
 import {
@@ -47,4 +45,3 @@ export const ContactsListRender = () => {
     </Container>
   );
 };
-

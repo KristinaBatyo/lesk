@@ -1,27 +1,32 @@
 import styled from '@emotion/styled';
 import Slider from 'react-slick';
+import facepaint from 'facepaint';
+
+const mq = facepaint(
+  [
+    '@media(max-width: 479px)',
+    '@media(min-width: 480px)',
+    '@media(min-width: 768px)',
+    '@media(min-width: 1200px)',
+  ],
+  { literal: true }
+);
 
 export const Container = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  // flex-direction: column;
+  ${mq({
+    width: ['300px', '130px', '200px', '200px'],
+  })};
 `;
-// export const Slider = styled.div`
-//   display: flex;
-//   justify-content: center;
-//   width: 500px;
-//   border: 2px solid #025260;
-//   align-item: center;
-// `;
-
-
 
 export const Line = styled.div`
   display: flex;
 `;
 
-    export const ReviewsButton = styled.button`
+export const ReviewsButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,34 +52,29 @@ export const Line = styled.div`
 
 export const ContactsList = styled.ul`
   max-width: auto;
+  padding-left: 0px;
   margin: 0;
   background-color: #fff;
   margin-top: 20px;
   margin-left: 0px;
-  padding-left: 0px;
-
   display: flex;
-  // flex-direction: column;
-  // align-items: center;
 `;
 export const ContactsItem = styled.li`
   max-width: 100%;
   height: auto;
   list-style: none;
-  // padding: 20px;
   border-bottom: 1px solid #f5f5f5;
   &:last-child {
     border-bottom: none;
   }
 `;
 export const ContactsTitle = styled.h2`
-  // max-width: 500px;
   height: auto;
   background-color: #025260;
   color: #fff;
   font-size: 20px;
   font-weight: 700;
-  margin: 10px;
+  // margin: 10px;
   width: auto;
 `;
 export const ContactsText = styled.p`
@@ -85,9 +85,12 @@ export const ContactsText = styled.p`
   height: auto;
   font-size: 20px;
   font-weight: 500;
-  margin: 10px;
+  // margin: 10px;
   background-color: #fff;
   color: #025260;
+  ${mq({
+    fontSize: ['10px', '130px', '200px', '200px'],
+  })};
 `;
 export const DeleteButton = styled.button`
   width: 100px;
@@ -108,13 +111,11 @@ export const DeleteButton = styled.button`
   }
 `;
 
-
 export const ContactsSlider = styled(Slider)`
   .slick-slide {
     margin: 0px 10px;
   }
 `;
-
 
 export const ContactsSliderContainer = styled.div`
   width: 100%;
