@@ -16,6 +16,16 @@ export const SliderContainer = styled.div`
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+    ${mq({
+      flexDirection: ['column', 'row'],
+      padding: ['1rem', '2rem', '3rem', '4rem'],
+      margin: ['1rem', '1.5rem', '2rem', '2.5rem'],
+    })};
 `;
 
 
@@ -23,7 +33,7 @@ export const Container = styled.div`
   width: 90%;
   max-width: 1000px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
   flex-wrap: wrap;
@@ -55,7 +65,6 @@ export const Buttom = styled.div`
   margin: 1rem;
   min-width: 100px;
   min-height: 30px;
-  margin-left: 1rem;
   background-color: #025260;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
@@ -71,12 +80,28 @@ export const Buttom = styled.div`
 `;
 
 
-export const ButtomContainer = styled.div`
+
+
+export const LeftButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: auto;
+  position: absolute;
+  left: 0;
   ${mq({
-    marginTop: ['10px', '20px', '30px', '40px'],
+    margin: ['0.5rem', '0.75rem', '1rem', '1.25rem'],
   })}
 `;
 
+export const RightButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  position: absolute;
+  right: 0;
+  ${mq({
+    margin: ['0.5rem', '0.75rem', '1rem', '1.25rem'],
+  })}
+`;
