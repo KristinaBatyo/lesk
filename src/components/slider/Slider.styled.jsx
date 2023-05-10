@@ -22,18 +22,16 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   justify-content: center;
-  // max-width: 100%;
-  overflow: hidden;
+  max-width: 100%;
 `;
 
 export const Handlers = styled.div`
-  width: 100%;
+  max-width: 100%;
 `;
 
 export const SliderItem = styled.div`
-  width: 100%;
+  max-width: 100%;
   flex-shrink: 0;
   margin: 10px;
   transition: all 0.3s ease;
@@ -42,7 +40,7 @@ export const SliderItem = styled.div`
   })}
 `;
 
-export const Buttom = styled.div`
+export const Buttom = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,11 +57,9 @@ export const Buttom = styled.div`
   color: #ffffff;
   cursor: pointer;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  pointer-events: none;
   ${mq({
     width: ['', '90px', '120px', '150px'],
-    height: ['', '30px', '35px', '40px'],
-    margin: ['0.5rem', '0.75rem', '1rem', '1.25rem'],
+    height: ['100%', '30px', '35px', '40px'],
   })}
 `;
 
@@ -71,18 +67,17 @@ export const Buttom = styled.div`
 
 
 export const LeftButtonContainer = styled.div`
-  // position: absolute;
+  position: absolute;
   left: 0;
 `;
 
 export const RightButtonContainer = styled.div`
-  // position: absolute;
+  position: absolute;
   right: 0;
 `;
 
 export const ContactsList = styled.ul`
   padding-left: 0px;
-  overflow: auto;
   ${mq({
     maxWidth: ['200px'],
   })}

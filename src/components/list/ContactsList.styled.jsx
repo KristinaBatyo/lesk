@@ -14,12 +14,10 @@ const mq = facepaint(
 
 export const Container = styled.div`
   display: flex;
-  // align-items: center;
   justify-content: center;
   overflow: hidden;
-  // flex-direction: column;
   ${mq({
-    width: ['100%', '130px', '200px', '200px'],
+    maxWidth: ['100%', '130px', '200px', '200px'],
   })};
 `;
 
@@ -55,7 +53,6 @@ export const ReviewsButton = styled.button`
 export const ContactsItem = styled.li`
   max-width: 100%;
   height: auto;
-  padding: 10px;
   padding-left: 0px;
   list-style: none;
   overflow: hidden;

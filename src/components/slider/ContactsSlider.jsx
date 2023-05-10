@@ -27,7 +27,6 @@ export const SliderTrack = ({ children }) => {
     if (currentIndex === children.length - 1) return;
     setCurrentIndex(currentIndex + 1);
   };
-
   const handlers = useSwipeable({
     onSwipedLeft: handleNext,
     onSwipedRight: handlePrevious,
