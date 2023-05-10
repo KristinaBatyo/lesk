@@ -37,9 +37,6 @@ export const SliderItem = styled.div`
   margin: 10px;
   margin-top: 0;
   transition: all 0.3s ease;
-  ${mq({
-    // maxWidth: ['300px', '400px', '500px', '600px'],
-  })}
 `;
 
 export const Button = styled.button`
@@ -60,8 +57,8 @@ export const Button = styled.button`
   cursor: pointer;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   ${mq({
-    width: ['', '90px', '120px', '150px'],
-    height: ['100%', '30px', '35px', '40px'],
+    width: ['',],
+    height: ['100%'],
   })}
 `;
 
@@ -82,6 +79,6 @@ export const ContactsList = styled.ul`
   padding-left: 0px;
   margin: 0;
   ${mq({
-    maxWidth: ['200px'],
+    maxWidth: ['200px', '350px', '650px', '1100px'],
   })}
 `;

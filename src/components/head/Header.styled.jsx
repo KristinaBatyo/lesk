@@ -63,10 +63,6 @@ export const MenuBtn = styled.button`
   })};
 `;
 
-
-
-
-
 export const ContactList = styled.ul`
   //   display: flex;
   margin-left: auto;
@@ -121,12 +117,11 @@ export const Number = styled.a`
 `;
 
 export const NavList = styled.ul`
-  display: flex;
   list-style: none;
   ${mq({
     opacity: ['0', '0', '1', '1'],
     visibility: ['hidden', 'hidden', 'visible', 'visible'],
-    display: ['none', 'none', 'block', 'block'],
+    display: ['none', 'none', 'flex', 'flex'],
   })};
 `;
 
@@ -134,8 +129,7 @@ export const NavItem = styled.li`
   font-family: Raleway, sans-serif;
   font-size: 15px;
   width: auto;
-  margin-right: 15px;
-
+  margin-right: 25px;
 `;
 
 export const NavLink = styled.a`
@@ -146,4 +140,7 @@ export const NavLink = styled.a`
     color: #e6ba95;
     cursor: pointer;
   }
+  ${mq({
+    fontSize: ['', '', '25px', '30px'],
+  })};
 `;

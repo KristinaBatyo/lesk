@@ -17,7 +17,7 @@ export const Container = styled.div`
   justify-content: center;
   overflow: hidden;
   ${mq({
-    maxWidth: ['100%', '130px', '200px', '200px'],
+    maxWidth: ['100%', ],
   })};
 `;
 
