@@ -6,6 +6,8 @@ import {
   Container,
   LeftButtonContainer,
   RightButtonContainer,
+  Handlers,
+  ContactsList,
 } from './Slider.styled';
 import React from 'react';
 import { ReactComponent as ButtonLeft } from '../image/circleleft.svg';
@@ -32,7 +34,7 @@ export const SliderTrack = ({ children }) => {
   });
 
   return (
-    <div {...handlers}>
+    <Handlers{...handlers}>
       <Container>
         <LeftButtonContainer>
           <Buttom onClick={handlePrevious}>
@@ -40,13 +42,13 @@ export const SliderTrack = ({ children }) => {
           </Buttom>
         </LeftButtonContainer>
         <SliderContainer>
-          <ul>
+          <ContactsList>
             {React.Children.map(children, (child, index) => {
               if (index === currentIndex) {
                 return <SliderItem>{child}</SliderItem>;
               }
             })}
-          </ul>
+          </ContactsList>
         </SliderContainer>
         <RightButtonContainer>
           <Buttom onClick={handleNext}>
@@ -54,6 +56,6 @@ export const SliderTrack = ({ children }) => {
           </Buttom>
         </RightButtonContainer>
       </Container>
-    </div>
+    </Handlers>
   );
 };

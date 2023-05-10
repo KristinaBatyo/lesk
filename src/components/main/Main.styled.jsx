@@ -19,11 +19,11 @@ export const Img = styled.img`
   margin-left: auto;
   margin-right: auto;
   ${mq({
-    width: ['243px', '243px', '486px', '972px'],
-    height: ['175px', '175px', '350px', '700px'],
+    width: ['243px', '243px', '386px', '972px'],
+    height: ['175px', '175px', '250px', '700px'],
     marginTop: ['', 'auto', '', ''],
     marginBottom: ['', 'auto', '', ''],
-    marginLeft: ['', 'auto', '-130px', '-200px'],
+    marginLeft: ['', 'auto', '', '-200px'],
 
     // top: ['656px'],
     'z-index': ['-1'],
@@ -91,13 +91,13 @@ export const TextContainer = styled.div`
   //   top: 120px;
   left: 120px;
   ${mq({
-    position: ['static', 'static', 'relative', 'relative'],
+    position: ['static', 'static', 'static', 'relative'],
     marginTop: ['140', ''],
-    top: ['', '', '100px'],
+    top: ['', '', '','100px'],
     color: ['', '', '#FFFFFF'],
     backgroundColor: ['', '#FFFFFF', '#006778'],
-    height: ['', '', '470px', '470px'],
-    width: ['', '', '470px', ''],
+    height: ['', '', '', '470px'],
+    width: ['', '', '370px', ''],
     left: ['', '', '0px'],
     padding: ['', '', '10px', '50px'],
     zIndex: ['', 1, ''],

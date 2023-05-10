@@ -13,12 +13,13 @@ const mq = facepaint(
 );
 
 export const Container = styled.div`
-  // display: flex;
+  display: flex;
   // align-items: center;
-  // justify-content: center;
+  justify-content: center;
+  overflow: hidden;
   // flex-direction: column;
   ${mq({
-    width: ['300px', '130px', '200px', '200px'],
+    width: ['100%', '130px', '200px', '200px'],
   })};
 `;
 
@@ -50,19 +51,12 @@ export const ReviewsButton = styled.button`
   }
 `;
 
-export const ContactsList = styled.ul`
-  max-width: auto;
-  padding-left: 0px;
-  margin: 0;
-  background-color: #fff;
-  margin-top: 20px;
-  margin-left: 0px;
-  display: flex;
-`;
+
 export const ContactsItem = styled.li`
   max-width: 100%;
   height: auto;
   padding: 10px;
+  padding-left: 0px;
   list-style: none;
   overflow: hidden;
   border-bottom: 1px solid #f5f5f5;
@@ -93,7 +87,7 @@ export const ContactsText = styled.p`
   background-color: #fff;
   color: #025260;
   ${mq({
-    fontSize: ['10px', '130px', '200px', '200px'],
+    fontSize: ['10px', '15px', '20px', '20px'],
   })};
 `;
 export const DeleteButton = styled.button`
@@ -121,6 +115,5 @@ export const ContactsSlider = styled(Slider)`
   }
 `;
 
-export const ContactsSliderContainer = styled.div`
-  width: 100%;
-`;
+
+
