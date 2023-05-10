@@ -42,7 +42,7 @@ export const SliderItem = styled.div`
   })}
 `;
 
-export const Buttom = styled.button`
+export const Button = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;

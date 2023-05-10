@@ -2,7 +2,7 @@ import { useState } from 'react';
 import {
   SliderContainer,
   SliderItem,
-  Buttom,
+  Button,
   Container,
   LeftButtonContainer,
   RightButtonContainer,
@@ -17,16 +17,24 @@ import { useSwipeable } from 'react-swipeable';
 
 export const SliderTrack = ({ children }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const childrenCount = React.Children.count(children);
 
   const handlePrevious = () => {
-    if (currentIndex === 0) return;
-    setCurrentIndex(currentIndex - 1);
+    if (currentIndex === 0) {
+      setCurrentIndex(childrenCount - 1);
+    } else {
+      setCurrentIndex(currentIndex - 1);
+    }
   };
 
   const handleNext = () => {
-    if (currentIndex === children.length - 1) return;
-    setCurrentIndex(currentIndex + 1);
+    if (currentIndex === childrenCount - 1) {
+      setCurrentIndex(0);
+    } else {
+      setCurrentIndex(currentIndex + 1);
+    }
   };
+
   const handlers = useSwipeable({
     onSwipedLeft: handleNext,
     onSwipedRight: handlePrevious,
@@ -35,9 +43,9 @@ export const SliderTrack = ({ children }) => {
   return (
     <Handlers {...handlers}>
       <LeftButtonContainer>
-        <Buttom onClick={handlePrevious}>
+        <Button onClick={handlePrevious}>
           <ButtonLeft fill="white" width="20px" />
-        </Buttom>
+        </Button>
       </LeftButtonContainer>
       <Container>
         <SliderContainer>
@@ -51,9 +59,9 @@ export const SliderTrack = ({ children }) => {
         </SliderContainer>
       </Container>
       <RightButtonContainer>
-        <Buttom onClick={handleNext}>
+        <Button onClick={handleNext}>
           <ButtonRight fill="white" width="20px" />
-        </Buttom>
+        </Button>
       </RightButtonContainer>
     </Handlers>
   );
