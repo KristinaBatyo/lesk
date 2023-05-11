@@ -36,9 +36,9 @@ export const ContactsListRender = () => {
           <ContactsItem key={nanoid()}>
             <ContactsTitle>{name}</ContactsTitle>
             <ContactsText>{number}</ContactsText>
-            <DeleteButton onClick={() => onDelete(id)} key={index}>
+            {/* <DeleteButton onClick={() => onDelete(id)} key={index}>
               Delete
-            </DeleteButton>
+            </DeleteButton> */}
           </ContactsItem>
         ))}
       </SliderTrack>

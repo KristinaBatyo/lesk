@@ -9,6 +9,7 @@ import { getLoading, getError, getContacts } from 'redux/selectors';
 import { Head } from "components/head/Header";
 import { Hero } from "components/main/Main";
 import { Footer } from "components/footer/Footer";
+import CallBackForm from "components/formspree/FormSpree";
 
 
 export const App = () => {
@@ -33,6 +34,7 @@ export const App = () => {
           {isLoading && <p>Načítání recenzí...</p>}
           {error && <p>{error}</p>}
           {contacts.length > 0 && <ContactsListRender />}
+        <CallBackForm/>
         </AppContainer>
         <Footer />
       </Container>
