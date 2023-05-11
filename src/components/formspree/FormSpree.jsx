@@ -12,6 +12,10 @@ import {
   PhoneInput,
   Form,
   Button,
+  EmailInput,
+  EmailLabel,
+  DotazLabel,
+  Select,
 } from './FormSpree.styled';
 
 function CallBackForm() {
@@ -43,6 +47,42 @@ function CallBackForm() {
               field="phone"
               errors={state.errors}
             />
+            <EmailLabel htmlFor="email">Email Address</EmailLabel>
+            <EmailInput id="email" type="email" name="email" />
+            <ValidationError
+              prefix="Email"
+              field="email"
+              errors={state.errors}
+            />
+            <DotazLabel for="attending">Dotaz</DotazLabel>
+            <Select name="attending" id="attending" required="">
+              {/* <option value="" selected="" disabled="">
+                Vybrat
+              </option> */}
+              <option value="Úklid domácností, rodinných domů a bytů.">
+                Úklid domácností, rodinných domů a bytů.
+              </option>
+              <option value="Uklid hotelu a apartmany.">
+                Uklid hotelu a apartmany.
+              </option>
+              <option value="Úklid kanceláří a firemních prostory.">
+                Úklid kanceláří a firemních prostory.
+              </option>
+              <option value="Úklid po malování, stavbě a rekonstrukci.">
+                Úklid po malování, stavbě a rekonstrukci.
+              </option>
+              <option value="Úklid hal, garáží. a průmyslových objektů.">
+                Úklid hal, garáží. a průmyslových objektů.
+              </option>
+              <option value="Úklid společných prostor.">
+                Úklid společných prostor.
+              </option>
+              <option value="Úklid restaurace.">Úklid restaurace.</option>
+              <option value="Rekonstrukce bytu.">Rekonstrukce bytu.</option>
+              <option value="Drobne zednicke prace.">
+                Drobne zednicke prace.
+              </option>
+            </Select>
             <Button type="submit" disabled={state.submitting}>
               Odeslat
             </Button>

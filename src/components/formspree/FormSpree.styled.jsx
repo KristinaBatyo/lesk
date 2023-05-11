@@ -24,6 +24,7 @@ export const ContactMessage = styled.p`
   //   background-color: #e6ba95;
   text-align: center;
   text-shadow: 1px 1px 1px white, 2px 2px 1px #e6ba95;
+  
 `;
 
 export const ContactContainer = styled.div`
@@ -35,10 +36,17 @@ export const ContactContainer = styled.div`
       rgba(47, 48, 58, 0.4)
     ),
     ${backgroundImage};
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
+  background-color: #025260; /* Колір фону за замовчуванням */
   ${mq({
     minHeight: ['auto', '', '', '700px'],
+    backgroundColor: [
+      '#025260',
+      '',
+      '',
+      '',
+    ] /* Колір фону для кожної ширини екрану */,
   })};
 `;
 export const Container = styled.div`
@@ -47,7 +55,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   ${mq({
-    paddingTop: ['25px', '50px', '', '70px'],
+    paddingTop: ['15px', '50px', '', '70px'],
   })};
 `;
 
@@ -73,7 +81,7 @@ export const Paragraph = styled.p`
   margin-bottom: 10px;
 
   ${mq({
-    fontSize: ['6px', '10px', '18px', '30px'],
+    fontSize: ['6px', '10px', '18px', '20px'],
   })};
 `;
 
@@ -82,7 +90,7 @@ export const FormName = styled.label`
   margin: 0;
 
   ${mq({
-    fontSize: ['6px', '14px', '20px', '25px'],
+    fontSize: ['6px', '14px', '20px', '20px'],
   })};
 `;
 
@@ -90,7 +98,21 @@ export const FormPhone = styled.label`
   padding-top: 10px;
   color: white;
   ${mq({
-    fontSize: ['6px', '14px', '20px', '25px'],
+    fontSize: ['6px', '14px', '20px', '20px'],
+  })};
+`;
+export const EmailLabel = styled.label`
+  padding-top: 10px;
+  color: white;
+  ${mq({
+    fontSize: ['6px', '14px', '20px', '20px'],
+  })};
+`;
+export const DotazLabel = styled.label`
+  padding-top: 10px;
+  color: white;
+  ${mq({
+    fontSize: ['6px', '14px', '20px', '20px'],
   })};
 `;
 
@@ -99,7 +121,7 @@ export const NameInput = styled.input`
   width: 90%;
   margin: 0;
   ${mq({
-    height: ['', '', '24px', '40px'],
+    height: ['10px', '', '24px', '40px'],
   })};
 `;
 
@@ -107,7 +129,14 @@ export const PhoneInput = styled.input`
   width: 90%;
   margin: 0;
   ${mq({
-    height: ['', '', '24px', '40px'],
+    height: ['10px', '', '24px', '40px'],
+  })};
+`;
+export const EmailInput = styled.input`
+  width: 90%;
+  margin: 0;
+  ${mq({
+    height: ['10px', '', '24px', '40px'],
   })};
 `;
 
@@ -145,5 +174,13 @@ export const Button = styled.button`
     marginTop: ['5px', '5px', '5px', '20px'],
     width: ['60px', '100px', '100px', '200px'],
     height: ['24px', '', '24px', '40px'],
+  })};
+`;
+
+export const Select = styled.select`
+  width: 90%;
+  margin: 0;
+  ${mq({
+    height: ['20px', '', '24px', '40px'],
   })};
 `;
