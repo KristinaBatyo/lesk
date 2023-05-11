@@ -10,7 +10,7 @@ import { Head } from "components/head/Header";
 import { Hero } from "components/main/Main";
 import { Footer } from "components/footer/Footer";
 import CallBackForm from "components/formspree/FormSpree";
-
+// import Reviews from "components/reviews/Reviews";
 
 export const App = () => {
     const dispatch = useDispatch();
@@ -34,7 +34,8 @@ export const App = () => {
           {isLoading && <p>Načítání recenzí...</p>}
           {error && <p>{error}</p>}
           {contacts.length > 0 && <ContactsListRender />}
-        <CallBackForm/>
+          <CallBackForm />
+          {/* <Reviews/> */}
         </AppContainer>
         <Footer />
       </Container>

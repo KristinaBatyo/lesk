@@ -24,13 +24,11 @@ export const Footer = () => {
           <ContactList>
             <ContactItem>
               <Mail href="mailto:info@devstudio.com">
-                info@devstudio.com
+                leskablesk1@seznam.cz
               </Mail>
             </ContactItem>
             <ContactItem>
-              <Number href="tel:+380961111111">
-                +420 777 043 272
-              </Number>
+              <Number href="tel:+380961111111">+420 777 043 272</Number>
             </ContactItem>
             <ContactItem>
               <Local
