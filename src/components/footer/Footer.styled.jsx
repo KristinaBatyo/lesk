@@ -24,12 +24,12 @@ export const FooterStyled = styled.footer`
   // height: 350px;
 
   ${mq({
-    height: ['140px', '200px', '200px', '200px'],
+    height: ['100px', '150px', '200px', '200px'],
   })};
 `;
 export const Img = styled.img`
   ${mq({
-    width: ['70px', '200px', '200px', '200px'],
+    width: ['70px', '140px', '200px', '200px'],
   })};
 `;
 
@@ -63,6 +63,9 @@ export const ContactList = styled.ul`
 
 export const ContactItem = styled.li`
   list-style: none;
+  ${mq({
+    marginTop: ['10px', '10px', '15px'],
+  })};
 `;
 
 export const Mail = styled.a`
