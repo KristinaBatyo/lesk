@@ -99,7 +99,7 @@ export const NameInput = styled.input`
   width: 90%;
   margin: 0;
   ${mq({
-    height: ['', '', '40px', ''],
+    height: ['', '', '24px', '40px'],
   })};
 `;
 
