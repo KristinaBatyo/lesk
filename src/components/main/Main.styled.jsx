@@ -92,7 +92,7 @@ export const TextContainer = styled.div`
   left: 120px;
   ${mq({
     position: ['static', 'static', 'static', 'relative'],
-    marginTop: ['140', '', '', '100px'],
+    marginTop: ['140', '', '100px', '100px'],
     top: ['', '', '', '100px'],
     color: ['', '', '#FFFFFF'],
     backgroundColor: ['', '#FFFFFF', '#006778'],
