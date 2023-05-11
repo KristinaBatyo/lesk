@@ -27,6 +27,7 @@ export const App = () => {
         <Head />
         <AppContainer>
           <Hero />
+          <CallBackForm />
           <Title>Napsat recenzi</Title>
           <ContactsForm />
           <Title id="recenze">Recenze</Title>
@@ -34,7 +35,6 @@ export const App = () => {
           {isLoading && <p>Načítání recenzí...</p>}
           {error && <p>{error}</p>}
           {contacts.length > 0 && <ContactsListRender />}
-          <CallBackForm />
           {/* <Reviews/> */}
         </AppContainer>
         <Footer />
