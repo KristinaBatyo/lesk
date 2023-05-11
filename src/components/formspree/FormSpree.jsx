@@ -29,7 +29,7 @@ function CallBackForm() {
         <Container>
           <Title>Chcete si objednat úklid?</Title>
           <Paragraph>
-            Vyplňte prosím formulář a náš konzultant vám v blízké budoucnosti
+            Vyplňte prosím formulář a náš konzultant v nejbližší době vám
             zavolá.
           </Paragraph>
           <Form

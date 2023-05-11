@@ -20,7 +20,6 @@ export const Hero = () => {
               alt="Tacos With Lime"
               width="15px"
             />
-            <a href=""></a>
             Úklid domácností, rodinných domů a bytů.
           </Item>
           <Item>
