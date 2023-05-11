@@ -80,7 +80,7 @@ export const ContactItem = styled.li`
 `;
 
 export const Mail = styled.a`
-  color: white;
+  color: #e6ba95;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -91,7 +91,7 @@ export const Mail = styled.a`
   &:hover,
   &:focus {
     cursor: pointer;
-    color: #e6ba95;
+    color: white;
   }
   padding-right: 50px;
   //   padding-top: 32px;
@@ -99,7 +99,7 @@ export const Mail = styled.a`
 `;
 
 export const Number = styled.a`
-  color: white;
+  color: #e6ba95;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -109,7 +109,7 @@ export const Number = styled.a`
   transition: color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    color: #e6ba95;
+    color: white;
     cursor: pointer;
   }
   //   padding-top: 32px;
@@ -141,6 +141,6 @@ export const NavLink = styled.a`
     cursor: pointer;
   }
   ${mq({
-    fontSize: ['', '', '25px', '30px'],
+    fontSize: ['', '', '20px', '30px'],
   })};
 `;
