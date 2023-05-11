@@ -3,23 +3,24 @@ import { SliderTrack } from 'components/slider/ContactsSlider';
 import {
   ContactsItem,
   ContactsTitle,
-  DeleteButton,
+  // DeleteButton,
   ContactsText,
   Container,
 } from './ContactsList.styled';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
+// import { useDispatch } from 'react-redux';
 import { nanoid } from 'nanoid';
 import { getContacts, getFilter } from 'redux/selectors';
-import { deleteContacts } from 'redux/operations';
+// import { deleteContacts } from 'redux/operations';
 
 export const ContactsListRender = () => {
   const contacts = useSelector(getContacts);
   const filters = useSelector(getFilter);
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
-  function onDelete(index) {
-    dispatch(deleteContacts(index));
-  }
+  // function onDelete(index) {
+  //   dispatch(deleteContacts(index));
+  // }
   function hendleFind() {
     const normalizedFilter = filters.toLowerCase();
     return contacts.filter(contact =>
