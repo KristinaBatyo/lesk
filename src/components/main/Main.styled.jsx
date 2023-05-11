@@ -96,7 +96,7 @@ export const TextContainer = styled.div`
     top: ['', '', '','100px'],
     color: ['', '', '#FFFFFF'],
     backgroundColor: ['', '#FFFFFF', '#006778'],
-    height: ['', '', '', '470px'],
+    height: ['', '', '', '550px'],
     width: ['', '', '370px', ''],
     left: ['', '', '0px'],
     padding: ['', '', '10px', '50px'],
