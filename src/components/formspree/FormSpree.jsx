@@ -54,7 +54,7 @@ function CallBackForm() {
               field="email"
               errors={state.errors}
             />
-            <DotazLabel for="attending">Dotaz</DotazLabel>
+            <DotazLabel htmlFor="attending">Dotaz</DotazLabel>
             <Select name="attending" id="attending" required="">
               {/* <option value="" selected="" disabled="">
                 Vybrat

@@ -28,7 +28,7 @@ export const ContactMessage = styled.p`
 `;
 
 export const ContactContainer = styled.div`
-  margin-top: 50px;
+  // margin-top: 50px;
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(
@@ -47,6 +47,8 @@ export const ContactContainer = styled.div`
       '',
       '',
     ] /* Колір фону для кожної ширини екрану */,
+  marginTop: [ '50px', '50px', '50px', '100px'],
+
   })};
 `;
 export const Container = styled.div`
