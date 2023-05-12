@@ -1,22 +1,20 @@
 {
   "files": {
     "main.css": "/viza/static/css/main.7acaea2f.css",
-    "main.js": "/viza/static/js/main.5e3e1590.js",
+    "main.js": "/viza/static/js/main.06ac9ddf.js",
     "static/media/Presentation.jpg": "/viza/static/media/Presentation.cdf7361c275933a3f76b.jpg",
     "static/media/logo.jpg": "/viza/static/media/logo.29c4d6058c4e886077da.jpg",
     "static/media/logoo.jpg": "/viza/static/media/logoo.ebb3d66b44f9c875e2e8.jpg",
     "static/media/rectangle.jpg": "/viza/static/media/rectangle.0a1ac4b7a2633c53e682.jpg",
     "static/media/li.png": "/viza/static/media/li.ba3748aee368d3da1023.png",
     "index.html": "/viza/index.html",
-    "static/media/circleright.svg": "/viza/static/media/circleright.b19bcec41645a5395ccbb569b8d0a0c6.svg",
-    "static/media/circleleft.svg": "/viza/static/media/circleleft.ee71c770b324f3b85607a421bd46558c.svg",
     "static/media/closebtn.svg": "/viza/static/media/closebtn.2236d99793cb5bf8169adf69c96253b2.svg",
     "static/media/menu-btn.svg": "/viza/static/media/menu-btn.1a0e97e0ff388261c0e17992dc2b9b73.svg",
     "main.7acaea2f.css.map": "/viza/static/css/main.7acaea2f.css.map",
-    "main.5e3e1590.js.map": "/viza/static/js/main.5e3e1590.js.map"
+    "main.06ac9ddf.js.map": "/viza/static/js/main.06ac9ddf.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.5e3e1590.js"
+    "static/js/main.06ac9ddf.js"
   ]
 }
