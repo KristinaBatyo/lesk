@@ -55,6 +55,17 @@ export const List = styled.ul`
   padding: 0px;
 `;
 
+export const Link = styled.a`
+  color: white;
+  text-decoration: none;
+  transition: color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    color: white;
+  }
+`;
+
 export const Item = styled.li`
   list-style: none;
 
