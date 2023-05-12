@@ -2,9 +2,9 @@
 // import { ContactsForm } from "components/form/ContactsForm";
 // import { Filter } from "components/filter/Filter";
 import { AppContainer, Title, Container } from './App.styled';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 // import { useDispatch, useSelector } from 'react-redux';
-import { fetchContacts } from "redux/operations";
+// import { fetchContacts } from "redux/operations";
 // import { getLoading, getError, getContacts } from 'redux/selectors';
 import { Head } from "components/head/Header";
 import { Hero } from "components/main/Main";

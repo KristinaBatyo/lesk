@@ -55,34 +55,12 @@ function CallBackForm() {
               errors={state.errors}
             />
             <DotazLabel htmlFor="attending">Dotaz</DotazLabel>
-            <Select name="Dotaz" id="attending" required="">
-              {/* <option value="" selected="" disabled="">
-                Vybrat
-              </option> */}
-              <option value="Úklid domácností, rodinných domů a bytů.">
-                Úklid domácností, rodinných domů a bytů.
-              </option>
-              <option value="Uklid hotelu a apartmany.">
-                Uklid hotelu a apartmany.
-              </option>
-              <option value="Úklid kanceláří a firemních prostory.">
-                Úklid kanceláří a firemních prostory.
-              </option>
-              <option value="Úklid po malování, stavbě a rekonstrukci.">
-                Úklid po malování, stavbě a rekonstrukci.
-              </option>
-              <option value="Úklid hal, garáží. a průmyslových objektů.">
-                Úklid hal, garáží. a průmyslových objektů.
-              </option>
-              <option value="Úklid společných prostor.">
-                Úklid společných prostor.
-              </option>
-              <option value="Úklid restaurace.">Úklid restaurace.</option>
-              <option value="Rekonstrukce bytu.">Rekonstrukce bytu.</option>
-              <option value="Drobne zednicke prace.">
-                Drobne zednicke prace.
-              </option>
-            </Select>
+            <Select id="text" type="text" name="message" />
+            <ValidationError
+              prefix="Message"
+              field="message"
+              errors={state.errors}
+            />
             <Button type="submit" disabled={state.submitting}>
               Odeslat
             </Button>

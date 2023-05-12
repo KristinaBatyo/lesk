@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import ReactPaginate from 'react-paginate';
-import facepaint from 'facepaint';
 
 
 export const ContactsButton = styled.button`

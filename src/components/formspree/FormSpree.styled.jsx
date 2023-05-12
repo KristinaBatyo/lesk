@@ -16,6 +16,7 @@ const mq = facepaint(
 );
 
 export const ContactMessage = styled.p`
+  margin-top: 130px;
   color: #025260;
   font-weight: 500;
   font-size: 34px;
@@ -24,7 +25,6 @@ export const ContactMessage = styled.p`
   //   background-color: #e6ba95;
   text-align: center;
   text-shadow: 1px 1px 1px white, 2px 2px 1px #e6ba95;
-  
 `;
 
 export const ContactContainer = styled.div`
@@ -179,10 +179,11 @@ export const Button = styled.button`
   })};
 `;
 
-export const Select = styled.select`
+export const Select = styled.textarea`
   width: 90%;
   margin: 0;
+   resize: none;
   ${mq({
-    height: ['20px', '', '24px', '40px'],
+    height: ['20px', '', '24px', '80px'],
   })};
 `;

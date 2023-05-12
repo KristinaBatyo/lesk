@@ -9,10 +9,9 @@ import {
   // doc,
 } from 'firebase/firestore';
 import { initializeApp } from 'firebase/app';
-import { getAnalytics } from 'firebase/analytics';
+// import { getAnalytics } from 'firebase/analytics';
 import ReactStarRatings from 'react-star-ratings';
 import {
-  Button,
   Card,
   Grid,
   Box,
@@ -36,7 +35,7 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+// const analytics = getAnalytics(app);
 const db = getFirestore(app);
 
 
