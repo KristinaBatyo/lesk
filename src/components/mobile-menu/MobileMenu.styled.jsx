@@ -67,6 +67,7 @@ export const MobileLink = styled.a`
     color: #e6ba95;
     cursor: pointer;
   }
+  
 `;
 
 export const MobileList = styled.ul`
@@ -87,7 +88,7 @@ export const MobileItem = styled.li`
   font-size: 20px;
   width: auto;
   ${mq({
-    marginBottom: ['18px', '18px'],
+    marginBottom: ['15px', '18px'],
   })};
 `;
 
@@ -133,7 +134,7 @@ export const Number = styled.a`
     color: #e6ba95;
   }
   ${mq({
-    fontSize: ['10px', '14px', ],
+    fontSize: ['8px', '14px', ],
   })};
 `;
 
@@ -152,6 +153,6 @@ export const Mail = styled.a`
   }
   padding-right: 50px;
   ${mq({
-    fontSize: ['10px', '14px',],
+    fontSize: ['8px', '14px',],
   })};
 `;

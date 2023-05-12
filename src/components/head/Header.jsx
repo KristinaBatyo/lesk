@@ -21,8 +21,11 @@ export const Head = () => {
 
 
   const items = [
-    { value: 'Nabizime pro vas', href: '#nabizime' },
+    { value: 'V nejbližší době se vám ozve', href: '#nabizime' },
+    { value: 'Ceník Služeb', href: '#ceník' },
     { value: 'Recenze', href: '#recenze' },
+    { value: 'O nás', href: '#onás' },
+
     // { value: 'Магазин', href: '/mainss' },
   ];
   const [menuActive, setMenuActive] = useState(false);
@@ -52,6 +55,9 @@ export const Head = () => {
         </NavItem>
         <NavItem>
           <NavLink href="#recenze">Recenze</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="#onás">O nás</NavLink>
         </NavItem>
       </NavList>
       <ContactList>

@@ -19,10 +19,10 @@ export const HeaderStyled = styled.header`
   border-color: #ececec;
   background-color: #025260;
   width: 100%;
-  marginTop: 0px;
+  margintop: 0px;
 
   ${mq({
-    height: ['80px', '130px', '200px', '200px'],
+    height: ['80px', '130px', '130px', '150px'],
     justifyContent: ['space-between', 'space-between', ''],
   })};
   position: fixed;
@@ -31,7 +31,7 @@ export const HeaderStyled = styled.header`
 `;
 export const Img = styled.img`
   ${mq({
-    width: ['70px', '120px', '190px', '190px'],
+    width: ['70px', '120px', '120px', '140px'],
   })};
 `;
 

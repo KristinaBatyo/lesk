@@ -116,7 +116,7 @@ const handleSubmit = async e => {
                 <Grid item xs={12} md={6}>
                   <TextField
                     fullWidth
-                    label="Název"
+                    label="Jméno a Příjmení"
                     variant="outlined"
                     name="name"
                     required
@@ -142,7 +142,7 @@ const handleSubmit = async e => {
                 <Grid item xs={12}>
                   <TextField
                     fullWidth
-                    label="Odezva"
+                    label="Správa"
                     variant="outlined"
                     name="comment"
                     required
