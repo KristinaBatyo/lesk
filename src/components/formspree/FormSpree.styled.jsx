@@ -15,6 +15,7 @@ const mq = facepaint(
   { literal: true }
 );
 
+
 export const ContactMessage = styled.p`
   margin-top: 130px;
   color: #025260;
@@ -48,7 +49,7 @@ export const ContactContainer = styled.div`
       '',
     ] /* Колір фону для кожної ширини екрану */,
   marginTop: [ '50px', '50px', '50px', '100px'],
-
+backgroundImage: ['none', '']
   })};
 `;
 export const Container = styled.div`
@@ -58,6 +59,7 @@ export const Container = styled.div`
   align-items: center;
   ${mq({
     paddingTop: ['15px', '50px', '', '70px'],
+    width: ['100%', '']
   })};
 `;
 
