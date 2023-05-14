@@ -31,7 +31,7 @@ export const Paragraph = styled.p`
   margin-top: 0px;
 
   ${mq({
-    fontSize: ['12px', '14px', '20px', '25px'],
+    fontSize: ['12px', '14px', '20px', '20px'],
   })};
 `;
 
@@ -41,10 +41,10 @@ export const Title = styled.h2`
   line-height: 1.19;
   letter-spacing: 0.03em;
   font-weight: 700;
-//   margin-top: 30px;
+  //   margin-top: 30px;
 
   background-color: #025260;
   ${mq({
-    fontSize: ['20px', '25px', '30px', '40px'],
+    fontSize: ['20px', '25px', '30px', '30px'],
   })};
 `;
