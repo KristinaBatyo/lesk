@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/viza/static/css/main.7acaea2f.css",
-    "main.js": "/viza/static/js/main.55c3ae96.js",
+    "main.js": "/viza/static/js/main.f55baebf.js",
     "static/media/Presentation.jpg": "/viza/static/media/Presentation.cdf7361c275933a3f76b.jpg",
     "static/media/Rectangle-o-nas.jpg": "/viza/static/media/Rectangle-o-nas.cd3c53e318f4e9d8ce35.jpg",
     "static/media/logo.jpg": "/viza/static/media/logo.29c4d6058c4e886077da.jpg",
@@ -22,10 +22,10 @@
     "static/media/home.svg": "/viza/static/media/home.b0326f941b5b3e1f3610df7b498b138b.svg",
     "static/media/checkmark.svg": "/viza/static/media/checkmark.2f4b8fdae8d0f856637f73e76118ded2.svg",
     "main.7acaea2f.css.map": "/viza/static/css/main.7acaea2f.css.map",
-    "main.55c3ae96.js.map": "/viza/static/js/main.55c3ae96.js.map"
+    "main.f55baebf.js.map": "/viza/static/js/main.f55baebf.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.55c3ae96.js"
+    "static/js/main.f55baebf.js"
   ]
 }
