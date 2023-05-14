@@ -32,12 +32,12 @@ export const Head = () => {
 
 
   return (
-    <HeaderStyled>
+    <HeaderStyled id="">
       <MenuBtn type="button" onClick={() => setMenuActive(!menuActive)}>
         <MyButton fill="white" />
       </MenuBtn>
       <Nav>
-        <a href="/">
+        <a href="./">
           {' '}
           <Img
             src={require('../image/logo.jpg')}
