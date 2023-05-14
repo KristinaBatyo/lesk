@@ -125,7 +125,7 @@ export const NameInput = styled.input`
   width: 90%;
   margin: 0;
   ${mq({
-    height: ['10px', '', '24px', '40px'],
+    height: ['20px', '20px', '24px', '40px'],
   })};
 `;
 
@@ -133,14 +133,14 @@ export const PhoneInput = styled.input`
   width: 90%;
   margin: 0;
   ${mq({
-    height: ['10px', '', '24px', '40px'],
+    height: ['20px', '20px', '24px', '40px'],
   })};
 `;
 export const EmailInput = styled.input`
   width: 90%;
   margin: 0;
   ${mq({
-    height: ['10px', '', '24px', '40px'],
+    height: ['20px', '20px', '24px', '40px'],
   })};
 `;
 
@@ -184,8 +184,8 @@ export const Button = styled.button`
 export const Select = styled.textarea`
   width: 90%;
   margin: 0;
-   resize: none;
+  resize: none;
   ${mq({
-    height: ['20px', '', '24px', '80px'],
+    height: ['80px', '80px', '80px', '105px'],
   })};
 `;
