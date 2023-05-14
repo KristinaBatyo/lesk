@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/lesk/static/css/main.7acaea2f.css",
-    "main.js": "/lesk/static/js/main.a148b638.js",
+    "main.js": "/lesk/static/js/main.4cbdfaaa.js",
     "static/media/Presentation.jpg": "/lesk/static/media/Presentation.cdf7361c275933a3f76b.jpg",
     "static/media/Rectangle-o-nas.jpg": "/lesk/static/media/Rectangle-o-nas.cd3c53e318f4e9d8ce35.jpg",
     "static/media/logo.jpg": "/lesk/static/media/logo.29c4d6058c4e886077da.jpg",
@@ -22,10 +22,10 @@
     "static/media/home.svg": "/lesk/static/media/home.b0326f941b5b3e1f3610df7b498b138b.svg",
     "static/media/checkmark.svg": "/lesk/static/media/checkmark.2f4b8fdae8d0f856637f73e76118ded2.svg",
     "main.7acaea2f.css.map": "/lesk/static/css/main.7acaea2f.css.map",
-    "main.a148b638.js.map": "/lesk/static/js/main.a148b638.js.map"
+    "main.4cbdfaaa.js.map": "/lesk/static/js/main.4cbdfaaa.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.a148b638.js"
+    "static/js/main.4cbdfaaa.js"
   ]
 }
