@@ -49,7 +49,7 @@ export const Button = styled.button`
   margin: 1rem;
   min-width: 30px;
   min-height: 20px;
-  background-color: #025260;
+  background-color: #f4f6f6;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   border: none;
@@ -57,13 +57,14 @@ export const Button = styled.button`
   cursor: pointer;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   ${mq({
-    width: ['',],
+    width: [''],
     height: ['100%'],
+    backgroundColor: ['#025260', ''],
   })}
 `;
 
 
-
+//  color: #025260;
 
 export const LeftButtonContainer = styled.div`
   position: absolute;

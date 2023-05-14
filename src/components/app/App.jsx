@@ -1,4 +1,4 @@
-// import { ContactsListRender } from "../list/ContactsList"; 
+import { ContactsListRender, ContactsListRender2 } from '../list/ContactsList'; 
 // import { ContactsForm } from "components/form/ContactsForm";
 // import { Filter } from "components/filter/Filter";
 import { AppContainer, Title, Container } from './App.styled';
@@ -11,7 +11,7 @@ import { Hero } from "components/main/Main";
 import { Footer } from "components/footer/Footer";
 import CallBackForm from "components/formspree/FormSpree";
 import Reviews from "components/reviews/Reviews";
-
+import { Ceník } from 'components/ceník/Ceník';
 export const App = () => {
     // const dispatch = useDispatch();
     // const contacts = useSelector(getContacts);
@@ -28,14 +28,16 @@ export const App = () => {
         <AppContainer>
           <Hero />
           <CallBackForm />
+          <Ceník />
+          <ContactsListRender />
+          <ContactsListRender2/>
           <Title>Napsat recenzi</Title>
           {/* <ContactsForm /> */}
           {/* <Title id="recenze">Recenze</Title> */}
           {/* <Filter /> */}
           {/* {isLoading && <p>Načítání recenzí...</p>} */}
           {/* {error && <p>{error}</p>} */}
-          {/* {contacts.length > 0 && <ContactsListRender />} */}
-          <Reviews/>
+          <Reviews />
         </AppContainer>
         <Footer />
       </Container>

@@ -1,48 +1,111 @@
 import { SliderTrack } from 'components/slider/ContactsSlider';
+import { nanoid } from 'nanoid';
 
 import {
   ContactsItem,
   ContactsTitle,
-  // DeleteButton,
   ContactsText,
   Container,
+  Container2,
+  CeníkItem,
 } from './ContactsList.styled';
-import { useSelector } from 'react-redux';
-// import { useDispatch } from 'react-redux';
-import { nanoid } from 'nanoid';
-import { getContacts, getFilter } from 'redux/selectors';
-// import { deleteContacts } from 'redux/operations';
+
+const ceník = [
+  {
+    id: nanoid(),
+    title: 'Pravidelné úklidy',
+    text: 'Pravidelné úklidy domácností a kanceláří',
+    li1: 'Cena za 1 hod. od 140 Kč',
+    li2: 'Cena za 1 m2 od 0,60 Kč',
+    li3: 'Cena za úklid od 400 Kč',
+  },
+  {
+    id: nanoid(),
+    title: 'Pravidelné úklidy',
+    text: 'Pravidelné úklidy komerčních prostor, škol, zdravotnických zařízení a jiných firem',
+    li1: 'Cena za 1 hod. od 150 Kč',
+    li2: 'Cena za 1 m2 od 0,60 Kč',
+    li3: 'Cena za úklid od 400 Kč',
+  },
+  {
+    id: nanoid(),
+    title: 'Pravidelné úklidy',
+    text: 'Pravidelné úklidy společných prostor',
+    li1: 'Cena za 1 m2 od 0,90 Kč',
+    li2: 'Cena za úklid od 500 Kč',
+  },
+];
+const ceník2 = [
+  {
+    id: nanoid(),
+    title: 'Jednorázové úklidy pro domácnosti a firmy',
+    text: 'Úklidy generální, stavební, předkolaudačni, po rekonstrukci a malířích',
+    li1: 'Cena za 1 hod. od 150 Kč',
+    li2: 'Cena za 1 m2 od 15 Kč',
+  },
+  {
+    id: nanoid(),
+    title: 'Jednorázové úklidy pro domácnosti a firmy',
+    text: 'Strojové čištění skladů, hal a garáží',
+    li1: 'Cena za 1 m2 od 3 Kč',
+  },
+  {
+    id: nanoid(),
+    title: 'Jednorázové úklidy pro domácnosti a firmy',
+    text: 'Extrakční čištění koberců a čalounění',
+    li1: 'Cena za čalounění od 200 Kč',
+    li2: 'Cena za 1 m2 od 14 Kč',
+  },
+  {
+    id: nanoid(),
+    title: 'Jednorázové úklidy pro domácnosti a firmy',
+    text: 'Hodinová sazba jednorázových úklidů',
+    li1: 'Od 150 Kč / 1 hod. / 1 úklidový pracovník',
+  },
+  {
+    id: nanoid(),
+    title: 'Jednorázové úklidy pro domácnosti a firmy',
+    text: 'Mytí oken včetně rámů, výloh a jiných skleněných výplní',
+    li1: 'Cena za 1 m2 od 7 Kč',
+    li2: 'Ceny od 1 000 Kč',
+  },
+];
 
 export const ContactsListRender = () => {
-  const contacts = useSelector(getContacts);
-  const filters = useSelector(getFilter);
-  // const dispatch = useDispatch();
-
-  // function onDelete(index) {
-  //   dispatch(deleteContacts(index));
-  // }
-  function hendleFind() {
-    const normalizedFilter = filters.toLowerCase();
-    return contacts.filter(contact =>
-      contact.name.toLowerCase().includes(normalizedFilter)
-    );
-  }
-
-  const contactsData = hendleFind();
-
   return (
     <Container>
       <SliderTrack>
-        {contactsData.map(({ name, number, id }, index) => (
-          <ContactsItem key={nanoid()}>
-            <ContactsTitle>{name}</ContactsTitle>
-            <ContactsText>{number}</ContactsText>
-            {/* <DeleteButton onClick={() => onDelete(id)} key={index}>
-              Delete
-            </DeleteButton> */}
+        {ceník.map(contact => (
+          <ContactsItem key={contact.id}>
+            <ContactsTitle>{contact.title}</ContactsTitle>
+            <ContactsText>{contact.text}</ContactsText>
+            <ul>
+              <CeníkItem>{contact.li1}</CeníkItem>
+              <CeníkItem>{contact.li2}</CeníkItem>
+              <CeníkItem>{contact.li3}</CeníkItem>
+            </ul>
           </ContactsItem>
         ))}
       </SliderTrack>
     </Container>
+  );
+};
+export const ContactsListRender2 = () => {
+  return (
+    <Container2>
+      <SliderTrack>
+        {ceník2.map(contact => (
+          <ContactsItem key={contact.id}>
+            <ContactsTitle>{contact.title}</ContactsTitle>
+            <ContactsText>{contact.text}</ContactsText>
+            <ul>
+              <CeníkItem>{contact.li1}</CeníkItem>
+              <CeníkItem>{contact.li2}</CeníkItem>
+              <CeníkItem>{contact.li3}</CeníkItem>
+            </ul>
+          </ContactsItem>
+        ))}
+      </SliderTrack>
+    </Container2>
   );
 };

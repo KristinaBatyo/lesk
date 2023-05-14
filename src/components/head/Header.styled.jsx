@@ -37,12 +37,9 @@ export const Img = styled.img`
 
 export const Nav = styled.div`
   font-family: Raleway, sans-serif;
-//   font-weight: 700;
-//   font-size: 24px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-//   margin-right: 93px;
   padding-top: 25px;
   padding-bottom: 25px;
   display: flex;
@@ -64,7 +61,6 @@ export const MenuBtn = styled.button`
 `;
 
 export const ContactList = styled.ul`
-  //   display: flex;
   margin-left: auto;
   padding: 0px;
   ${mq({
@@ -86,7 +82,6 @@ export const Mail = styled.a`
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-
   transition: color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
@@ -94,8 +89,6 @@ export const Mail = styled.a`
     color: white;
   }
   padding-right: 50px;
-  //   padding-top: 32px;
-  //   padding-bottom: 32px;
 `;
 
 export const Number = styled.a`

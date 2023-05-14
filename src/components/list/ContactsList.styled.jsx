@@ -22,6 +22,17 @@ export const Container = styled.div`
     maxWidth: ['100%'],
   })};
 `;
+export const Container2 = styled.div`
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #fafafa;
+  margin-top: 20px;
+
+  ${mq({
+    maxWidth: ['100%'],
+  })};
+`;
 
 export const Line = styled.div`
   display: flex;
@@ -84,7 +95,8 @@ export const ContactsText = styled.p`
   padding: 0;
   font-size: 1rem;
   background-color: #fff;
-  color: #025260;
+  color: #e6ba95;
+
   ${mq({
     fontSize: ['10px', '15px', '20px', '20px'],
   })};
@@ -116,3 +128,18 @@ export const ContactsSlider = styled(Slider)`
 
 
 
+export const CeníkItem = styled.li`
+  max-width: 100%;
+  height: auto;
+  padding-left: 0px;
+  list-style: none;
+  border-bottom: 1px solid #f5f5f5;
+  &:last-child {
+    border-bottom: none;
+  }
+  color: #025260;
+  margin-top: 15px;
+  ${mq({
+    fontSize: ['14px', '15px', '20px', '20px'],
+  })};
+`;

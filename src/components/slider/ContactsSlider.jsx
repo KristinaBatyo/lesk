@@ -1,3 +1,4 @@
+// SliderTrack.js
 import { useState } from 'react';
 import {
   SliderContainer,
@@ -14,6 +15,7 @@ import { ReactComponent as ButtonLeft } from '../image/circleleft.svg';
 import { ReactComponent as ButtonRight } from '../image/circleright.svg';
 
 import { useSwipeable } from 'react-swipeable';
+import { nanoid } from 'nanoid';
 
 export const SliderTrack = ({ children }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -44,7 +46,7 @@ export const SliderTrack = ({ children }) => {
     <Handlers {...handlers}>
       <LeftButtonContainer>
         <Button onClick={handlePrevious}>
-          <ButtonLeft fill="white" width="20px" />
+          <ButtonLeft fill="#e6ba95" width="20px" />
         </Button>
       </LeftButtonContainer>
       <Container>
@@ -52,7 +54,7 @@ export const SliderTrack = ({ children }) => {
           <ContactsList>
             {React.Children.map(children, (child, index) => {
               if (index === currentIndex) {
-                return <SliderItem>{child}</SliderItem>;
+                return <SliderItem key={nanoid()}>{child}</SliderItem>;
               }
             })}
           </ContactsList>
@@ -60,7 +62,7 @@ export const SliderTrack = ({ children }) => {
       </Container>
       <RightButtonContainer>
         <Button onClick={handleNext}>
-          <ButtonRight fill="white" width="20px" />
+          <ButtonRight fill="#e6ba95" width="20px" />
         </Button>
       </RightButtonContainer>
     </Handlers>
