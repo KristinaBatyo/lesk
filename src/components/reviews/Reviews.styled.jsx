@@ -25,15 +25,14 @@ export const ContactsButton = styled.button`
     outline: none;
     color: #025260;
   }
-
 `;
 
 
 
 const PaginateContainer = styled.div`
   display: flex;
+  margin-top: 15px;
   justify-content: center;
-
   ul {
     list-style: none;
     display: flex;

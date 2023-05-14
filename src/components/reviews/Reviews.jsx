@@ -190,8 +190,8 @@ const handleSubmit = async e => {
               </Card>
             ))}
             {displayReviews.length === 0 && (
-              <Typography variant="body1" component="p">
-                No reviews to display.
+              <Typography display={'flex'} justifyContent={'center'} variant="body1" component="p">
+                Žádné recenze k zobrazení.
               </Typography>
             )}
             <CustomPaginate
