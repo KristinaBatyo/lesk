@@ -37,7 +37,7 @@ export const Head = () => {
         <MyButton fill="white" />
       </MenuBtn>
       <Nav>
-        <a href="/lesk">
+        <a href="/">
           {' '}
           <Img
             src={require('../image/logo.jpg')}
