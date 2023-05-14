@@ -9,7 +9,8 @@ import {
   Img,
   Adress,
   Iframe,
-  Local
+  Local,
+  LocalMobile,
   //   NavLogo,
 } from './Footer.styled';
 
@@ -47,6 +48,23 @@ export const Footer = () => {
               </Local>
               {/* <p>Praha, Vrchlického 484/45</p> */}
             </ContactItem>
+            <ContactItem>
+              <LocalMobile
+                href="https://goo.gl/maps/qxyAUHJcafWaHDPN7?coh=178573&entry=tt"
+                target="blank"
+              >
+                {' '}
+                Křešínská 153/4
+              </LocalMobile>
+              <LocalMobile
+                href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10243.54106564588!2d14.364999972535408!3d50.06971031712511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b95a5eaad1ae1%3A0xe096bfa9eab40e77!2zVnJjaGxpY2vDqWhvIDQ4NC80NSwgMTUwIDAwIFByYWhhIDUtS2_FocOtxZllLCDQp9C10YXRltGP!5e0!3m2!1suk!2sua!4v1683217985699!5m2!1suk!2sua"
+                target="blank"
+              >
+                {' '}
+                Pobočka: Vrchlického 484/45 Praha 5 Košíře 150 00
+              </LocalMobile>
+              {/* <p>Praha, Vrchlického 484/45</p> */}
+            </ContactItem>
           </ContactList>
         </Adress>
         <Nav>
@@ -59,3 +77,4 @@ export const Footer = () => {
       </FooterStyled>
     );
 };
+

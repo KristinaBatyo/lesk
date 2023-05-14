@@ -29,7 +29,7 @@ export const FooterStyled = styled.footer`
 `;
 export const Img = styled.img`
   ${mq({
-    width: ['70px', '140px', '200px', '200px'],
+    width: ['60px', '140px', '200px', '200px'],
   })};
 `;
 
@@ -147,5 +147,27 @@ export const Local = styled.a`
     opacity: ['0', '0', '1', '1'],
     visibility: ['hidden', 'hidden', 'visible', 'visible'],
     display: ['none', 'none', 'block', 'block'],
+  })};
+`;
+
+export const LocalMobile = styled.a`
+  color: #025260;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition: color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: #e6ba95;
+  }
+  padding-right: 50px;
+  ${mq({
+    fontSize: ['10px', '14px', '18px', '18px'],
+    opacity: ['1', '1', '0', '0'],
+    visibility: ['visible', 'visible', 'hidden', 'hidden'],
+    display: ['block', 'block', 'none', 'none'],
   })};
 `;

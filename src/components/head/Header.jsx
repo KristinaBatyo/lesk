@@ -71,6 +71,7 @@ export const Head = () => {
       <MobileMenu active={menuActive} setActive={setMenuActive} items={items} />
     </HeaderStyled>
   );
+  
 };
 
 
