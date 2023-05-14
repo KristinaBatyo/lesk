@@ -70,7 +70,7 @@ export const Title = styled.h1`
   font-family: Raleway, sans-serif;
   text-align: center;
   ${mq({
-    fontSize: ['10px', '18px', '40px', '50px'],
+    fontSize: ['18px', '18px', '40px', '50px'],
   })};
 `;
 
@@ -85,7 +85,7 @@ export const Paragraph = styled.p`
   margin-bottom: 10px;
 
   ${mq({
-    fontSize: ['6px', '10px', '18px', '20px'],
+    fontSize: ['14px', '10px', '18px', '20px'],
   })};
 `;
 
@@ -94,7 +94,7 @@ export const FormName = styled.label`
   margin: 0;
 
   ${mq({
-    fontSize: ['6px', '14px', '20px', '20px'],
+    fontSize: ['12px', '14px', '20px', '20px'],
   })};
 `;
 
@@ -102,21 +102,21 @@ export const FormPhone = styled.label`
   padding-top: 10px;
   color: white;
   ${mq({
-    fontSize: ['6px', '14px', '20px', '20px'],
+    fontSize: ['12px', '14px', '20px', '20px'],
   })};
 `;
 export const EmailLabel = styled.label`
   padding-top: 10px;
   color: white;
   ${mq({
-    fontSize: ['6px', '14px', '20px', '20px'],
+    fontSize: ['12px', '14px', '20px', '20px'],
   })};
 `;
 export const DotazLabel = styled.label`
   padding-top: 10px;
   color: white;
   ${mq({
-    fontSize: ['6px', '14px', '20px', '20px'],
+    fontSize: ['12px', '14px', '20px', '20px'],
   })};
 `;
 
