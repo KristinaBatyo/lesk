@@ -37,7 +37,7 @@ export const Head = () => {
         <MyButton fill="white" />
       </MenuBtn>
       <Nav>
-        <a href="/viza">
+        <a href="/lesk">
           {' '}
           <Img
             src={require('../image/logo.jpg')}
