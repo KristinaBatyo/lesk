@@ -21,7 +21,7 @@ export const Head = () => {
 
 
   const items = [
-    { value: 'V nejbližší době se vám ozve', href: '#nabizime' },
+    { value: 'Nabizime pro vas', href: '#nabizime' },
     { value: 'Ceník Služeb', href: '#ceník' },
     { value: 'Recenze', href: '#recenze' },
     { value: 'O nás', href: '#onás' },
