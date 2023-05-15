@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.7acaea2f.css",
-    "main.js": "/static/js/main.ed5be8ca.js",
+    "main.js": "/static/js/main.89bdad17.js",
     "static/media/Presentation.jpg": "/static/media/Presentation.cdf7361c275933a3f76b.jpg",
-    "static/media/Rectangle-o-nas.jpg": "/static/media/Rectangle-o-nas.cd3c53e318f4e9d8ce35.jpg",
+    "static/media/úklid.jpg": "/static/media/úklid.cd3c53e318f4e9d8ce35.jpg",
     "static/media/logo.jpg": "/static/media/logo.29c4d6058c4e886077da.jpg",
     "static/media/logoo.jpg": "/static/media/logoo.ebb3d66b44f9c875e2e8.jpg",
-    "static/media/rectangle.jpg": "/static/media/rectangle.0a1ac4b7a2633c53e682.jpg",
+    "static/media/čistý.jpg": "/static/media/čistý.0a1ac4b7a2633c53e682.jpg",
     "static/media/li.png": "/static/media/li.ba3748aee368d3da1023.png",
     "static/media/eye-blocked.svg": "/static/media/eye-blocked.89ab20b4b5fdc99023c7de58eca74c6f.svg",
     "index.html": "/index.html",
@@ -22,10 +22,10 @@
     "static/media/home.svg": "/static/media/home.b0326f941b5b3e1f3610df7b498b138b.svg",
     "static/media/checkmark.svg": "/static/media/checkmark.2f4b8fdae8d0f856637f73e76118ded2.svg",
     "main.7acaea2f.css.map": "/static/css/main.7acaea2f.css.map",
-    "main.ed5be8ca.js.map": "/static/js/main.ed5be8ca.js.map"
+    "main.89bdad17.js.map": "/static/js/main.89bdad17.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.ed5be8ca.js"
+    "static/js/main.89bdad17.js"
   ]
 }
