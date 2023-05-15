@@ -34,8 +34,8 @@ export const ONas = () => {
     <DivContainer id="onás">
       <ONasContainer>
         <Img
-          src={require('../image/Rectangle-o-nas.jpg')}
-          alt="Tacos With Lime"
+          src={require('../image/úklid.jpg')}
+          alt="Chcete si objednat úklid?"
           width="100%"
         />
         <Container>

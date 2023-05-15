@@ -71,7 +71,7 @@ const ceník2 = [
   },
 ];
 
-export const ContactsListRender = () => {
+export const CeníkFormulář = () => {
   return (
     <Container>
       <SliderTrack>
@@ -90,7 +90,7 @@ export const ContactsListRender = () => {
     </Container>
   );
 };
-export const ContactsListRender2 = () => {
+export const CeníkFormulář2 = () => {
   return (
     <Container2>
       <SliderTrack>

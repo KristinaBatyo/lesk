@@ -113,11 +113,10 @@ export const Hero = () => {
               Drobne zednicke prace.
             </Link>
           </Item>
-          
         </List>
       </TextContainer>
 
-      <Img src={require('../image/rectangle.jpg')} alt="Tacos With Lime" />
+      <Img src={require('../image/čistý.jpg')} alt="úklidová firma" />
     </HeroContainer>
   );
 };

@@ -1,4 +1,4 @@
-import { ContactsListRender, ContactsListRender2 } from '../list/ContactsList'; 
+import { CeníkFormulář, CeníkFormulář2 } from '../list/ContactsList'; 
 import { AppContainer, Title, Container } from './App.styled';
 import { Head } from "components/head/Header";
 import { Hero } from "components/main/Main";
@@ -18,8 +18,8 @@ export const App = () => {
           <Hero />
           <CallBackForm />
           <Ceník />
-          <ContactsListRender />
-          <ContactsListRender2 />
+          <CeníkFormulář />
+          <CeníkFormulář2 />
           <Title>Napsat recenzi</Title>
           <Reviews />
           <ONas />
