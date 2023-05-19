@@ -1,15 +1,13 @@
 import { useState, useEffect } from 'react';
-// import { nanoid } from 'nanoid';
 import {
   getFirestore,
   collection,
   getDocs,
   addDoc,
-  updateDoc,
-  doc,
+  // updateDoc,
+  // doc,
 } from 'firebase/firestore';
 import { initializeApp } from 'firebase/app';
-// import { getAnalytics } from 'firebase/analytics';
 import ReactStarRatings from 'react-star-ratings';
 import {
   Card,
@@ -18,7 +16,7 @@ import {
   CardContent,
   Typography,
   TextField,
-  Button,
+  // Button,
 } from '@mui/material';
 import CustomPaginate from './Reviews.styled';
 import { ContactsButton } from './Reviews.styled';
@@ -44,8 +42,8 @@ function Reviews() {
   const [rating, setRating] = useState(5);
   const [currentPage, setCurrentPage] = useState(0);
   const reviewsPerPage = 10;
-  const [replyText, setReplyText] = useState('');
-  const [replyId, setReplyId] = useState('');
+  // const [replyText, setReplyText] = useState('');
+  // const [replyId, setReplyId] = useState('');
 
   const handleRatingChange = newRating => {
     setRating(newRating);
@@ -85,33 +83,33 @@ function Reviews() {
       console.error('Error adding review:', error);
     }
   };
-  const handleReplyChange = e => {
-    setReplyText(e.target.value);
-  };
+  // const handleReplyChange = e => {
+  //   setReplyText(e.target.value);
+  // };
 
-  const handleReply = async e => {
-    e.preventDefault();
-    try {
-      await updateDoc(doc(db, 'reviews', replyId), {
-        reply: replyText,
-      });
-      const updatedReviews = reviews.map(review => {
-        if (review.id === replyId) {
-          return { ...review, reply: replyText };
-        }
-        return review;
-      });
-      setReviews(updatedReviews);
-      setReplyText('');
-      setReplyId('');
-    } catch (error) {
-      console.error('Error adding reply:', error);
-    }
-  };
+  // const handleReply = async e => {
+  //   e.preventDefault();
+  //   try {
+  //     await updateDoc(doc(db, 'reviews', replyId), {
+  //       reply: replyText,
+  //     });
+  //     const updatedReviews = reviews.map(review => {
+  //       if (review.id === replyId) {
+  //         return { ...review, reply: replyText };
+  //       }
+  //       return review;
+  //     });
+  //     setReviews(updatedReviews);
+  //     setReplyText('');
+  //     setReplyId('');
+  //   } catch (error) {
+  //     console.error('Error adding reply:', error);
+  //   }
+  // };
 
-  const handleReplyClick = id => {
-    setReplyId(id);
-  };
+  // const handleReplyClick = id => {
+  //   setReplyId(id);
+  // };
 
   const handlePageClick = ({ selected }) => {
     setCurrentPage(selected);
