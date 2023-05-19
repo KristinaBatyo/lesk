@@ -29,7 +29,7 @@ export const Footer = () => {
               </Mail>
             </ContactItem>
             <ContactItem>
-              <Number href="tel:+380961111111">+420 777 043 272</Number>
+              <Number href="tel:+420777043272">+420 777 043 272</Number>
             </ContactItem>
             <ContactItem>
               <Local
