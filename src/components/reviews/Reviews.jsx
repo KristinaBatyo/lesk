@@ -5,8 +5,8 @@ import {
   collection,
   getDocs,
   addDoc,
-  // deleteDoc,
-  // doc,
+  updateDoc,
+  doc,
 } from 'firebase/firestore';
 import { initializeApp } from 'firebase/app';
 // import { getAnalytics } from 'firebase/analytics';
@@ -18,6 +18,7 @@ import {
   CardContent,
   Typography,
   TextField,
+  Button,
 } from '@mui/material';
 import CustomPaginate from './Reviews.styled';
 import { ContactsButton } from './Reviews.styled';
@@ -35,7 +36,6 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-// const analytics = getAnalytics(app);
 const db = getFirestore(app);
 
 
@@ -44,6 +44,8 @@ function Reviews() {
   const [rating, setRating] = useState(5);
   const [currentPage, setCurrentPage] = useState(0);
   const reviewsPerPage = 10;
+  const [replyText, setReplyText] = useState('');
+  const [replyId, setReplyId] = useState('');
 
   const handleRatingChange = newRating => {
     setRating(newRating);
@@ -65,51 +67,65 @@ function Reviews() {
     fetchReviews();
   }, []);
 
-const handleSubmit = async e => {
-  e.preventDefault();
-  const name = e.target.name.value;
-  const comment = e.target.comment.value;
-  try {
-    const docRef = await addDoc(collection(db, 'reviews'), {
-      name,
-      comment,
-      rating,
-    });
-    const newReview = { name, comment, rating, id: docRef.id };
-    setReviews(prevReviews => [newReview, ...prevReviews]);
-    e.target.reset();
-    setCurrentPage(0);
-  } catch (error) {
-    console.error('Error adding review:', error);
-  }
-};
+  const handleSubmit = async e => {
+    e.preventDefault();
+    const name = e.target.name.value;
+    const comment = e.target.comment.value;
+    try {
+      const docRef = await addDoc(collection(db, 'reviews'), {
+        name,
+        comment,
+        rating,
+      });
+      const newReview = { name, comment, rating, id: docRef.id };
+      setReviews(prevReviews => [newReview, ...prevReviews]);
+      e.target.reset();
+      setCurrentPage(0);
+    } catch (error) {
+      console.error('Error adding review:', error);
+    }
+  };
+  const handleReplyChange = e => {
+    setReplyText(e.target.value);
+  };
 
+  const handleReply = async e => {
+    e.preventDefault();
+    try {
+      await updateDoc(doc(db, 'reviews', replyId), {
+        reply: replyText,
+      });
+      const updatedReviews = reviews.map(review => {
+        if (review.id === replyId) {
+          return { ...review, reply: replyText };
+        }
+        return review;
+      });
+      setReviews(updatedReviews);
+      setReplyText('');
+      setReplyId('');
+    } catch (error) {
+      console.error('Error adding reply:', error);
+    }
+  };
+
+  const handleReplyClick = id => {
+    setReplyId(id);
+  };
 
   const handlePageClick = ({ selected }) => {
     setCurrentPage(selected);
   };
 
-  // const pageCount = Math.ceil(reviews.length / reviewsPerPage);
-  // const displayReviews = reviews.slice(
-  //   currentPage * reviewsPerPage,
-  //   (currentPage + 1) * reviewsPerPage
-  // );
-
-   const pageCount = Math.ceil(reviews.length / reviewsPerPage);
-   const startIndex = currentPage * reviewsPerPage;
-   const endIndex = (currentPage + 1) * reviewsPerPage;
-   const displayReviews = reviews.slice(startIndex, endIndex);
-
+  const pageCount = Math.ceil(reviews.length / reviewsPerPage);
+  const startIndex = currentPage * reviewsPerPage;
+  const endIndex = (currentPage + 1) * reviewsPerPage;
+  const displayReviews = reviews.slice(startIndex, endIndex);
 
   return (
     <div>
       <Box m={4}>
         <Grid container spacing={3} justifyContent="center">
-          <Grid item xs={12}>
-            {/* <Typography variant="h4" align="center" gutterBottom>
-              Recenze
-            </Typography> */}
-          </Grid>
           <Grid item xs={12} md={8}>
             <form onSubmit={handleSubmit}>
               <Grid container spacing={2}>
@@ -130,13 +146,6 @@ const handleSubmit = async e => {
                     starDimension="20px"
                     starSpacing="5px"
                     changeRating={handleRatingChange}
-                    // count={5}
-                    // value={rating}
-                    // onChange={handleRatingChange}
-                    // size={24}
-                    // rating={rating}
-                    activeColor="orange"
-                    // starRatedColor="orange"
                   />
                 </Grid>
                 <Grid item xs={12}>
@@ -177,20 +186,43 @@ const handleSubmit = async e => {
                     numberOfStars={5}
                     starDimension="20px"
                     starSpacing="5px"
-                    // count={5}
-                    // value={review.rating}
-                    // size={24}
-                    // edit={false}
-                    // activeColor="#ffd700"
                   />
                   <Typography variant="body1" component="p">
                     {review.comment}
                   </Typography>
+                  {review.reply ? (
+                    <Typography variant="body2" component="p">
+                      <strong>Reply:</strong> {review.reply}
+                    </Typography>
+                  ) : (
+                    <form onSubmit={handleReply}>
+                      <TextField
+                        fullWidth
+                        label="Reply"
+                        variant="outlined"
+                        value={replyText}
+                        onChange={handleReplyChange}
+                        required
+                      />
+                      <Button
+                        variant="contained"
+                        type="submit"
+                        onClick={() => handleReplyClick(review.id)}
+                      >
+                        Send Reply
+                      </Button>
+                    </form>
+                  )}
                 </CardContent>
               </Card>
             ))}
             {displayReviews.length === 0 && (
-              <Typography display={'flex'} justifyContent={'center'} variant="body1" component="p">
+              <Typography
+                display={'flex'}
+                justifyContent={'center'}
+                variant="body1"
+                component="p"
+              >
                 Žádné recenze k zobrazení.
               </Typography>
             )}
