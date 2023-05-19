@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7acaea2f.css",
-    "main.js": "/static/js/main.89bdad17.js",
+    "main.js": "/static/js/main.b054fce7.js",
     "static/media/Presentation.jpg": "/static/media/Presentation.cdf7361c275933a3f76b.jpg",
     "static/media/úklid.jpg": "/static/media/úklid.cd3c53e318f4e9d8ce35.jpg",
     "static/media/logo.jpg": "/static/media/logo.29c4d6058c4e886077da.jpg",
@@ -22,10 +22,10 @@
     "static/media/home.svg": "/static/media/home.b0326f941b5b3e1f3610df7b498b138b.svg",
     "static/media/checkmark.svg": "/static/media/checkmark.2f4b8fdae8d0f856637f73e76118ded2.svg",
     "main.7acaea2f.css.map": "/static/css/main.7acaea2f.css.map",
-    "main.89bdad17.js.map": "/static/js/main.89bdad17.js.map"
+    "main.b054fce7.js.map": "/static/js/main.b054fce7.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.89bdad17.js"
+    "static/js/main.b054fce7.js"
   ]
 }
