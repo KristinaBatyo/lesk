@@ -69,13 +69,19 @@ function Reviews() {
     e.preventDefault();
     const name = e.target.name.value;
     const comment = e.target.comment.value;
+  const currentDate = new Date();
+  const year = currentDate.getFullYear();
+  const month = String(currentDate.getMonth() + 1).padStart(2, '0'); // Місяці починаються з 0, тому додаємо 1
+  const day = String(currentDate.getDate()).padStart(2, '0');
+  const timestamp = `${year}-${month}-${day}`;
     try {
       const docRef = await addDoc(collection(db, 'reviews'), {
         name,
         comment,
         rating,
+        timestamp,
       });
-      const newReview = { name, comment, rating, id: docRef.id };
+      const newReview = { name, comment, rating, timestamp, id: docRef.id };
       setReviews(prevReviews => [newReview, ...prevReviews]);
       e.target.reset();
       setCurrentPage(0);
@@ -188,31 +194,35 @@ function Reviews() {
                   <Typography variant="body1" component="p">
                     {review.comment}
                   </Typography>
-                  {/* {review.reply ? (
+                  <Typography variant="body2" component="p">
+                    {review.timestamp}
+                  </Typography>
+                  {review.reply ? (
                     <Typography variant="body2" component="p">
-                      <strong>Reply:</strong> {review.reply}
+                      <strong >Odpověď konzultanta:</strong> {review.reply}
                     </Typography>
                   )
                     : (
-                    <form onSubmit={handleReply}>
-                      <TextField
-                        fullWidth
-                        label="Reply"
-                        variant="outlined"
-                        value={replyText}
-                        onChange={handleReplyChange}
-                        required
-                      />
-                      <Button
-                        variant="contained"
-                        type="submit"
-                        onClick={() => handleReplyClick(review.id)}
-                      >
-                        Send Reply
-                      </Button>
-                    </form>
-                    )
-                  } */}
+                      <></>
+                    // <form onSubmit={handleReply}>
+                    //   <TextField
+                    //     fullWidth
+                    //     label="Reply"
+                    //     variant="outlined"
+                    //     value={replyText}
+                    //     onChange={handleReplyChange}
+                    //     required
+                    //   />
+                    //   <Button
+                    //     variant="contained"
+                    //     type="submit"
+                    //     onClick={() => handleReplyClick(review.id)}
+                    //   >
+                    //     Send Reply
+                    //   </Button>
+                    // </form>
+                  )
+                  }
                 </CardContent>
               </Card>
             ))}
