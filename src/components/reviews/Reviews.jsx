@@ -190,11 +190,12 @@ function Reviews() {
                   <Typography variant="body1" component="p">
                     {review.comment}
                   </Typography>
-                  {review.reply ? (
+                  {/* {review.reply ? (
                     <Typography variant="body2" component="p">
                       <strong>Reply:</strong> {review.reply}
                     </Typography>
-                  ) : (
+                  )
+                    : (
                     <form onSubmit={handleReply}>
                       <TextField
                         fullWidth
@@ -212,7 +213,8 @@ function Reviews() {
                         Send Reply
                       </Button>
                     </form>
-                  )}
+                    )
+                  } */}
                 </CardContent>
               </Card>
             ))}
