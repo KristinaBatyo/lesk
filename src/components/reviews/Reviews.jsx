@@ -198,7 +198,7 @@ function Reviews() {
                     {review.timestamp}
                   </Typography>
                   {review.reply ? (
-                    <Typography variant="body2" component="p">
+                    <Typography marginTop={'30px'} variant="body2" component="p">
                       <strong >Odpověď konzultanta:</strong> {review.reply}
                     </Typography>
                   )
