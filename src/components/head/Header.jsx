@@ -40,8 +40,8 @@ export const Head = () => {
         <a href="/">
           {' '}
           <Img
-            src={require('../image/logo.jpg')}
-            alt="Tacos With Lime"
+            src={require('../image/uklid-praha.jpg')}
+            alt="Uklid Praha"
             width="140"
           />
         </a>

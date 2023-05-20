@@ -18,8 +18,8 @@ export const Hero = () => {
             {' '}
             <Link href="#objednat">
               <img
-                src={require('../image/li.png')}
-                alt="Tacos With Lime"
+                src={require('../image/top-úklid.png')}
+                alt="Top úklid"
                 width="15px"
               />
               Úklid domácností, rodinných domů a bytů.
@@ -29,7 +29,7 @@ export const Hero = () => {
             {' '}
             <Link href="#objednat">
               <img
-                src={require('../image/li.png')}
+                src={require('../image/top-úklid.png')}
                 alt="Tacos With Lime"
                 width="15px"
               />
@@ -40,7 +40,7 @@ export const Hero = () => {
             {' '}
             <Link href="#objednat">
               <img
-                src={require('../image/li.png')}
+                src={require('../image/top-úklid.png')}
                 alt="Tacos With Lime"
                 width="15px"
               />
@@ -51,7 +51,7 @@ export const Hero = () => {
             {' '}
             <Link href="#objednat">
               <img
-                src={require('../image/li.png')}
+                src={require('../image/top-úklid.png')}
                 alt="Tacos With Lime"
                 width="15px"
               />
@@ -62,7 +62,7 @@ export const Hero = () => {
             {' '}
             <Link href="#objednat">
               <img
-                src={require('../image/li.png')}
+                src={require('../image/top-úklid.png')}
                 alt="Tacos With Lime"
                 width="15px"
               />
@@ -73,7 +73,7 @@ export const Hero = () => {
             {' '}
             <Link href="#objednat">
               <img
-                src={require('../image/li.png')}
+                src={require('../image/top-úklid.png')}
                 alt="Tacos With Lime"
                 width="15px"
               />
@@ -84,7 +84,7 @@ export const Hero = () => {
             {' '}
             <Link href="#objednat">
               <img
-                src={require('../image/li.png')}
+                src={require('../image/top-úklid.png')}
                 alt="Tacos With Lime"
                 width="15px"
               />
@@ -95,7 +95,7 @@ export const Hero = () => {
             {' '}
             <Link href="#objednat">
               <img
-                src={require('../image/li.png')}
+                src={require('../image/top-úklid.png')}
                 alt="Tacos With Lime"
                 width="15px"
               />
@@ -106,7 +106,7 @@ export const Hero = () => {
             {' '}
             <Link href="#objednat">
               <img
-                src={require('../image/li.png')}
+                src={require('../image/top-úklid.png')}
                 alt="Tacos With Lime"
                 width="15px"
               />

@@ -12,14 +12,14 @@ import {
   List,
   Img,
 } from './Onas.styled';
-import { ReactComponent as Check } from '../image/checkmark.svg';
-import { ReactComponent as Number } from '../image/list-numbered.svg';
-import { ReactComponent as Heart } from '../image/heart.svg';
-import { ReactComponent as Money } from '../image/coin-dollar.svg';
+import { ReactComponent as Check } from '../image/úklidové-služby.svg';
+import { ReactComponent as Number } from '../image/úklidová-firma-praha.svg';
+import { ReactComponent as Heart } from '../image/úklidová-firma.svg';
+import { ReactComponent as Money } from '../image/úklid-bytových-domů.svg';
 import { ReactComponent as User } from '../image/user.svg';
-import { ReactComponent as Eye } from '../image/eye-blocked.svg';
-import { ReactComponent as Home } from '../image/home.svg'
-import { ReactComponent as Lab } from '../image/lab.svg';
+import { ReactComponent as Eye } from '../image/úklidy-domácností.svg';
+import { ReactComponent as Home } from '../image/komplexní-úklid.svg';
+import { ReactComponent as Lab } from '../image/oddělení-okamžitého-úklidu.svg';
 
 
 
