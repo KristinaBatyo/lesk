@@ -21,7 +21,7 @@ export const AppContainer = styled.div`
   padding-right: 15px;
 `;
 
-export const Title = styled.h1`
+export const Title = styled.h2`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,8 +36,22 @@ export const Title = styled.h1`
     marginTop: ['50px', '50px', '150px'],
   })};
 `;
-export const Container = styled.h1`
+export const Container = styled.div`
   // display: flex;
+  width: 100%;
+`;
+
+export const TitleSeo = styled.h1`
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
   width: 100%;
 `;
 

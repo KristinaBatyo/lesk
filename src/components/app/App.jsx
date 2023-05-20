@@ -1,5 +1,5 @@
 import { CeníkFormulář, CeníkFormulář2 } from '../list/ContactsList'; 
-import { AppContainer, Title, Container } from './App.styled';
+import { AppContainer, Title, Container, TitleSeo } from './App.styled';
 import { Head } from "components/head/Header";
 import { Hero } from "components/main/Main";
 import { Footer } from "components/footer/Footer";
@@ -13,6 +13,7 @@ export const App = () => {
 
     return (
       <Container>
+        <TitleSeo>Úklidová firma Praha</TitleSeo>
         <Head />
         <AppContainer>
           <Hero />
