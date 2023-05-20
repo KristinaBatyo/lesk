@@ -27,7 +27,7 @@ export const ONasContainer = styled.div`
   })};
 `;
 
-export const Title = styled.h1`
+export const Title = styled.h2`
   height: auto;
   text-align: center;
   background-color: #025260;
