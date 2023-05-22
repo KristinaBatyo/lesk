@@ -53,7 +53,7 @@ export const Text = styled.p`
   color: black;
   background-color: #f4f4f4;
   ${mq({
-    fontSize: ['10px', '15px', '20px', '20px'],
+    fontSize: ['13px', '15px', '20px', '20px'],
   })};
 `;
 
@@ -70,7 +70,7 @@ export const TextFlex = styled.p`
   color: black;
   background-color: #f4f4f4;
   ${mq({
-    fontSize: ['10px', '15px', '20px', '20px'],
+    fontSize: ['13px', '15px', '20px', '20px'],
       marginLeft: ['', '', '20px', '20px'],
   })};
 `;

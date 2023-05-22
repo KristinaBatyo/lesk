@@ -24,7 +24,7 @@ export const FooterStyled = styled.footer`
   // height: 350px;
 
   ${mq({
-    height: ['100px', '150px', '200px', '200px'],
+    height: ['150px', '150px', '200px', '200px'],
   })};
 `;
 export const Img = styled.img`
@@ -83,7 +83,7 @@ export const Mail = styled.a`
   }
   padding-right: 50px;
   ${mq({
-    fontSize: ['10px', '14px', '18px', '18px'],
+    fontSize: ['12px', '14px', '18px', '18px'],
   })};
 `;
 
@@ -101,7 +101,7 @@ export const Number = styled.a`
     color: #e6ba95;
   }
   ${mq({
-    fontSize: ['10px', '14px', '18px', '18px'],
+    fontSize: ['12px', '14px', '18px', '18px'],
   })};
 `;
 
@@ -153,11 +153,10 @@ export const Local = styled.a`
 export const LocalMobile = styled.a`
   color: #025260;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-
+  margin-top: 15px;
   transition: color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
@@ -165,7 +164,7 @@ export const LocalMobile = styled.a`
   }
   padding-right: 50px;
   ${mq({
-    fontSize: ['10px', '14px', '18px', '18px'],
+    fontSize: ['12px', '14px', '', ''],
     opacity: ['1', '1', '0', '0'],
     visibility: ['visible', 'visible', 'hidden', 'hidden'],
     display: ['block', 'block', 'none', 'none'],
