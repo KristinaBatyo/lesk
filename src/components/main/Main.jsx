@@ -30,7 +30,7 @@ export const Hero = () => {
             <Link href="#objednat">
               <img
                 src={require('../image/top-úklid.png')}
-                alt="Tacos With Lime"
+                alt="Top úklid"
                 width="15px"
               />
               Uklid hotelu a apartmany.
@@ -41,7 +41,7 @@ export const Hero = () => {
             <Link href="#objednat">
               <img
                 src={require('../image/top-úklid.png')}
-                alt="Tacos With Lime"
+                alt="Top úklid"
                 width="15px"
               />
               Úklid kanceláří a firemních prostory.
@@ -52,7 +52,7 @@ export const Hero = () => {
             <Link href="#objednat">
               <img
                 src={require('../image/top-úklid.png')}
-                alt="Tacos With Lime"
+                alt="Top úklid"
                 width="15px"
               />
               Úklid po malování, stavbě a rekonstrukci.
@@ -63,7 +63,7 @@ export const Hero = () => {
             <Link href="#objednat">
               <img
                 src={require('../image/top-úklid.png')}
-                alt="Tacos With Lime"
+                alt="Top úklid"
                 width="15px"
               />
               Úklid hal, garáží. a průmyslových.
@@ -74,7 +74,7 @@ export const Hero = () => {
             <Link href="#objednat">
               <img
                 src={require('../image/top-úklid.png')}
-                alt="Tacos With Lime"
+                alt="Top úklid"
                 width="15px"
               />
               Úklid společných prostor.
@@ -85,7 +85,7 @@ export const Hero = () => {
             <Link href="#objednat">
               <img
                 src={require('../image/top-úklid.png')}
-                alt="Tacos With Lime"
+                alt="Top úklid"
                 width="15px"
               />
               Úklid restaurace.
@@ -96,7 +96,7 @@ export const Hero = () => {
             <Link href="#objednat">
               <img
                 src={require('../image/top-úklid.png')}
-                alt="Tacos With Lime"
+                alt="Top úklid"
                 width="15px"
               />
               Rekonstrukce bytu.
@@ -107,7 +107,7 @@ export const Hero = () => {
             <Link href="#objednat">
               <img
                 src={require('../image/top-úklid.png')}
-                alt="Tacos With Lime"
+                alt="Top úklid"
                 width="15px"
               />
               Drobne zednicke prace.
