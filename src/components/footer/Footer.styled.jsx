@@ -56,7 +56,7 @@ export const ContactList = styled.ul`
   margin-left: 0px;
   padding: 0px;
   ${mq({
-    fontSize: ['8px', '10px', '14px', '14px'],
+    fontSize: ['12px', '12px', '14px', '14px'],
     marginLeft: ['0px', '0px', '40px', '40px'],
   })};
 `;
@@ -143,7 +143,7 @@ export const Local = styled.a`
   }
   padding-right: 50px;
   ${mq({
-    fontSize: ['10px', '14px', '18px', '18px'],
+    fontSize: ['', '', '18px', '18px'],
     opacity: ['0', '0', '1', '1'],
     visibility: ['hidden', 'hidden', 'visible', 'visible'],
     display: ['none', 'none', 'block', 'block'],

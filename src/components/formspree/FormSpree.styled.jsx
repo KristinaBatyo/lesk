@@ -85,7 +85,7 @@ export const Paragraph = styled.p`
   margin-bottom: 10px;
 
   ${mq({
-    fontSize: ['14px', '10px', '18px', '20px'],
+    fontSize: ['14px', '14px', '18px', '20px'],
   })};
 `;
 

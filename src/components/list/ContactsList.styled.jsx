@@ -100,7 +100,7 @@ export const ContactsText = styled.p`
   color: #e6ba95;
   font-family: Raleway, sans-serif;
   ${mq({
-    fontSize: ['10px', '15px', '20px', '20px'],
+    fontSize: ['12px', '15px', '20px', '20px'],
   })};
 `;
 export const DeleteButton = styled.button`

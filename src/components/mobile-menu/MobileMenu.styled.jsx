@@ -38,7 +38,7 @@ export const Blur = styled.div`
 `;
 
 export const MenuContent = styled.div`
-  width: 40%;
+  width: 55%;
   height: 100%;
   background-color: #025260;
   display: flex;
@@ -112,7 +112,7 @@ export const ContactList = styled.ul`
   line-height: 0.5;
   ${mq({
     paddingLeft: ['10px', '10px', '0', '0'],
-    MarginLeft: ['0', '0', 'auto', 'auto'],
+    marginLeft: ['0', '0', 'auto', 'auto'],
   })};
 `;
 
@@ -134,7 +134,7 @@ export const Number = styled.a`
     color: #e6ba95;
   }
   ${mq({
-    fontSize: ['8px', '14px', ],
+    fontSize: ['12px', '14px', ],
   })};
 `;
 
@@ -153,6 +153,6 @@ export const Mail = styled.a`
   }
   padding-right: 50px;
   ${mq({
-    fontSize: ['8px', '14px',],
+    fontSize: ['12px', '14px',],
   })};
 `;
