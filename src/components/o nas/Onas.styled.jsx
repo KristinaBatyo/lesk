@@ -81,7 +81,7 @@ export const Flex = styled.div`
 `;
 export const Img = styled.img`
   ${mq({
-    minWidth: ['', '', '50%'],
+    minWidth: ['50%', '', '50%'],
   })};
 `;
 
