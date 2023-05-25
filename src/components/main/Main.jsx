@@ -70,7 +70,6 @@ const Hero = () => {
                 alt="Top úklid"
                 width="15px"
                 height="auto"
-
               />
               Úklid hal, garáží. a průmyslových.
             </Link>
@@ -83,7 +82,6 @@ const Hero = () => {
                 alt="Top úklid"
                 width="15px"
                 height="auto"
-
               />
               Úklid společných prostor.
             </Link>
@@ -96,7 +94,6 @@ const Hero = () => {
                 alt="Top úklid"
                 width="15px"
                 height="auto"
-
               />
               Úklid restaurace.
             </Link>
@@ -109,7 +106,6 @@ const Hero = () => {
                 alt="Top úklid"
                 width="15px"
                 height="auto"
-
               />
               Rekonstrukce bytu.
             </Link>
@@ -122,7 +118,6 @@ const Hero = () => {
                 alt="Top úklid"
                 width="15px"
                 height="auto"
-
               />
               Drobne zednicke prace.
             </Link>
@@ -130,7 +125,11 @@ const Hero = () => {
         </List>
       </TextContainer>
 
-      <Img src={require('../image/čistý.jpg')} alt="úklidová firma" />
+      <Img
+        src={require('../image/čistý.jpg')}
+        alt="úklidová firma"
+        loading="lazy"
+      />
     </HeroContainer>
   );
 };
