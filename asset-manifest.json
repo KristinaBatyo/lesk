@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7acaea2f.css",
-    "main.js": "/static/js/main.11bff5a2.js",
+    "main.js": "/static/js/main.918f49a9.js",
     "static/media/Presentation.jpg": "/static/media/Presentation.cdf7361c275933a3f76b.jpg",
     "static/media/uklid-praha.jpg": "/static/media/uklid-praha.29c4d6058c4e886077da.jpg",
     "static/media/logoo.jpg": "/static/media/logoo.ebb3d66b44f9c875e2e8.jpg",
@@ -22,10 +22,10 @@
     "static/media/komplexní-úklid.svg": "/static/media/komplexní-úklid.b0326f941b5b3e1f3610df7b498b138b.svg",
     "static/media/úklidové-služby.svg": "/static/media/úklidové-služby.2f4b8fdae8d0f856637f73e76118ded2.svg",
     "main.7acaea2f.css.map": "/static/css/main.7acaea2f.css.map",
-    "main.11bff5a2.js.map": "/static/js/main.11bff5a2.js.map"
+    "main.918f49a9.js.map": "/static/js/main.918f49a9.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.11bff5a2.js"
+    "static/js/main.918f49a9.js"
   ]
 }
