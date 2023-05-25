@@ -72,6 +72,7 @@ const Footer = () => {
           <Img
             src={require('../image/logoo.jpg')}
             alt="Uklid Praha"
+            loading="lazy"
           />
         </Nav>
       </FooterStyled>
