@@ -13,16 +13,12 @@ const mq = facepaint(
 
 export const FooterStyled = styled.footer`
   display: flex;
-  // padding-right: 15px;
   align-items: center;
   justify-content: space-between;
   border-width: 1px;
   border-style: solid;
   border-color: #ececec;
   background-color: #fff;
-  width: 100%;
-  // height: 350px;
-
   ${mq({
     height: ['150px', '150px', '200px', '200px'],
   })};
@@ -39,12 +35,9 @@ export const Img = styled.img`
 
 export const Nav = styled.div`
   font-family: Raleway, sans-serif;
-  //   font-weight: 700;
-  //   font-size: 24px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
-  //   margin-right: 93px;
   padding-top: 25px;
   padding-bottom: 25px;
   display: flex;

@@ -16,7 +16,7 @@ export const HeaderStyled = styled.header`
   align-items: center;
   border-width: 1px;
   border-style: solid;
-  border-color: #ececec;
+  // border-color: #ececec;
   background-color: #025260;
   width: 100%;
   margintop: 0px;
@@ -37,7 +37,6 @@ export const Img = styled.img`
 `;
 
 export const Nav = styled.div`
-  font-family: Raleway, sans-serif;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
@@ -99,15 +98,12 @@ export const Number = styled.a`
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
-
   transition: color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: white;
     cursor: pointer;
   }
-  //   padding-top: 32px;
-  //   padding-bottom: 32px;
 `;
 
 export const NavList = styled.ul`

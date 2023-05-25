@@ -23,15 +23,11 @@ export const ContactMessage = styled.p`
   font-size: 34px;
   line-height: 1.14;
   font-family: Raleway, sans-serif;
-  //   background-color: #e6ba95;
   text-align: center;
   text-shadow: 1px 1px 1px white, 2px 2px 1px #e6ba95;
 `;
 
 export const ContactContainer = styled.div`
-  // margin-top: 50px;
-  display: flex;
-  flex-direction: column;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -67,7 +63,6 @@ export const Title = styled.h2`
   color: white;
   font-weight: 500;
   line-height: 1.14;
-  font-family: Raleway, sans-serif;
   text-align: center;
   ${mq({
     fontSize: ['18px', '18px', '40px', '50px'],
@@ -78,12 +73,9 @@ export const Paragraph = styled.p`
   color: white;
   font-weight: 500;
   line-height: 1.14;
-  font-family: Raleway, sans-serif;
-  //   background-color: #e6ba95;
   width: 90%;
   margin: 0;
   margin-bottom: 10px;
-
   ${mq({
     fontSize: ['14px', '14px', '18px', '20px'],
   })};
@@ -91,8 +83,6 @@ export const Paragraph = styled.p`
 
 export const FormName = styled.label`
   color: white;
-  margin: 0;
-
   ${mq({
     fontSize: ['12px', '14px', '20px', '20px'],
   })};
@@ -183,7 +173,6 @@ export const Button = styled.button`
 
 export const Select = styled.textarea`
   width: 90%;
-  margin: 0;
   resize: none;
   ${mq({
     height: ['80px', '80px', '80px', '105px'],

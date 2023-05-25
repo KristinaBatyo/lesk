@@ -4,13 +4,9 @@ import ReactPaginate from 'react-paginate';
 
 
 export const ContactsButton = styled.button`
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 20px;
   width: 100px;
   height: 30px;
-  margin-left: 20px;
   background-color: #025260;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);

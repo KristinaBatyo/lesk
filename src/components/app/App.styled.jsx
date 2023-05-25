@@ -12,11 +12,7 @@ const mq = facepaint(
 );
 
 export const AppContainer = styled.div`
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
   background-color: #fff;
-
   padding-left: 15px;
   padding-right: 15px;
 `;
@@ -27,8 +23,6 @@ export const Title = styled.h2`
   align-items: center;
   font-size: 30px;
   font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
   line-height: 42px;
   color: #006778;
   ${mq({
@@ -37,8 +31,6 @@ export const Title = styled.h2`
   })};
 `;
 export const Container = styled.div`
-  // display: flex;
-  width: 100%;
 `;
 
 export const TitleSeo = styled.h1`

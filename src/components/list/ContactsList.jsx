@@ -8,6 +8,7 @@ import {
   Container,
   Container2,
   CeníkItem,
+  ContactsListStyled,
 } from './ContactsList.styled';
 
 const ceník = [
@@ -79,11 +80,11 @@ export const CeníkFormulář = () => {
           <ContactsItem key={contact.id}>
             <ContactsTitle>{contact.title}</ContactsTitle>
             <ContactsText>{contact.text}</ContactsText>
-            <ul>
+            <ContactsListStyled>
               <CeníkItem>{contact.li1}</CeníkItem>
               <CeníkItem>{contact.li2}</CeníkItem>
               <CeníkItem>{contact.li3}</CeníkItem>
-            </ul>
+            </ContactsListStyled>
           </ContactsItem>
         ))}
       </SliderTrack>
@@ -98,11 +99,11 @@ export const CeníkFormulář2 = () => {
           <ContactsItem key={contact.id}>
             <ContactsTitle>{contact.title}</ContactsTitle>
             <ContactsText>{contact.text}</ContactsText>
-            <ul>
+            <ContactsListStyled>
               <CeníkItem>{contact.li1}</CeníkItem>
               <CeníkItem>{contact.li2}</CeníkItem>
               <CeníkItem>{contact.li3}</CeníkItem>
-            </ul>
+            </ContactsListStyled>
           </ContactsItem>
         ))}
       </SliderTrack>

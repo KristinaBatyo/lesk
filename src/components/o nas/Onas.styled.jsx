@@ -33,7 +33,6 @@ export const Title = styled.h2`
   background-color: #025260;
   color: #fff;
   padding: 5px;
-  font-size: 1.5rem;
   margin-bottom: 0.5rem;
   ${mq({
     fontSize: ['1.2rem', '1.3rem', '1.4rem', '1.5rem'],
@@ -43,12 +42,9 @@ export const Title = styled.h2`
 export const Text = styled.p`
   flex-wrap: wrap;
   height: auto;
-  font-size: 20px;
-  font-weight: 500;
   max-width: 100%;
   margin: 0;
   padding: 0;
-  font-size: 1rem;
   background-color: #fff;
   color: black;
   background-color: #f4f4f4;
@@ -60,12 +56,10 @@ export const Text = styled.p`
 export const TextFlex = styled.p`
   flex-wrap: wrap;
   height: auto;
-  font-size: 20px;
   font-weight: 500;
   max-width: 100%;
   margin: 0;
   padding: 0;
-  font-size: 1rem;
   background-color: #fff;
   color: black;
   background-color: #f4f4f4;

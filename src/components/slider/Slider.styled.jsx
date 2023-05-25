@@ -45,11 +45,8 @@ export const Button = styled.button`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 1rem;
-  font-weight: 700;
   margin: 1rem;
   min-width: 30px;
-  min-height: 20px;
   background-color: #f4f6f6;
   border-radius: 10px;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);

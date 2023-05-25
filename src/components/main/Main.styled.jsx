@@ -12,28 +12,20 @@ const mq = facepaint(
 );
 
 export const Img = styled.img`
-  //   width: 972px;
-  //   height: 700px;
-  //   flex-shrink: 0;
   display: block;
-  margin-left: auto;
   margin-right: auto;
   ${mq({
     width: ['243px', '243px', '386px', '900px'],
     height: ['175px', '175px', '250px', '700px'],
     marginTop: ['', 'auto', '', ''],
     marginBottom: ['', 'auto', '', ''],
-    marginLeft: ['', 'auto', '', '-200px'],
-
-    // top: ['656px'],
+    marginLeft: ['auto', 'auto', 'auto', '-200px'],
     'z-index': ['-1'],
   })};
 `;
 
 export const Title = styled.h1`
   position: static;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 42px;
@@ -46,7 +38,6 @@ export const Title = styled.h1`
 `;
 export const List = styled.ul`
   position: static;
-  font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -70,15 +61,9 @@ export const Link = styled.a`
 
 export const Item = styled.li`
   list-style: none;
-
-  line-height: 22px;
   ${mq({
     fontSize: ['', '', '20px'],
-    fontWeight: ['', '', '400'],
-    fontFamily: ['Montserrat'],
-    fontStyle: ['normal'],
     lineHeight: ['', '', '42px'],
-
   })};
 `;
 
@@ -86,8 +71,6 @@ export const HeroContainer = styled.div`
   width: 100%;
   display: inline-block;
   z-index: -1;
-  //   margin-top: 350px;
-  //   margin 120px;
   ${mq({
     display: ['block', 'flex', 'flex'],
     flexDirection: ['', 'row'],
@@ -98,10 +81,6 @@ export const HeroContainer = styled.div`
 
 export const TextContainer = styled.div`
   position: relative;
-  //   display: block;
-  //   margin-left: auto;
-  //   margin-right: auto;
-  //   top: 120px;
   left: 120px;
   ${mq({
     position: ['static', 'static', 'static', 'relative'],
@@ -114,6 +93,5 @@ export const TextContainer = styled.div`
     left: ['', '', '0px'],
     padding: ['', '', '10px', '50px'],
     zIndex: ['', 1, ''],
-    //   top:[ '120px'],
   })};
 `;
