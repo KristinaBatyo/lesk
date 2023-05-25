@@ -31,6 +31,9 @@ export const Img = styled.img`
   ${mq({
     width: ['60px', '140px', '200px', '200px'],
     height: ['auto'],
+    opacity: ['0', '0', '1', '1'],
+    visibility: ['hidden', 'hidden', 'visible', 'visible'],
+    display: ['none', 'none', 'block', 'block'],
   })};
 `;
 
