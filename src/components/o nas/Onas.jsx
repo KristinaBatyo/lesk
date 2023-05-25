@@ -28,7 +28,7 @@ import { ReactComponent as Lab } from '../image/oddělení-okamžitého-úklidu.
 
 
 
-export const ONas = () => {
+const ONas = () => {
 
   return (
     <DivContainer id="onás">
@@ -116,3 +116,6 @@ export const ONas = () => {
     </DivContainer>
   );
 };
+
+
+export default ONas;

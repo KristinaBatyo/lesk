@@ -17,7 +17,7 @@ import {
 } from './Header.styled';
 import { MobileMenu } from 'components/mobile-menu/MobileMenu';
 
-export const Head = () => {
+const Head = () => {
 
 
   const items = [
@@ -74,3 +74,4 @@ export const Head = () => {
 };
 
 
+export default Head;

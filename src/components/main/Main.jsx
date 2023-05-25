@@ -8,7 +8,7 @@ import {
   Link,
 } from './Main.styled';
 
-export const Hero = () => {
+const Hero = () => {
   return (
     <HeroContainer id="nabizime">
       <TextContainer>
@@ -134,3 +134,6 @@ export const Hero = () => {
     </HeroContainer>
   );
 };
+
+
+export default Hero;

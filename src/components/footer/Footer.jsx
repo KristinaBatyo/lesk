@@ -14,7 +14,7 @@ import {
   //   NavLogo,
 } from './Footer.styled';
 
-export const Footer = () => {
+const Footer = () => {
     return (
       <FooterStyled>
         <Adress>
@@ -77,3 +77,4 @@ export const Footer = () => {
     );
 };
 
+export default Footer;
