@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.7acaea2f.css",
-    "main.js": "/static/js/main.c72ed505.js",
+    "main.js": "/static/js/main.cfb41956.js",
     "static/media/Presentation.jpg": "/static/media/Presentation.cdf7361c275933a3f76b.jpg",
-    "static/media/úklid.jpg": "/static/media/úklid.cd3c53e318f4e9d8ce35.jpg",
     "static/media/uklid-praha.jpg": "/static/media/uklid-praha.29c4d6058c4e886077da.jpg",
     "static/media/logoo.jpg": "/static/media/logoo.ebb3d66b44f9c875e2e8.jpg",
     "static/media/čistý.jpg": "/static/media/čistý.0a1ac4b7a2633c53e682.jpg",
     "static/media/top-úklid.png": "/static/media/top-úklid.ba3748aee368d3da1023.png",
+    "static/media/úklid.jpg": "/static/media/úklid.33fe099a365a75e1f7d7.jpg",
     "static/media/úklidy-domácností.svg": "/static/media/úklidy-domácností.89ab20b4b5fdc99023c7de58eca74c6f.svg",
     "index.html": "/index.html",
     "static/media/úklid-bytových-domů.svg": "/static/media/úklid-bytových-domů.83978d74cc4b97bba8bec0505cb47f68.svg",
@@ -22,10 +22,10 @@
     "static/media/komplexní-úklid.svg": "/static/media/komplexní-úklid.b0326f941b5b3e1f3610df7b498b138b.svg",
     "static/media/úklidové-služby.svg": "/static/media/úklidové-služby.2f4b8fdae8d0f856637f73e76118ded2.svg",
     "main.7acaea2f.css.map": "/static/css/main.7acaea2f.css.map",
-    "main.c72ed505.js.map": "/static/js/main.c72ed505.js.map"
+    "main.cfb41956.js.map": "/static/js/main.cfb41956.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.c72ed505.js"
+    "static/js/main.cfb41956.js"
   ]
 }
