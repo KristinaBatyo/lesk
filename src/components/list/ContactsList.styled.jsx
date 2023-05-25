@@ -63,7 +63,7 @@ export const ContactsText = styled.p`
   })};
 `;
 
-export const ContactsListStyled = styled.p`
+export const ContactsListStyled = styled.ul`
 padding: 0px;
 `;
 
