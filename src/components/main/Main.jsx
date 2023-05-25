@@ -21,6 +21,7 @@ export const Hero = () => {
                 src={require('../image/top-úklid.png')}
                 alt="Top úklid"
                 width="15px"
+                height="auto"
               />
               Úklid domácností, rodinných domů a bytů.
             </Link>
@@ -32,6 +33,7 @@ export const Hero = () => {
                 src={require('../image/top-úklid.png')}
                 alt="Top úklid"
                 width="15px"
+                height="auto"
               />
               Uklid hotelu a apartmany.
             </Link>
@@ -43,6 +45,7 @@ export const Hero = () => {
                 src={require('../image/top-úklid.png')}
                 alt="Top úklid"
                 width="15px"
+                height="auto"
               />
               Úklid kanceláří a firemních prostory.
             </Link>
@@ -54,6 +57,7 @@ export const Hero = () => {
                 src={require('../image/top-úklid.png')}
                 alt="Top úklid"
                 width="15px"
+                height="auto"
               />
               Úklid po malování, stavbě a rekonstrukci.
             </Link>
@@ -65,6 +69,8 @@ export const Hero = () => {
                 src={require('../image/top-úklid.png')}
                 alt="Top úklid"
                 width="15px"
+                height="auto"
+
               />
               Úklid hal, garáží. a průmyslových.
             </Link>
@@ -76,6 +82,8 @@ export const Hero = () => {
                 src={require('../image/top-úklid.png')}
                 alt="Top úklid"
                 width="15px"
+                height="auto"
+
               />
               Úklid společných prostor.
             </Link>
@@ -87,6 +95,8 @@ export const Hero = () => {
                 src={require('../image/top-úklid.png')}
                 alt="Top úklid"
                 width="15px"
+                height="auto"
+
               />
               Úklid restaurace.
             </Link>
@@ -98,6 +108,8 @@ export const Hero = () => {
                 src={require('../image/top-úklid.png')}
                 alt="Top úklid"
                 width="15px"
+                height="auto"
+
               />
               Rekonstrukce bytu.
             </Link>
@@ -109,6 +121,8 @@ export const Hero = () => {
                 src={require('../image/top-úklid.png')}
                 alt="Top úklid"
                 width="15px"
+                height="auto"
+
               />
               Drobne zednicke prace.
             </Link>
