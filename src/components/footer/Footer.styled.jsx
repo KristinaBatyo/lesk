@@ -30,6 +30,7 @@ export const FooterStyled = styled.footer`
 export const Img = styled.img`
   ${mq({
     width: ['60px', '140px', '200px', '200px'],
+    height: ['auto'],
   })};
 `;
 

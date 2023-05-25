@@ -42,7 +42,6 @@ export const Head = () => {
           <Img
             src={require('../image/uklid-praha.jpg')}
             alt="Uklid Praha"
-            width="140"
           />
         </a>
       </Nav>

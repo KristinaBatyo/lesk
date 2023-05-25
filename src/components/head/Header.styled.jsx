@@ -32,6 +32,7 @@ export const HeaderStyled = styled.header`
 export const Img = styled.img`
   ${mq({
     width: ['70px', '120px', '120px', '140px'],
+    height: ['auto'],
   })};
 `;
 

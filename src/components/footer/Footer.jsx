@@ -70,8 +70,7 @@ export const Footer = () => {
         <Nav>
           <Img
             src={require('../image/logoo.jpg')}
-            alt="Tacos With Lime"
-            width="140"
+            alt="Uklid Praha"
           />
         </Nav>
       </FooterStyled>
