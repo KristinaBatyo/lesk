@@ -55,7 +55,7 @@ function CallBackForm() {
               errors={state.errors}
             />
             <DotazLabel htmlFor="attending">Dotaz</DotazLabel>
-            <Select id="text" type="text" name="message" />
+            <Select id="message" name="message" />
             <ValidationError
               prefix="Message"
               field="message"
