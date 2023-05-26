@@ -12,14 +12,14 @@ import {
   List,
   Img,
 } from './Onas.styled';
-import { ReactComponent as Check } from '../image/úklidové-služby.svg';
-import { ReactComponent as Number } from '../image/úklidová-firma-praha.svg';
-import { ReactComponent as Heart } from '../image/úklidová-firma.svg';
-import { ReactComponent as Money } from '../image/úklid-bytových-domů.svg';
-import { ReactComponent as User } from '../image/úklid-v-praze.svg';
-import { ReactComponent as Eye } from '../image/úklidy-domácností.svg';
-import { ReactComponent as Home } from '../image/komplexní-úklid.svg';
-import { ReactComponent as Lab } from '../image/oddělení-okamžitého-úklidu.svg';
+import { ReactComponent as Check } from '../image/uklidove-sluzby.svg';
+import { ReactComponent as Number } from '../image/uklidova-firma-praha.svg';
+import { ReactComponent as Heart } from '../image/uklidova-firma.svg';
+import { ReactComponent as Money } from '../image/uklid-bytovych-domu.svg';
+import { ReactComponent as User } from '../image/uklid-v-praze.svg';
+import { ReactComponent as Eye } from '../image/uklidy-domacnosti.svg';
+import { ReactComponent as Home } from '../image/komplexni-uklid.svg';
+import { ReactComponent as Lab } from '../image/oddeleni-okamziteho-uklidu.svg';
 
 
 
@@ -34,7 +34,7 @@ const ONas = () => {
     <DivContainer id="onás">
       <ONasContainer>
         <Img
-          src={require('../image/úklid.jpg')}
+          src={require('../image/uklid.jpg')}
           alt="Chcete si objednat úklid?"
           width="100%"
           height="auto"

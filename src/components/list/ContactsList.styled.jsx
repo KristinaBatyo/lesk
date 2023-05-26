@@ -44,7 +44,6 @@ export const ContactsItem = styled.li`
 
 `;
 export const ContactsTitle = styled.h2`
-  // height: auto;
   background-color: #025260;
   color: #fff;
   padding: 5px;

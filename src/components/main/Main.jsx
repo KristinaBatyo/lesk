@@ -18,7 +18,7 @@ const Hero = () => {
             {' '}
             <Link href="#objednat">
               <img
-                src={require('../image/top-úklid.png')}
+                src={require('../image/top-uklid.png')}
                 alt="Top úklid"
                 width="20px"
                 height="20px"
@@ -30,7 +30,7 @@ const Hero = () => {
             {' '}
             <Link href="#objednat">
               <img
-                src={require('../image/top-úklid.png')}
+                src={require('../image/top-uklid.png')}
                 alt="Top úklid"
                 width="20px"
                 height="20px"
@@ -42,7 +42,7 @@ const Hero = () => {
             {' '}
             <Link href="#objednat">
               <img
-                src={require('../image/top-úklid.png')}
+                src={require('../image/top-uklid.png')}
                 alt="Top úklid"
                 width="20px"
                 height="20px"
@@ -54,7 +54,7 @@ const Hero = () => {
             {' '}
             <Link href="#objednat">
               <img
-                src={require('../image/top-úklid.png')}
+                src={require('../image/top-uklid.png')}
                 alt="Top úklid"
                 width="20px"
                 height="20px"
@@ -66,7 +66,7 @@ const Hero = () => {
             {' '}
             <Link href="#objednat">
               <img
-                src={require('../image/top-úklid.png')}
+                src={require('../image/top-uklid.png')}
                 alt="Top úklid"
                 width="20px"
                 height="20px"
@@ -78,7 +78,7 @@ const Hero = () => {
             {' '}
             <Link href="#objednat">
               <img
-                src={require('../image/top-úklid.png')}
+                src={require('../image/top-uklid.png')}
                 alt="Top úklid"
                 width="20px"
                 height="20px"
@@ -90,7 +90,7 @@ const Hero = () => {
             {' '}
             <Link href="#objednat">
               <img
-                src={require('../image/top-úklid.png')}
+                src={require('../image/top-uklid.png')}
                 alt="Top úklid"
                 width="20px"
                 height="20px"
@@ -102,7 +102,7 @@ const Hero = () => {
             {' '}
             <Link href="#objednat">
               <img
-                src={require('../image/top-úklid.png')}
+                src={require('../image/top-uklid.png')}
                 alt="Top úklid"
                 width="20px"
                 height="20px"
@@ -114,7 +114,7 @@ const Hero = () => {
             {' '}
             <Link href="#objednat">
               <img
-                src={require('../image/top-úklid.png')}
+                src={require('../image/top-uklid.png')}
                 alt="Top úklid"
                 width="20px"
                 height="20px"
@@ -125,11 +125,7 @@ const Hero = () => {
         </List>
       </TextContainer>
 
-      <Img
-        src={require('../image/čistý.jpg')}
-        alt="úklidová firma"
-        // loading="lazy"
-      />
+      <Img src={require('../image/cisty.jpg')} alt="úklidová firma" />
     </HeroContainer>
   );
 };
