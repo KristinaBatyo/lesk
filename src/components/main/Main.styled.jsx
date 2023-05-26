@@ -14,14 +14,16 @@ const mq = facepaint(
 export const Img = styled.img`
   display: block;
   margin-right: auto;
-  ${mq({
-    width: ['243px', '243px', '386px', '900px'],
-    height: ['175px', '175px', '250px', '700px'],
-    marginTop: ['', 'auto', '', ''],
-    marginBottom: ['', 'auto', '', ''],
-    marginLeft: ['auto', 'auto', 'auto', '-200px'],
-    'z-index': ['-1'],
-  })};
+  height: 175px;
+  width: 243px;
+    ${mq({
+      width: ['', '', '386px', '900px'],
+      height: ['', '', '250px', '700px'],
+      marginTop: ['', 'auto', '', ''],
+      marginBottom: ['', 'auto', '', ''],
+      marginLeft: ['auto', 'auto', 'auto', '-200px'],
+      'z-index': ['-1'],
+    })};
 `;
 
 export const Title = styled.h1`
