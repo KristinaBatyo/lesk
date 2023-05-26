@@ -128,7 +128,7 @@ const Hero = () => {
       <Img
         src={require('../image/čistý.jpg')}
         alt="úklidová firma"
-        loading="lazy"
+        // loading="lazy"
       />
     </HeroContainer>
   );
