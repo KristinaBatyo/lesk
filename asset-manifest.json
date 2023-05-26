@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.7acaea2f.css",
-    "main.js": "/static/js/main.b41330ae.js",
+    "main.js": "/static/js/main.93b39d7b.js",
     "static/js/792.9a34832f.chunk.js": "/static/js/792.9a34832f.chunk.js",
     "static/js/398.a47020df.chunk.js": "/static/js/398.a47020df.chunk.js",
     "static/js/443.cadd2fc1.chunk.js": "/static/js/443.cadd2fc1.chunk.js",
-    "static/js/640.3b912a03.chunk.js": "/static/js/640.3b912a03.chunk.js",
+    "static/js/640.64e133d2.chunk.js": "/static/js/640.64e133d2.chunk.js",
     "static/js/336.7bb8cfb1.chunk.js": "/static/js/336.7bb8cfb1.chunk.js",
     "static/media/Presentation.jpg": "/static/media/Presentation.a2b1a7c632998cb88ad9.jpg",
     "static/media/uklid-praha.jpg": "/static/media/uklid-praha.29c4d6058c4e886077da.jpg",
@@ -27,15 +27,15 @@
     "static/media/komplexní-úklid.svg": "/static/media/komplexní-úklid.b0326f941b5b3e1f3610df7b498b138b.svg",
     "static/media/úklidové-služby.svg": "/static/media/úklidové-služby.2f4b8fdae8d0f856637f73e76118ded2.svg",
     "main.7acaea2f.css.map": "/static/css/main.7acaea2f.css.map",
-    "main.b41330ae.js.map": "/static/js/main.b41330ae.js.map",
+    "main.93b39d7b.js.map": "/static/js/main.93b39d7b.js.map",
     "792.9a34832f.chunk.js.map": "/static/js/792.9a34832f.chunk.js.map",
     "398.a47020df.chunk.js.map": "/static/js/398.a47020df.chunk.js.map",
     "443.cadd2fc1.chunk.js.map": "/static/js/443.cadd2fc1.chunk.js.map",
-    "640.3b912a03.chunk.js.map": "/static/js/640.3b912a03.chunk.js.map",
+    "640.64e133d2.chunk.js.map": "/static/js/640.64e133d2.chunk.js.map",
     "336.7bb8cfb1.chunk.js.map": "/static/js/336.7bb8cfb1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.b41330ae.js"
+    "static/js/main.93b39d7b.js"
   ]
 }
