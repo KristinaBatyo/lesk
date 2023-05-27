@@ -36,7 +36,7 @@ const ONas = () => {
         <Img
           src={require('../image/uklid.jpg')}
           alt="Chcete si objednat úklid?"
-          width="100%"
+          width="250px"
           height="auto"
         />
         <Container>
