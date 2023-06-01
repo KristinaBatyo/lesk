@@ -17,11 +17,17 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  ${mq({
+    width: ['', '', '', ''],
+    marginLeft: ['', '', '20px', '20px'],
+    paddingRight: ['20px', '20px', '20px', '20px'],
+    paddingLeft: ['20px', '20px', '0px', '0px'],
+  })};
 `;
 
 export const ONasContainer = styled.div`
-  justify-content: center;
   align-items: center;
+  justify-content: flex-start;
   ${mq({
     display: ['block', 'block', 'flex'],
   })};
@@ -47,6 +53,7 @@ export const Text = styled.p`
   padding: 0;
   background-color: #fff;
   color: black;
+  font-weight: 500;
   background-color: #f4f4f4;
   ${mq({
     fontSize: ['13px', '15px', '20px', '20px'],
@@ -65,7 +72,6 @@ export const TextFlex = styled.p`
   background-color: #f4f4f4;
   ${mq({
     fontSize: ['13px', '15px', '20px', '20px'],
-      marginLeft: ['', '', '20px', '20px'],
   })};
 `;
 export const Flex = styled.div`
@@ -74,9 +80,14 @@ export const Flex = styled.div`
   })};
 `;
 export const Img = styled.img`
+  justify-content: center;
+  display: block;
   ${mq({
-    minWidth: ['100%', '100%', '50%'],
-    minHeight: ['100%', '100%', '50%'],
+    width: ['300px', '400px', '393px', '597px'],
+    height: ['200px', '400px', '383px', '578px'],
+    paddingTop: ['20px', '20px', '', ''],
+    marginRight: ['auto', 'auto', '0', '0'],
+    marginLeft: ['auto', 'auto', '20px', '20px'],
   })};
 `;
 
@@ -89,15 +100,16 @@ export const SirokeContainer = styled.div`
   ${mq({
     minWidth: ['', '', '', '47%'],
     justifyContent: ['', '', '', 'flex-start'],
-    marginRight: ['', '', '', '40px'],
-    paddingLeft: ['', '', '', '20px'],
+    marginRight: ['', '', '', '60px'],
+    paddingLeft: ['20px', '20px', '', '20px'],
+    paddingRight: ['20px', '20px', '', '0px'],
   })};
 `;
 export const ListContainer = styled.div`
   ${mq({
     minWidth: ['', '', '', '50%'],
     display: ['', '', '', 'flex'],
-    alignItems: ['', '', '', 'flex-start'],
+    alignItems: ['', '', 'center', 'flex-start'],
     flexDirection: ['', '', '', 'column'],
   })};
 `;
@@ -105,6 +117,7 @@ export const ListContainer = styled.div`
 export const Item = styled.li`
   max-width: 100%;
   height: auto;
+  font-weight: 500;
   padding-left: 0px;
   list-style: none;
   border-bottom: 1px solid #f5f5f5;
