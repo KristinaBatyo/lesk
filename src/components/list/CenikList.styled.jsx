@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import Slider from 'react-slick';
 import facepaint from 'facepaint';
 
 const mq = facepaint(
@@ -35,7 +34,7 @@ export const Line = styled.div`
   display: flex;
 `;
 
-export const ContactsItem = styled.li`
+export const CenikItem = styled.li`
   list-style: none;
   border-bottom: 1px solid #f5f5f5;
   &:last-child {
@@ -43,7 +42,7 @@ export const ContactsItem = styled.li`
   }
 
 `;
-export const ContactsTitle = styled.h2`
+export const CenikTitle = styled.h2`
   background-color: #025260;
   color: #fff;
   padding: 5px;
@@ -52,7 +51,7 @@ export const ContactsTitle = styled.h2`
     fontSize: ['15px', '15px', '15px', '20px'],
   })}
 `;
-export const ContactsText = styled.p`
+export const CenikText = styled.p`
   margin: 0;
   color: #e6ba95;
   width: 100%;
@@ -62,18 +61,9 @@ export const ContactsText = styled.p`
   })};
 `;
 
-export const ContactsListStyled = styled.ul`
-padding: 0px;
+export const CenikListStyled = styled.ul`
+  padding: 0px;
 `;
-
-
-export const ContactsSlider = styled(Slider)`
-  .slick-slide {
-    margin: 0px 10px;
-  }
-`;
-
-
 
 export const CeníkItem = styled.li`
   max-width: 100%;

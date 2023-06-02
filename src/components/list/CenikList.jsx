@@ -2,14 +2,14 @@ import { SliderTrack } from 'components/slider/ContactsSlider';
 import { nanoid } from 'nanoid';
 
 import {
-  ContactsItem,
-  ContactsTitle,
-  ContactsText,
+  CenikItem,
+  CenikTitle,
+  CenikText,
   Container,
   Container2,
   CeníkItem,
-  ContactsListStyled,
-} from './ContactsList.styled';
+  CenikListStyled,
+} from './CenikList.styled';
 
 const ceník = [
   {
@@ -72,39 +72,39 @@ const ceník2 = [
   },
 ];
 
-export const CeníkFormulář = () => {
+export const CenikFormular = () => {
   return (
     <Container>
       <SliderTrack>
         {ceník.map(contact => (
-          <ContactsItem key={contact.id}>
-            <ContactsTitle>{contact.title}</ContactsTitle>
-            <ContactsText>{contact.text}</ContactsText>
-            <ContactsListStyled>
+          <CenikItem key={contact.id}>
+            <CenikTitle>{contact.title}</CenikTitle>
+            <CenikText>{contact.text}</CenikText>
+            <CenikListStyled>
               <CeníkItem>{contact.li1}</CeníkItem>
               <CeníkItem>{contact.li2}</CeníkItem>
               <CeníkItem>{contact.li3}</CeníkItem>
-            </ContactsListStyled>
-          </ContactsItem>
+            </CenikListStyled>
+          </CenikItem>
         ))}
       </SliderTrack>
     </Container>
   );
 };
-export const CeníkFormulář2 = () => {
+export const CenikFormular2 = () => {
   return (
     <Container2>
       <SliderTrack>
         {ceník2.map(contact => (
-          <ContactsItem key={contact.id}>
-            <ContactsTitle>{contact.title}</ContactsTitle>
-            <ContactsText>{contact.text}</ContactsText>
-            <ContactsListStyled>
+          <CenikItem key={contact.id}>
+            <CenikTitle>{contact.title}</CenikTitle>
+            <CenikText>{contact.text}</CenikText>
+            <CenikListStyled>
               <CeníkItem>{contact.li1}</CeníkItem>
               <CeníkItem>{contact.li2}</CeníkItem>
               <CeníkItem>{contact.li3}</CeníkItem>
-            </ContactsListStyled>
-          </ContactsItem>
+            </CenikListStyled>
+          </CenikItem>
         ))}
       </SliderTrack>
     </Container2>

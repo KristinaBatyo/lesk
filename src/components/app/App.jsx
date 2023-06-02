@@ -1,10 +1,10 @@
-import { CeníkFormulář, CeníkFormulář2 } from '../list/ContactsList'; 
+import { CenikFormular, CenikFormular2 } from '../list/CenikList'; 
 import { AppContainer, Title, Container, TitleSeo } from './App.styled';
 import CallBackForm from "components/formspree/FormSpree";
 import Reviews from "components/reviews/Reviews";
 import React, { Suspense } from 'react';
 
-const Ceník = React.lazy(() => import('components/ceník/Ceník'));
+const Cenik = React.lazy(() => import('components/cenik/Cenik'));
 const Head = React.lazy(() => import('components/head/Header'));
 const Hero = React.lazy(() => import('components/main/Main'));
 const Footer = React.lazy(() => import('components/footer/Footer'));
@@ -23,9 +23,9 @@ export const App = () => {
           <AppContainer>
             <Hero />
             <CallBackForm />
-            <Ceník />
-            <CeníkFormulář />
-            <CeníkFormulář2 />
+            <Cenik />
+            <CenikFormular />
+            <CenikFormular2 />
             <Title>Napsat recenzi</Title>
             <Reviews />
             <ONas />

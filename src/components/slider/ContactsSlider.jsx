@@ -9,6 +9,7 @@ import {
   RightButtonContainer,
   Handlers,
   ContactsList,
+  
 } from './Slider.styled';
 import React from 'react';
 import { ReactComponent as ButtonLeft } from '../image/circleleft.svg';
