@@ -19,7 +19,7 @@ const Hero = () => {
             <Link href="#objednat">
               <img
                 src={require('../image/top-uklid.png')}
-                alt="Top úklid"
+                alt="Top uklid"
                 width="20px"
                 height="20px"
               />
@@ -31,7 +31,7 @@ const Hero = () => {
             <Link href="#objednat">
               <img
                 src={require('../image/top-uklid.png')}
-                alt="Top úklid"
+                alt="Top uklid"
                 width="20px"
                 height="20px"
               />
@@ -43,7 +43,7 @@ const Hero = () => {
             <Link href="#objednat">
               <img
                 src={require('../image/top-uklid.png')}
-                alt="Top úklid"
+                alt="Top uklid"
                 width="20px"
                 height="20px"
               />
@@ -55,7 +55,7 @@ const Hero = () => {
             <Link href="#objednat">
               <img
                 src={require('../image/top-uklid.png')}
-                alt="Top úklid"
+                alt="Top uklid"
                 width="20px"
                 height="20px"
               />
@@ -67,7 +67,7 @@ const Hero = () => {
             <Link href="#objednat">
               <img
                 src={require('../image/top-uklid.png')}
-                alt="Top úklid"
+                alt="Top uklid"
                 width="20px"
                 height="20px"
               />
@@ -79,7 +79,7 @@ const Hero = () => {
             <Link href="#objednat">
               <img
                 src={require('../image/top-uklid.png')}
-                alt="Top úklid"
+                alt="Top uklid"
                 width="20px"
                 height="20px"
               />
@@ -91,7 +91,7 @@ const Hero = () => {
             <Link href="#objednat">
               <img
                 src={require('../image/top-uklid.png')}
-                alt="Top úklid"
+                alt="Top uklid"
                 width="20px"
                 height="20px"
               />
@@ -103,7 +103,7 @@ const Hero = () => {
             <Link href="#objednat">
               <img
                 src={require('../image/top-uklid.png')}
-                alt="Top úklid"
+                alt="Top uklid"
                 width="20px"
                 height="20px"
               />
@@ -115,7 +115,7 @@ const Hero = () => {
             <Link href="#objednat">
               <img
                 src={require('../image/top-uklid.png')}
-                alt="Top úklid"
+                alt="Top uklid"
                 width="20px"
                 height="20px"
               />
@@ -125,7 +125,7 @@ const Hero = () => {
         </List>
       </TextContainer>
 
-      <Img src={require('../image/cisty.jpg')} alt="úklidová firma" />
+      <Img src={require('../image/cisty.jpg')} alt="uklidova firma" />
     </HeroContainer>
   );
 };
