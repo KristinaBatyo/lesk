@@ -65,7 +65,7 @@ export const CenikListStyled = styled.ul`
   padding: 0px;
 `;
 
-export const CeníkItem = styled.li`
+export const CenikItem2 = styled.li`
   max-width: 100%;
   height: auto;
   padding-left: 0px;

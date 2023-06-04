@@ -3,7 +3,7 @@ import facepaint from 'facepaint';
 
 
 
-const backgroundImage = `url(${require('../image/Presentation.jpg')})`;
+import backgroundImage from '../image/Presentation.jpg';
 
 const mq = facepaint(
   [
@@ -32,7 +32,7 @@ export const ContactContainer = styled.div`
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    ${backgroundImage};
+    url(${backgroundImage});
   background-size: 100%;
   background-repeat: no-repeat;
   background-color: #025260; /* Колір фону за замовчуванням */
@@ -44,8 +44,8 @@ export const ContactContainer = styled.div`
       '',
       '',
     ] /* Колір фону для кожної ширини екрану */,
-  marginTop: [ '50px', '50px', '50px', '100px'],
-backgroundImage: ['none', '']
+    marginTop: ['50px', '50px', '50px', '100px'],
+    backgroundImage: ['none', ''],
   })};
 `;
 export const Container = styled.div`

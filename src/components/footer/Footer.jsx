@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 import {
   FooterStyled,
   Nav,
@@ -11,8 +10,9 @@ import {
   Iframe,
   Local,
   LocalMobile,
-  //   NavLogo,
 } from './Footer.styled';
+import logoo from '../image/logoo.jpg';
+
 
 const Footer = () => {
     return (
@@ -70,11 +70,7 @@ const Footer = () => {
           </ContactList>
         </Adress>
         <Nav>
-          <Img
-            src={require('../image/logoo.jpg')}
-            alt="Uklid Praha"
-            loading="lazy"
-          />
+          <Img src={logoo} alt="Uklid Praha" loading="lazy" />
         </Nav>
       </FooterStyled>
     );

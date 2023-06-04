@@ -11,7 +11,7 @@ const mq = facepaint(
   { literal: true }
 );
 
-export const CeníkContainer = styled.div`
+export const CenikContainer = styled.div`
   color: #025260;
 `;
 

@@ -7,6 +7,8 @@ import {
   Item,
   Link,
 } from './Main.styled';
+import image from '../image/cisty.jpg';
+import top from '../image/top-uklid.png';
 
 const Hero = () => {
   return (
@@ -17,115 +19,70 @@ const Hero = () => {
           <Item>
             {' '}
             <Link href="#objednat">
-              <img
-                src={require('../image/top-uklid.png')}
-                alt="Top uklid"
-                width="20px"
-                height="20px"
-              />
+              <img src={top} alt="Top uklid" width="20px" height="20px" />
               Úklid domácností, rodinných domů a bytů.
             </Link>
           </Item>
           <Item>
             {' '}
             <Link href="#objednat">
-              <img
-                src={require('../image/top-uklid.png')}
-                alt="Top uklid"
-                width="20px"
-                height="20px"
-              />
+              <img src={top} alt="Top uklid" width="20px" height="20px" />
               Uklid hotelu a apartmany.
             </Link>
           </Item>
           <Item>
             {' '}
             <Link href="#objednat">
-              <img
-                src={require('../image/top-uklid.png')}
-                alt="Top uklid"
-                width="20px"
-                height="20px"
-              />
+              <img src={top} alt="Top uklid" width="20px" height="20px" />
               Úklid kanceláří a firemních prostory.
             </Link>
           </Item>{' '}
           <Item>
             {' '}
             <Link href="#objednat">
-              <img
-                src={require('../image/top-uklid.png')}
-                alt="Top uklid"
-                width="20px"
-                height="20px"
-              />
+              <img src={top} alt="Top uklid" width="20px" height="20px" />
               Úklid po malování, stavbě a rekonstrukci.
             </Link>
           </Item>{' '}
           <Item>
             {' '}
             <Link href="#objednat">
-              <img
-                src={require('../image/top-uklid.png')}
-                alt="Top uklid"
-                width="20px"
-                height="20px"
-              />
+              <img src={top} alt="Top uklid" width="20px" height="20px" />
               Úklid hal, garáží. a průmyslových.
             </Link>
           </Item>{' '}
           <Item>
             {' '}
             <Link href="#objednat">
-              <img
-                src={require('../image/top-uklid.png')}
-                alt="Top uklid"
-                width="20px"
-                height="20px"
-              />
+              <img src={top} alt="Top uklid" width="20px" height="20px" />
               Úklid společných prostor.
             </Link>
           </Item>{' '}
           <Item>
             {' '}
             <Link href="#objednat">
-              <img
-                src={require('../image/top-uklid.png')}
-                alt="Top uklid"
-                width="20px"
-                height="20px"
-              />
+              <img src={top} alt="Top uklid" width="20px" height="20px" />
               Úklid restaurace.
             </Link>
           </Item>{' '}
           <Item>
             {' '}
             <Link href="#objednat">
-              <img
-                src={require('../image/top-uklid.png')}
-                alt="Top uklid"
-                width="20px"
-                height="20px"
-              />
+              <img src={top} alt="Top uklid" width="20px" height="20px" />
               Rekonstrukce bytu.
             </Link>
           </Item>{' '}
           <Item>
             {' '}
             <Link href="#objednat">
-              <img
-                src={require('../image/top-uklid.png')}
-                alt="Top uklid"
-                width="20px"
-                height="20px"
-              />
+              <img src={top} alt="Top uklid" width="20px" height="20px" />
               Drobne zednicke prace.
             </Link>
           </Item>
         </List>
       </TextContainer>
 
-      <Img src={require('../image/cisty.jpg')} alt="uklidova firma" />
+      <Img src={image} alt="uklidova firma" />
     </HeroContainer>
   );
 };

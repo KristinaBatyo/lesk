@@ -20,6 +20,7 @@ import { ReactComponent as User } from '../image/uklid-v-praze.svg';
 import { ReactComponent as Eye } from '../image/uklidy-domacnosti.svg';
 import { ReactComponent as Home } from '../image/komplexni-uklid.svg';
 import { ReactComponent as Lab } from '../image/oddeleni-okamziteho-uklidu.svg';
+import uklid from '../image/uklid.jpg';
 
 
 
@@ -34,7 +35,7 @@ const ONas = () => {
     <DivContainer id="onás">
       <ONasContainer>
         <Img
-          src={require('../image/uklid.jpg')}
+          src={uklid}
           alt="Chcete si objednat uklid?"
         />
         <Container>

@@ -31,6 +31,7 @@ export const Title = styled.h2`
   })};
 `;
 export const Container = styled.div`
+
 `;
 
 export const TitleSeo = styled.h1`

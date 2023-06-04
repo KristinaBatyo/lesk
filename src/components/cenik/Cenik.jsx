@@ -1,8 +1,8 @@
-import { CeníkContainer, Container, Paragraph, Title } from './Cenik.styled';
+import { CenikContainer, Container, Paragraph, Title } from './Cenik.styled';
 
  const Cenik = () => {
     return (
-      <CeníkContainer id="ceník">
+      <CenikContainer id="ceník">
         <Container>
           <Title>Ceník</Title>
           <Paragraph>
@@ -14,7 +14,7 @@ import { CeníkContainer, Container, Paragraph, Title } from './Cenik.styled';
             komunikaci.
           </Paragraph>
         </Container>
-      </CeníkContainer>
+      </CenikContainer>
     );
 };
 

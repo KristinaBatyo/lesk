@@ -16,6 +16,8 @@ import {
   //   NavLogo,
 } from './Header.styled';
 import { MobileMenu } from 'components/mobile-menu/MobileMenu';
+import logo from '../image/uklid-praha.jpg';
+
 
 const Head = () => {
 
@@ -39,10 +41,7 @@ const Head = () => {
       <Nav>
         <a href="/">
           {' '}
-          <Img
-            src={require('../image/uklid-praha.jpg')}
-            alt="Uklid Praha"
-          />
+          <Img src={logo} alt="Uklid Praha" />
         </a>
       </Nav>
       <NavList>

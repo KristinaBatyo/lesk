@@ -7,7 +7,7 @@ import {
   CenikText,
   Container,
   Container2,
-  CeníkItem,
+  CenikItem2,
   CenikListStyled,
 } from './CenikList.styled';
 
@@ -81,9 +81,9 @@ export const CenikFormular = () => {
             <CenikTitle>{contact.title}</CenikTitle>
             <CenikText>{contact.text}</CenikText>
             <CenikListStyled>
-              <CeníkItem>{contact.li1}</CeníkItem>
-              <CeníkItem>{contact.li2}</CeníkItem>
-              <CeníkItem>{contact.li3}</CeníkItem>
+              <CenikItem2>{contact.li1}</CenikItem2>
+              <CenikItem2>{contact.li2}</CenikItem2>
+              <CenikItem2>{contact.li3}</CenikItem2>
             </CenikListStyled>
           </CenikItem>
         ))}
@@ -100,9 +100,9 @@ export const CenikFormular2 = () => {
             <CenikTitle>{contact.title}</CenikTitle>
             <CenikText>{contact.text}</CenikText>
             <CenikListStyled>
-              <CeníkItem>{contact.li1}</CeníkItem>
-              <CeníkItem>{contact.li2}</CeníkItem>
-              <CeníkItem>{contact.li3}</CeníkItem>
+              <CenikItem2>{contact.li1}</CenikItem2>
+              <CenikItem2>{contact.li2}</CenikItem2>
+              <CenikItem2>{contact.li3}</CenikItem2>
             </CenikListStyled>
           </CenikItem>
         ))}

@@ -83,11 +83,12 @@ export const Img = styled.img`
   justify-content: center;
   display: block;
   ${mq({
-    width: ['300px', '400px', '393px', '597px'],
-    height: ['200px', '400px', '383px', '578px'],
+    width: ['250px', '400px', '393px', '597px'],
+    height: ['190px', '400px', '383px', '578px'],
     paddingTop: ['20px', '20px', '', ''],
     marginRight: ['auto', 'auto', '0', '0'],
-    marginLeft: ['auto', 'auto', '20px', '20px'],
+    marginLeft: ['auto', 'auto', '0', '0'],
+    paddingLeft: ['', '', '20px', '20px'],
   })};
 `;
 
@@ -98,7 +99,7 @@ export const SirokeContainer = styled.div`
   align-items: center;
   flex-direction: column;
   ${mq({
-    minWidth: ['', '', '', '47%'],
+    minWidth: ['', '', '', '40%'],
     justifyContent: ['', '', '', 'flex-start'],
     marginRight: ['', '', '', '60px'],
     paddingLeft: ['20px', '20px', '', '20px'],
