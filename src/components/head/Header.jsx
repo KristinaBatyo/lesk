@@ -49,13 +49,13 @@ const Head = () => {
           <NavLink href="#nabizime"> Nabizime pro vas</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="#ceník">Ceník Služeb</NavLink>
+          <NavLink href="#cenik">Ceník Služeb</NavLink>
         </NavItem>
         <NavItem>
           <NavLink href="#recenze">Recenze</NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="#onás">O nás</NavLink>
+          <NavLink href="#onas">O nás</NavLink>
         </NavItem>
       </NavList>
       <ContactList>

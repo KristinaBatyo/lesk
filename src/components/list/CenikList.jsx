@@ -11,7 +11,7 @@ import {
   CenikListStyled,
 } from './CenikList.styled';
 
-const ceník = [
+const cenik = [
   {
     id: nanoid(),
     title: 'Pravidelné úklidy',
@@ -36,7 +36,7 @@ const ceník = [
     li2: 'Cena za úklid od 500 Kč',
   },
 ];
-const ceník2 = [
+const cenik2 = [
   {
     id: nanoid(),
     title: 'Jednorázové úklidy pro domácnosti a firmy',
@@ -76,7 +76,7 @@ export const CenikFormular = () => {
   return (
     <Container>
       <SliderTrack>
-        {ceník.map(contact => (
+        {cenik.map(contact => (
           <CenikItem key={contact.id}>
             <CenikTitle>{contact.title}</CenikTitle>
             <CenikText>{contact.text}</CenikText>
@@ -95,7 +95,7 @@ export const CenikFormular2 = () => {
   return (
     <Container2>
       <SliderTrack>
-        {ceník2.map(contact => (
+        {cenik2.map(contact => (
           <CenikItem key={contact.id}>
             <CenikTitle>{contact.title}</CenikTitle>
             <CenikText>{contact.text}</CenikText>

@@ -2,7 +2,7 @@ import { CenikContainer, Container, Paragraph, Title } from './Cenik.styled';
 
  const Cenik = () => {
     return (
-      <CenikContainer id="ceník">
+      <CenikContainer id="cenik">
         <Container>
           <Title>Ceník</Title>
           <Paragraph>

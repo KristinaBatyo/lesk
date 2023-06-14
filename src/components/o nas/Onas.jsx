@@ -32,7 +32,7 @@ import uklid from '../image/uklid.jpg';
 const ONas = () => {
 
   return (
-    <DivContainer id="onás">
+    <DivContainer id="onas">
       <ONasContainer>
         <Img
           src={uklid}

@@ -15,6 +15,16 @@ const ONas = React.lazy(() => import('components/o nas/Onas'));
 
 export const App = () => {
 
+function* generatir() {
+  yield 1;
+  yield 2;
+}
+  const it = generatir()
+  console.log(it.next().value);
+  console.log(it.next().value);
+  console.log(it.next().value);
+
+
     return (
       <Container>
         <Suspense fallback={<div>Načítání...</div>}>
