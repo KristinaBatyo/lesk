@@ -15,15 +15,20 @@ import logoo from '../image/logoo.jpg';
 
 
 const Footer = () => {
+  const isMobile = window.innerWidth <= 768;
+
+
     return (
       <FooterStyled>
         <Adress>
-          <Iframe
-            name="iframe1"
-            title="myFrame"
-            className="lazy"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10243.54106564588!2d14.364999972535408!3d50.06971031712511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b95a5eaad1ae1%3A0xe096bfa9eab40e77!2zVnJjaGxpY2vDqWhvIDQ4NC80NSwgMTUwIDAwIFByYWhhIDUtS2_FocOtxZllLCDQp9C10YXRltGP!5e0!3m2!1suk!2sua!4v1683217985699!5m2!1suk!2sua"
-          />
+          {!isMobile && (
+            <Iframe
+              name="iframe1"
+              title="myFrame"
+              className="lazy"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10243.54106564588!2d14.364999972535408!3d50.06971031712511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b95a5eaad1ae1%3A0xe096bfa9eab40e77!2zVnJjaGxpY2vDqWhvIDQ4NC80NSwgMTUwIDAwIFByYWhhIDUtS2_FocOtxZllLCDQp9C10YXRltGP!5e0!3m2!1suk!2sua!4v1683217985699!5m2!1suk!2sua"
+            />
+          )}
           <ContactList>
             <ContactItem>
               <Mail href="mailto:info@devstudio.com">
