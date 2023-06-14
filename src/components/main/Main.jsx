@@ -82,7 +82,7 @@ const Hero = () => {
         </List>
       </TextContainer>
 
-      <Img src={image} alt="uklidova firma" />
+      <Img src={image} alt="uklidova firma" loading="lazy" />
     </HeroContainer>
   );
 };
