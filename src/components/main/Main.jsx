@@ -6,6 +6,7 @@ import {
   List,
   Item,
   Link,
+  ImgList,
 } from './Main.styled';
 import image from '../image/cisty.jpg';
 import top from '../image/top-uklid.png';
@@ -21,63 +22,63 @@ const Hero = () => {
           <Item>
             {' '}
             <Link href="#objednat">
-              <img src={top} alt="Top uklid" width="20px" height="20px" />
+              <ImgList src={top} alt="Top uklid" />
               Úklid domácností, rodinných domů a bytů.
             </Link>
           </Item>
           <Item>
             {' '}
             <Link href="#objednat">
-              <img src={top} alt="Top uklid" width="20px" height="20px" />
+              <ImgList src={top} alt="Top uklid" />
               Uklid hotelu a apartmany.
             </Link>
           </Item>
           <Item>
             {' '}
             <Link href="#objednat">
-              <img src={top} alt="Top uklid" width="20px" height="20px" />
+              <ImgList src={top} alt="Top uklid" />
               Úklid kanceláří a firemních prostory.
             </Link>
           </Item>{' '}
           <Item>
             {' '}
             <Link href="#objednat">
-              <img src={top} alt="Top uklid" width="20px" height="20px" />
+              <ImgList src={top} alt="Top uklid" />
               Úklid po malování, stavbě a rekonstrukci.
             </Link>
           </Item>{' '}
           <Item>
             {' '}
             <Link href="#objednat">
-              <img src={top} alt="Top uklid" width="20px" height="20px" />
+              <ImgList src={top} alt="Top uklid" />
               Úklid hal, garáží. a průmyslových.
             </Link>
           </Item>{' '}
           <Item>
             {' '}
             <Link href="#objednat">
-              <img src={top} alt="Top uklid" width="20px" height="20px" />
+              <ImgList src={top} alt="Top uklid" />
               Úklid společných prostor.
             </Link>
           </Item>{' '}
           <Item>
             {' '}
             <Link href="#objednat">
-              <img src={top} alt="Top uklid" width="20px" height="20px" />
+              <ImgList src={top} alt="Top uklid" />
               Úklid restaurace.
             </Link>
           </Item>{' '}
           <Item>
             {' '}
             <Link href="#objednat">
-              <img src={top} alt="Top uklid" width="20px" height="20px" />
+              <ImgList src={top} alt="Top uklid" />
               Rekonstrukce bytu.
             </Link>
           </Item>{' '}
           <Item>
             {' '}
             <Link href="#objednat">
-              <img src={top} alt="Top uklid" width="20px" height="20px" />
+              <ImgList src={top} alt="Top uklid" />
               Drobne zednicke prace.
             </Link>
           </Item>

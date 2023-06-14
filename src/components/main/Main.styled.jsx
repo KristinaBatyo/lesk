@@ -11,6 +11,12 @@ const mq = facepaint(
   { literal: true }
 );
 
+export const ImgList = styled.img`
+width: 20px;
+ height: 20px;
+`;
+
+
 export const Img = styled.img`
   display: block;
   margin-right: auto;
