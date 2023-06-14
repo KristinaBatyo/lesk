@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7acaea2f.css",
-    "main.js": "/static/js/main.3ee22a4f.js",
+    "main.js": "/static/js/main.feb32acb.js",
     "static/js/623.a0e2d0ed.chunk.js": "/static/js/623.a0e2d0ed.chunk.js",
     "static/js/398.0e0fd66b.chunk.js": "/static/js/398.0e0fd66b.chunk.js",
     "static/js/443.ad4bec17.chunk.js": "/static/js/443.ad4bec17.chunk.js",
@@ -27,7 +27,7 @@
     "static/media/komplexni-uklid.svg": "/static/media/komplexni-uklid.b0326f941b5b3e1f3610df7b498b138b.svg",
     "static/media/uklidove-sluzby.svg": "/static/media/uklidove-sluzby.2f4b8fdae8d0f856637f73e76118ded2.svg",
     "main.7acaea2f.css.map": "/static/css/main.7acaea2f.css.map",
-    "main.3ee22a4f.js.map": "/static/js/main.3ee22a4f.js.map",
+    "main.feb32acb.js.map": "/static/js/main.feb32acb.js.map",
     "623.a0e2d0ed.chunk.js.map": "/static/js/623.a0e2d0ed.chunk.js.map",
     "398.0e0fd66b.chunk.js.map": "/static/js/398.0e0fd66b.chunk.js.map",
     "443.ad4bec17.chunk.js.map": "/static/js/443.ad4bec17.chunk.js.map",
@@ -36,6 +36,6 @@
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.3ee22a4f.js"
+    "static/js/main.feb32acb.js"
   ]
 }
