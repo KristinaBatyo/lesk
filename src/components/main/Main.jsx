@@ -13,11 +13,6 @@ import React from 'react';
 
 const Hero = () => {
 
-    React.useEffect(() => {
-      const img = new Image();
-      img.src = image;
-    }, []);
-  
   return (
     <HeroContainer id="nabizime">
       <TextContainer>
