@@ -1,4 +1,5 @@
-import React from 'react';
+
+import React, { useEffect, useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 import {
   ContactMessage,
@@ -20,9 +21,28 @@ import {
 
 function CallBackForm() {
   const [state, handleSubmit] = useForm('xbjeblej');
+  const [scriptLoaded, setScriptLoaded] = useState(false);
+    useEffect(() => {
+      const script = document.createElement('script');
+      script.src = '/node_modules/@firebase/firestore/dist/index.esm2017.js';
+      script.async = true;
+      script.onload = () => {
+        setScriptLoaded(true);
+      };
+      document.body.appendChild(script);
+
+      return () => {
+        document.body.removeChild(script);
+      };
+    }, []);
+
   if (state.succeeded) {
     return <ContactMessage>Děkujeme, že jste se připojili!</ContactMessage>;
   }
+
+    if (!scriptLoaded) {
+      return null; 
+    }
 
     return (
       <ContactContainer id="objednat">
