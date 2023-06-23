@@ -1,13 +1,4 @@
 import { useState, useEffect } from 'react';
-import {
-  getFirestore,
-  collection,
-  getDocs,
-  addDoc,
-  // updateDoc,
-  // doc,
-} from 'firebase/firestore';
-import { initializeApp } from 'firebase/app';
 import ReactStarRatings from 'react-star-ratings';
 import {
   Card,
@@ -20,21 +11,16 @@ import {
 } from '@mui/material';
 import CustomPaginate from './Reviews.styled';
 import { ContactsButton } from './Reviews.styled';
+import axios from 'axios';
 
-const firebaseConfig = {
-  apiKey: 'AIzaSyDaxA9z4ZR8Pi7M_qG8bHqoTtGwAWjVt9k',
-  authDomain: 'reviews-4c539.firebaseapp.com',
-  databaseURL:
-    'https://reviews-4c539-default-rtdb.europe-west1.firebasedatabase.app',
-  projectId: 'reviews-4c539',
-  storageBucket: 'reviews-4c539.appspot.com',
-  messagingSenderId: '566511584630',
-  appId: '1:566511584630:web:85d7bfaf9f166af9d82657',
-  measurementId: 'G-EQZDYS8YK9',
+const axiosConfig = {
+  headers: {
+    'Content-Type': 'application/json',
+  },
 };
 
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
+const databaseURL = 'https://lesk-backend.onrender.com';
+
 
 
 function Reviews() {
@@ -49,73 +35,46 @@ function Reviews() {
     setRating(newRating);
   };
 
-  useEffect(() => {
-    const fetchReviews = async () => {
-      try {
-        const querySnapshot = await getDocs(collection(db, 'reviews'));
-        const result = querySnapshot.docs.map(doc => ({
-          ...doc.data(),
-          id: doc.id,
-        }));
-        setReviews(result);
-      } catch (error) {
-        console.error('Error fetching reviews:', error);
-      }
-    };
-    fetchReviews();
-  }, []);
-
-  const handleSubmit = async e => {
-    e.preventDefault();
-    const name = e.target.name.value;
-    const comment = e.target.comment.value;
-  const currentDate = new Date();
-  const year = currentDate.getFullYear();
-  const month = String(currentDate.getMonth() + 1).padStart(2, '0'); // Місяці починаються з 0, тому додаємо 1
-  const day = String(currentDate.getDate()).padStart(2, '0');
-  const timestamp = `${year}-${month}-${day}`;
+useEffect(() => {
+  const fetchReviews = async () => {
     try {
-      const docRef = await addDoc(collection(db, 'reviews'), {
-        name,
-        comment,
-        rating,
-        timestamp,
-      });
-      const newReview = { name, comment, rating, timestamp, id: docRef.id };
-      setReviews(prevReviews => [newReview, ...prevReviews]);
-      e.target.reset();
-      setCurrentPage(0);
+      const response = await axios.get(`${databaseURL}/api/contacts/`); 
+      setReviews(response.data);
     } catch (error) {
-      console.error('Error adding review:', error);
+      console.error('Error fetching reviews:', error);
     }
   };
-  // const handleReplyChange = e => {
-  //   setReplyText(e.target.value);
-  // };
+  fetchReviews();
+}, []);
 
-  // const handleReply = async e => {
-  //   e.preventDefault();
-  //   try {
-  //     await updateDoc(doc(db, 'reviews', replyId), {
-  //       reply: replyText,
-  //     });
-  //     const updatedReviews = reviews.map(review => {
-  //       if (review.id === replyId) {
-  //         return { ...review, reply: replyText };
-  //       }
-  //       return review;
-  //     });
-  //     setReviews(updatedReviews);
-  //     setReplyText('');
-  //     setReplyId('');
-  //   } catch (error) {
-  //     console.error('Error adding reply:', error);
-  //   }
-  // };
 
-  // const handleReplyClick = id => {
-  //   setReplyId(id);
-  // };
+const handleSubmit = async e => {
+  e.preventDefault();
+  const name = e.target.name.value;
+  const comment = e.target.comment.value;
+  const currentDate = new Date();
+  const year = currentDate.getFullYear();
+  const month = String(currentDate.getMonth() + 1).padStart(2, '0');
+  const day = String(currentDate.getDate()).padStart(2, '0');
+  const timestamp = `${year}-${month}-${day}`;
+  const data = {
+    name,
+    comment,
+    rating,
+    timestamp,
+  };
+
+  try {
+    await axios.post(`${databaseURL}/api/contacts/`, data, axiosConfig);
+    const newReview = { name, comment, rating, timestamp, id: Date.now() };
+    setReviews(prevReviews => [newReview, ...prevReviews]);
+    e.target.reset();
+    setCurrentPage(0);
+  } catch (error) {
+    console.error('Error adding review:', error);
+  }
+};
+
 
   const handlePageClick = ({ selected }) => {
     setCurrentPage(selected);
@@ -172,9 +131,9 @@ function Reviews() {
             </form>
           </Grid>
           <Grid item xs={12} md={8}>
-            {displayReviews.map(review => (
+            {displayReviews.map((review, index) => (
               <Card
-                key={review.id}
+                key={index}
                 sx={{
                   padding: '16px',
                   marginBottom: '16px',
@@ -198,12 +157,15 @@ function Reviews() {
                     {review.timestamp}
                   </Typography>
                   {review.reply ? (
-                    <Typography marginTop={'30px'} variant="body2" component="p">
-                      <strong >Odpověď konzultanta:</strong> {review.reply}
+                    <Typography
+                      marginTop={'30px'}
+                      variant="body2"
+                      component="p"
+                    >
+                      <strong>Odpověď konzultanta:</strong> {review.reply}
                     </Typography>
-                  )
-                    : (
-                      <></>
+                  ) : (
+                    <></>
                     // <form onSubmit={handleReply}>
                     //   <TextField
                     //     fullWidth
@@ -221,8 +183,7 @@ function Reviews() {
                     //     Send Reply
                     //   </Button>
                     // </form>
-                  )
-                  }
+                  )}
                 </CardContent>
               </Card>
             ))}
@@ -249,242 +210,3 @@ function Reviews() {
 }
 
 export default Reviews;
-
-
-
-
-
-
-
-// function Reviews() {
-//   const [reviews, setReviews] = useState([]);
-//   const [rating, setRating] = useState(5);
-
-//   const handleRatingChange = newRating => {
-//     setRating(newRating);
-//   };
-
-//   useEffect(() => {
-//     const fetchReviews = async () => {
-//       try {
-//         const querySnapshot = await getDocs(collection(db, 'reviews'));
-//         const result = querySnapshot.docs.map(doc => ({
-//           ...doc.data(),
-//           id: doc.id,
-//         }));
-//         setReviews(result);
-//       } catch (error) {
-//         console.error('Error fetching reviews:', error);
-//         // відобразити користувачеві повідомлення про те, що сталася помилка
-//       }
-//     };
-//     fetchReviews();
-//   }, []);
-
-//   const handleSubmit = async e => {
-//     e.preventDefault();
-//     const name = e.target.name.value;
-//     const comment = e.target.comment.value;
-//     try {
-//       await addDoc(collection(db, 'reviews'), { name, comment, rating });
-//       const querySnapshot = await getDocs(collection(db, 'reviews'));
-//       const result = querySnapshot.docs.map(doc => ({
-//         ...doc.data(),
-//         id: doc.id,
-//       }));
-//       setReviews(result);
-//     } catch (error) {
-//       console.error('Error adding review:', error);
-//       // відобразити користувачеві повідомлення про те, що сталася помилка
-//     }
-//   };
-  
-//     // const handleDelete = async id => {
-//     //   await deleteDoc(doc(db, 'reviews', id));
-//     //   const querySnapshot = await getDocs(collection(db, 'reviews'));
-//     //   const result = querySnapshot.docs.map(doc => ({
-//     //     ...doc.data(),
-//     //     id: doc.id,
-//     //   }));
-//     //   setReviews(result);
-//     // };
-
-//   return (
-//     <div>
-// <Box m={4}>
-// <Grid container spacing={3} justifyContent="center">
-// <Grid item xs={12}>
-// <Typography variant="h3" align="center" gutterBottom>
-//               Reviews
-//               </Typography>
-// </Grid>
-// <Grid item xs={12} md={8}>
-// <form onSubmit={handleSubmit}>
-// <Grid container spacing={2}>
-// <Grid item xs={12} sm={6}>
-// <TextField
-// label="Name"
-// name="name"
-// variant="outlined"
-// required
-// fullWidth
-// />
-// </Grid>
-// <Grid item xs={12} sm={6}>
-//     <ReactStarRatings
-//     rating={rating}
-//     starRatedColor="orange"
-//     numberOfStars={5}
-//     starDimension="20px"
-//     starSpacing="5px"
-//     changeRating={handleRatingChange}
-    
-//     />
-// </Grid>
-// <Grid item xs={12}>
-// <TextField
-// label="Comment"
-// name="comment"
-// variant="outlined"
-// required
-// fullWidth
-// multiline
-// rows={4}
-// />
-// </Grid>
-// <Grid item xs={12}>
-// <Button type="submit" variant="contained" color="primary">
-// Submit
-// </Button>
-// </Grid>
-// </Grid>
-// </form>
-// </Grid>
-// <Grid item xs={12} md={8}>
-// <Box mt={4}>
-// <Typography variant="h5" gutterBottom>
-// Recent Reviews
-// </Typography>
-// {reviews.map(review => (
-// <Card key={review.id} variant="outlined" >
-// <CardContent>
-// <Grid container spacing={2} justifyContent="space-between" alignItems="center">
-// <Grid item xs={12} sm={6}>
-// <Typography variant="h6" gutterBottom>
-// {review.name}
-// </Typography>
-// </Grid>
-// <Grid item xs={12} sm={6}>
-// <ReactStarRatings
-// rating={review.rating}
-// starRatedColor="orange"
-// numberOfStars={5}
-// starDimension="20px"
-// starSpacing="5px"
-// />
-// </Grid>
-// <Grid item xs={12}>
-// <Typography variant="body1">
-// {review.comment}
-// </Typography>
-// </Grid>
-// </Grid>
-// </CardContent>
-// <CardActions>
-// {/* <Button size="small" color="secondary" >
-// Delete
-// </Button> */}
-// </CardActions>
-// </Card>
-// ))}
-// </Box>
-// </Grid>
-// </Grid>
-// </Box>
-// </div>
-// );
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // <div>
-    //   <h1>Reviews</h1>
-    //   <form onSubmit={handleSubmit}>
-    //     <label>
-    //       Name:
-    //       <input type="text" name="name" required />
-    //     </label>
-    //     <br />
-    //     <label>
-    //       Comment:
-    //       <textarea name="comment" required></textarea>
-    //     </label>
-    //     <br />
-    //     <label>
-    //       Rating:
-    //       <ReactStarRatings
-    //         rating={rating}
-    //         starRatedColor="orange"
-    //         numberOfStars={5}
-    //         starDimension="20px"
-    //         starSpacing="5px"
-    //         changeRating={handleRatingChange}
-    //       />
-    //     </label>
-    //     <br />
-    //     <button type="submit">Submit</button>
-    //   </form>
-    //   <ul>
-    //     {reviews.map(review => (
-    //       <li key={nanoid()}>
-    //         <p>Name: {review.name}</p>
-    //         <p>Comment: {review.comment}</p>
-    //         <ReactStarRatings
-    //           rating={review.rating}
-    //           starRatedColor="orange"
-    //           numberOfStars={5}
-    //           starDimension="20px"
-    //           starSpacing="5px"
-    //         />
-    //         {/* <button
-    //           className="delete-btn"
-    //           onClick={() => handleDelete(review._id)}
-    //         >
-    //           Delete
-    //         </button> */}
-    //       </li>
-    //     ))}
-    //   </ul>
-    // </div>
-//   );
-// }
-
-// export default Reviews;
