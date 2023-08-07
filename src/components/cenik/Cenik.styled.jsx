@@ -11,6 +11,7 @@ const mq = facepaint(
 );
 
 export const CenikContainer = styled.div`
+  margin-top: 20px;
   background: linear-gradient(to right, #006778, #e0e0e0);
   padding: 10px;
 `;

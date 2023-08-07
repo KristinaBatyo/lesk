@@ -117,8 +117,8 @@ export const Button = styled.button`
   }
   ${mq({
     marginTop: ['5px', '5px', '5px', '20px'],
-    width: ['60px', '100px', '100px', '200px'],
-    height: ['24px', '', '24px', '40px'],
+    width: ['100px', '100px', '100px', '200px'],
+    height: ['40px', '', '24px', '40px'],
   })};
 `;
 
