@@ -11,6 +11,8 @@ import {
   DivContainer,
   List,
   Img,
+  Img2,
+  Img3,
 } from './Onas.styled';
 import { ReactComponent as Check } from '../image/uklidove-sluzby.svg';
 import { ReactComponent as Number } from '../image/uklidova-firma-praha.svg';
@@ -20,12 +22,9 @@ import { ReactComponent as User } from '../image/uklid-v-praze.svg';
 import { ReactComponent as Eye } from '../image/uklidy-domacnosti.svg';
 import { ReactComponent as Home } from '../image/komplexni-uklid.svg';
 import { ReactComponent as Lab } from '../image/oddeleni-okamziteho-uklidu.svg';
-import uklid from '../image/uklid.jpg';
-
-
-
-
-
+import uklid from '../image/Subtract.webp';
+import phone from '../image/phone.png';
+import mask from '../image/mask-group.webp';
 
 
 
@@ -63,8 +62,11 @@ const ONas = () => {
             na profesionály. Nezávazně nás kontaktujte a vytvoříme Vám cenovou
             nabídku.
           </Text>
+          <Img3 src={mask} alt="Chcete si objednat uklid?" />
         </SirokeContainer>
+
         <ListContainer>
+          <Img2 src={phone} alt="Chcete si objednat uklid?" />
           <Title>Naši firmu budete chtít protože…</Title>
           <List>
             <Item>

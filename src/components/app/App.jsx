@@ -3,6 +3,7 @@ import { AppContainer, Title, Container, TitleSeo } from './App.styled';
 import CallBackForm from "components/formspree/FormSpree";
 import Reviews from "components/reviews/Reviews";
 import React, { Suspense } from 'react';
+import { PropagateLoader } from 'react-spinners';
 
 const Cenik = React.lazy(() => import('components/cenik/Cenik'));
 const Head = React.lazy(() => import('components/head/Header'));
@@ -17,7 +18,15 @@ export const App = () => {
 
     return (
       <Container>
-        <Suspense fallback={<div>Načítání...</div>}>
+        <Suspense
+          fallback={
+            <PropagateLoader
+              color="#36d7b7"
+              aria-label="Loading Spinner"
+              data-testid="loader"
+            />
+          }
+        >
           <TitleSeo>Úklidová firma Praha</TitleSeo>
           <Head />
           <AppContainer>

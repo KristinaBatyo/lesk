@@ -84,14 +84,32 @@ export const Img = styled.img`
   display: block;
   ${mq({
     width: ['250px', '400px', '393px', '597px'],
-    height: ['190px', '400px', '383px', '578px'],
+    height: ['auto', 'auto', 'auto', 'auto'],
     paddingTop: ['20px', '20px', '', ''],
     marginRight: ['auto', 'auto', '0', '0'],
     marginLeft: ['auto', 'auto', '0', '0'],
     paddingLeft: ['', '', '20px', '20px'],
   })};
 `;
-
+export const Img2 = styled.img`
+  justify-content: center;
+  align-items: center;
+  ${mq({
+    width: ['250px', '400px', '400px', '400px'],
+    height: ['auto', 'auto', 'auto', 'auto'],
+    marginLeft: ['', '', '200px', '0px'],
+  })};
+`;
+export const Img3 = styled.img`
+  justify-content: center;
+  align-items: center;
+  ${mq({
+    width: ['0', '0', '0', '500px'],
+    height: ['auto', 'auto', 'auto', 'auto'],
+    marginTop: ['', '', '', '200px'],
+    visibility: ['hidden', 'hidden', 'hidden', 'visible'],
+  })};
+`;
 
 export const SirokeContainer = styled.div`
   display: flex;
