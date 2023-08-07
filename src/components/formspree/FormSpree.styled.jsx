@@ -3,7 +3,7 @@ import facepaint from 'facepaint';
 
 
 
-import backgroundImage from '../image/Presentation.jpg';
+// import backgroundImage from '../image/Presentation.jpg';
 
 const mq = facepaint(
   [
@@ -28,24 +28,9 @@ export const ContactMessage = styled.p`
 `;
 
 export const ContactContainer = styled.div`
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(${backgroundImage});
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-color: #025260; /* Колір фону за замовчуванням */
+display: flex;
   ${mq({
     minHeight: ['auto', '', '', '700px'],
-    backgroundColor: [
-      '#025260',
-      '',
-      '',
-      '',
-    ] /* Колір фону для кожної ширини екрану */,
-    marginTop: ['50px', '50px', '50px', '100px'],
-    backgroundImage: ['none', ''],
   })};
 `;
 export const Container = styled.div`
@@ -59,8 +44,18 @@ export const Container = styled.div`
   })};
 `;
 
+export const ImgContainer = styled.div`
+position: relative;
+`;
+export const Img = styled.img`
+  position: absolute;
+`;
+export const Img2 = styled.img`
+  position: absolute;
+`;
+
 export const Title = styled.h2`
-  color: white;
+  color: #e6ba95;
   font-weight: 500;
   line-height: 1.14;
   text-align: center;
@@ -70,7 +65,7 @@ export const Title = styled.h2`
 `;
 
 export const Paragraph = styled.p`
-  color: white;
+  color: #e6ba95;
   font-weight: 500;
   line-height: 1.14;
   width: 90%;
@@ -178,3 +173,11 @@ export const Select = styled.textarea`
     height: ['80px', '80px', '80px', '105px'],
   })};
 `;
+
+// import image from '../image/imageclean.webp';
+// import image2 from '../image/maskingclean.webp';
+
+//      <ImgContainer>
+      //   <Img src={image} alt="uklidova firma" />
+      //   <Img2 src={image2} alt="uklidova firma" />
+      // </ImgContainer>

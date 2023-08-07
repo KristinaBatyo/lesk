@@ -15,32 +15,39 @@ export const ImgList = styled.img`
 width: 20px;
  height: 20px;
 `;
+export const ImgContainer = styled.div`
+  display: block;
+  width: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%
+  overflow: hidden;
+        ${mq({
+          position: ['static', 'static', 'relative', 'relative'],
+        })};
+`;
+
 
 
 export const Img = styled.img`
+  bottom: 0;
   display: block;
-  margin-right: auto;
-  height: 175px;
-  width: 243px;
-    ${mq({
-      width: ['', '', '386px', '900px'],
-      height: ['', '', '250px', '700px'],
-      marginTop: ['', 'auto', '', ''],
-      marginBottom: ['', 'auto', '', ''],
-      marginLeft: ['auto', 'auto', 'auto', '-200px'],
-      'z-index': ['-1'],
-    })};
+  ${mq({
+    width: ['100%', '100%', '100%', '100%'],
+    height: ['auto', 'auto', 'auto', 'auto'],
+    position: ['static', 'static', 'absolute', 'absolute'],
+  })};
 `;
 
+
 export const Title = styled.h1`
+  background: linear-gradient(to right,  #e0e0e0 , #006778);
   position: static;
   font-weight: 700;
   font-size: 32px;
   line-height: 42px;
   color: #006778;
   ${mq({
-    color: ['', '', '#FFFFFF'],
-    backgroundColor: ['', '', '#006778'],
     width: ['', '', 'inherit', 'inherit'],
   })};
 `;
@@ -50,21 +57,22 @@ export const List = styled.ul`
   font-weight: 400;
   font-size: 12px;
   line-height: 17px;
-  width: 100%;
   padding: 0px;
+  ${mq({
+    width: ['100%', '100%', '350px', '400px'],
+  })};
 `;
 
 export const Link = styled.a`
   text-decoration: none;
+  background-color: #006778;
+  color: white;
   transition: color 250ms linear, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     cursor: pointer;
     color: white;
   }
-  ${mq({
-    color: ['#006778', '#006778', 'white'],
-  })};
 `;
 
 export const Item = styled.li`
@@ -72,34 +80,30 @@ export const Item = styled.li`
   ${mq({
     fontSize: ['', '', '20px'],
     lineHeight: ['', '', '42px'],
+    
   })};
 `;
 
 export const HeroContainer = styled.div`
   width: 100%;
-  display: inline-block;
-  z-index: -1;
+  background: linear-gradient(to right, #006778, #e0e0e0 100%, #006778);
   ${mq({
-    display: ['block', 'flex', 'flex'],
-    flexDirection: ['', 'row'],
+    display: ['block', 'block', 'flex', 'flex'],
     marginTop: ['100px', '120px'],
     top: ['', '350px', '200px', '200px'],
   })};
 `;
 
 export const TextContainer = styled.div`
-  position: relative;
   left: 120px;
+  height: auto;
+  width: auto;
+  color: white;
+  background: linear-gradient(to right, #006778, #e0e0e0,);
+  border-radius: 15px 15px 0px 0px;
   ${mq({
     position: ['static', 'static', 'static', 'relative'],
-    marginTop: ['140', '', '100px', '100px'],
-    top: ['', '', '', '100px'],
-    color: ['', '', '#FFFFFF'],
-    backgroundColor: ['', '#FFFFFF', '#006778'],
-    height: ['', '', '', '550px'],
-    width: ['', '', '370px', ''],
     left: ['', '', '0px'],
-    padding: ['', '', '10px', '50px'],
-    zIndex: ['', 1, ''],
+    padding: ['10px', '10px', '10px', '50px'],
   })};
 `;

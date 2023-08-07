@@ -4,10 +4,10 @@
   "private": true,
   "homepage": "",
   "dependencies": {
-    "@emotion/react": "^11.11.0",
+    "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@formspree/react": "^2.4.1",
-    "@mui/material": "^5.13.0",
+    "@mui/material": "^5.14.3",
     "@reduxjs/toolkit": "^1.9.3",
     "@sefailyasoz/react-carousel": "^1.1.1",
     "@testing-library/jest-dom": "^5.16.3",

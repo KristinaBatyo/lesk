@@ -7,8 +7,9 @@ import {
   Item,
   Link,
   ImgList,
+  ImgContainer,
 } from './Main.styled';
-import image from '../image/cisty.jpg';
+import image from '../image/girl.webp';
 import top from '../image/top-uklid.png';
 import React from 'react';
 
@@ -84,8 +85,9 @@ const Hero = () => {
           </Item>
         </List>
       </TextContainer>
-
-      <Img src={image} alt="uklidova firma" />
+      <ImgContainer >
+        <Img src={image} alt="uklidova firma" />
+      </ImgContainer>
     </HeroContainer>
   );
 };
