@@ -23,7 +23,7 @@ import { ReactComponent as Eye } from '../image/uklidy-domacnosti.svg';
 import { ReactComponent as Home } from '../image/komplexni-uklid.svg';
 import { ReactComponent as Lab } from '../image/oddeleni-okamziteho-uklidu.svg';
 import uklid from '../image/Subtract.webp';
-import phone from '../image/phone.png';
+import phone from '../image/phone.webp';
 import mask from '../image/mask-group.webp';
 
 
