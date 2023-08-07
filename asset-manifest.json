@@ -1,18 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.7acaea2f.css",
-    "main.js": "/static/js/main.681970e7.js",
-    "static/js/623.a0e2d0ed.chunk.js": "/static/js/623.a0e2d0ed.chunk.js",
+    "main.js": "/static/js/main.1346f88b.js",
+    "static/js/623.03da5ecd.chunk.js": "/static/js/623.03da5ecd.chunk.js",
     "static/js/398.0e0fd66b.chunk.js": "/static/js/398.0e0fd66b.chunk.js",
-    "static/js/443.ad4bec17.chunk.js": "/static/js/443.ad4bec17.chunk.js",
-    "static/js/640.8decb58d.chunk.js": "/static/js/640.8decb58d.chunk.js",
-    "static/js/168.41daac80.chunk.js": "/static/js/168.41daac80.chunk.js",
-    "static/media/Presentation.jpg": "/static/media/Presentation.a2b1a7c632998cb88ad9.jpg",
+    "static/js/443.123a9d50.chunk.js": "/static/js/443.123a9d50.chunk.js",
+    "static/js/640.2879a688.chunk.js": "/static/js/640.2879a688.chunk.js",
+    "static/js/168.14d29e8e.chunk.js": "/static/js/168.14d29e8e.chunk.js",
+    "static/media/girl.webp": "/static/media/girl.ba076241df8b96e1976a.webp",
     "static/media/uklid-praha.jpg": "/static/media/uklid-praha.29c4d6058c4e886077da.jpg",
     "static/media/logoo.jpg": "/static/media/logoo.ebb3d66b44f9c875e2e8.jpg",
     "static/media/top-uklid.png": "/static/media/top-uklid.ba3748aee368d3da1023.png",
     "static/media/uklid.jpg": "/static/media/uklid.33fe099a365a75e1f7d7.jpg",
-    "static/media/cisty.jpg": "/static/media/cisty.c669ada06f2baf0e06be.jpg",
+    "static/media/imageclean.webp": "/static/media/imageclean.8605df26f7cf485d5524.webp",
+    "static/media/maskingclean.webp": "/static/media/maskingclean.99d78057664805b4542b.webp",
+    "static/media/image.webp": "/static/media/image.7925dd7cc622ed9d037c.webp",
     "static/media/uklidy-domacnosti.svg": "/static/media/uklidy-domacnosti.89ab20b4b5fdc99023c7de58eca74c6f.svg",
     "index.html": "/index.html",
     "static/media/uklid-bytovych-domu.svg": "/static/media/uklid-bytovych-domu.83978d74cc4b97bba8bec0505cb47f68.svg",
@@ -27,15 +29,15 @@
     "static/media/komplexni-uklid.svg": "/static/media/komplexni-uklid.b0326f941b5b3e1f3610df7b498b138b.svg",
     "static/media/uklidove-sluzby.svg": "/static/media/uklidove-sluzby.2f4b8fdae8d0f856637f73e76118ded2.svg",
     "main.7acaea2f.css.map": "/static/css/main.7acaea2f.css.map",
-    "main.681970e7.js.map": "/static/js/main.681970e7.js.map",
-    "623.a0e2d0ed.chunk.js.map": "/static/js/623.a0e2d0ed.chunk.js.map",
+    "main.1346f88b.js.map": "/static/js/main.1346f88b.js.map",
+    "623.03da5ecd.chunk.js.map": "/static/js/623.03da5ecd.chunk.js.map",
     "398.0e0fd66b.chunk.js.map": "/static/js/398.0e0fd66b.chunk.js.map",
-    "443.ad4bec17.chunk.js.map": "/static/js/443.ad4bec17.chunk.js.map",
-    "640.8decb58d.chunk.js.map": "/static/js/640.8decb58d.chunk.js.map",
-    "168.41daac80.chunk.js.map": "/static/js/168.41daac80.chunk.js.map"
+    "443.123a9d50.chunk.js.map": "/static/js/443.123a9d50.chunk.js.map",
+    "640.2879a688.chunk.js.map": "/static/js/640.2879a688.chunk.js.map",
+    "168.14d29e8e.chunk.js.map": "/static/js/168.14d29e8e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.681970e7.js"
+    "static/js/main.1346f88b.js"
   ]
 }
