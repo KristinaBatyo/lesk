@@ -1,17 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.7acaea2f.css",
-    "main.js": "/static/js/main.1346f88b.js",
+    "main.js": "/static/js/main.15cd21c7.js",
     "static/js/623.03da5ecd.chunk.js": "/static/js/623.03da5ecd.chunk.js",
     "static/js/398.0e0fd66b.chunk.js": "/static/js/398.0e0fd66b.chunk.js",
     "static/js/443.123a9d50.chunk.js": "/static/js/443.123a9d50.chunk.js",
     "static/js/640.2879a688.chunk.js": "/static/js/640.2879a688.chunk.js",
-    "static/js/168.14d29e8e.chunk.js": "/static/js/168.14d29e8e.chunk.js",
+    "static/js/168.53d38cf8.chunk.js": "/static/js/168.53d38cf8.chunk.js",
+    "static/media/phone.png": "/static/media/phone.82c90e88acbfd5e9e019.png",
     "static/media/girl.webp": "/static/media/girl.ba076241df8b96e1976a.webp",
     "static/media/uklid-praha.jpg": "/static/media/uklid-praha.29c4d6058c4e886077da.jpg",
     "static/media/logoo.jpg": "/static/media/logoo.ebb3d66b44f9c875e2e8.jpg",
     "static/media/top-uklid.png": "/static/media/top-uklid.ba3748aee368d3da1023.png",
-    "static/media/uklid.jpg": "/static/media/uklid.33fe099a365a75e1f7d7.jpg",
+    "static/media/Subtract.webp": "/static/media/Subtract.06f176ce559f8521e4e7.webp",
+    "static/media/mask-group.webp": "/static/media/mask-group.9aaa6d223714ac97373e.webp",
     "static/media/imageclean.webp": "/static/media/imageclean.8605df26f7cf485d5524.webp",
     "static/media/maskingclean.webp": "/static/media/maskingclean.99d78057664805b4542b.webp",
     "static/media/image.webp": "/static/media/image.7925dd7cc622ed9d037c.webp",
@@ -29,15 +31,15 @@
     "static/media/komplexni-uklid.svg": "/static/media/komplexni-uklid.b0326f941b5b3e1f3610df7b498b138b.svg",
     "static/media/uklidove-sluzby.svg": "/static/media/uklidove-sluzby.2f4b8fdae8d0f856637f73e76118ded2.svg",
     "main.7acaea2f.css.map": "/static/css/main.7acaea2f.css.map",
-    "main.1346f88b.js.map": "/static/js/main.1346f88b.js.map",
+    "main.15cd21c7.js.map": "/static/js/main.15cd21c7.js.map",
     "623.03da5ecd.chunk.js.map": "/static/js/623.03da5ecd.chunk.js.map",
     "398.0e0fd66b.chunk.js.map": "/static/js/398.0e0fd66b.chunk.js.map",
     "443.123a9d50.chunk.js.map": "/static/js/443.123a9d50.chunk.js.map",
     "640.2879a688.chunk.js.map": "/static/js/640.2879a688.chunk.js.map",
-    "168.14d29e8e.chunk.js.map": "/static/js/168.14d29e8e.chunk.js.map"
+    "168.53d38cf8.chunk.js.map": "/static/js/168.53d38cf8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.1346f88b.js"
+    "static/js/main.15cd21c7.js"
   ]
 }
