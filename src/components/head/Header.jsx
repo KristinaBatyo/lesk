@@ -24,7 +24,7 @@ const Head = () => {
 
   const items = [
     { value: 'Nabizime pro vas', href: '#nabizime' },
-    { value: 'Ceník Služeb', href: '#ceník' },
+    { value: 'Ceník Služeb', href: '#cenik' },
     { value: 'Recenze', href: '#recenze' },
     { value: 'O nás', href: '#onás' },
 
