@@ -43,9 +43,10 @@ export const CenikItem = styled.li`
 
 `;
 export const CenikTitle = styled.h2`
-  background-color: #025260;
+  background: #025260;
+
   color: #fff;
-  padding: 5px;
+  padding: 15px;
   margin-bottom: 0.5rem;
   ${mq({
     fontSize: ['15px', '15px', '15px', '20px'],

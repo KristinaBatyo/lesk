@@ -47,8 +47,7 @@ export const Button = styled.button`
   flex-direction: column;
   margin: 1rem;
   min-width: 30px;
-  background-color: #f4f6f6;
-  border-radius: 10px;
+  border-radius: 50%;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   border: none;
   color: #ffffff;
@@ -57,7 +56,7 @@ export const Button = styled.button`
   ${mq({
     width: [''],
     height: ['100%'],
-    backgroundColor: ['#025260', ''],
+    // backgroundColor: ['#025260', ''],
   })}
 `;
 

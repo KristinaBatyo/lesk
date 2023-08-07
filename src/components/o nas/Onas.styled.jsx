@@ -116,6 +116,7 @@ export const ListContainer = styled.div`
 `;
 
 export const Item = styled.li`
+  display: flex;
   max-width: 100%;
   height: auto;
   font-weight: 500;

@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
 import facepaint from 'facepaint';
-
 const mq = facepaint(
   [
     '@media(max-width: 479px)',
@@ -12,7 +11,8 @@ const mq = facepaint(
 );
 
 export const CenikContainer = styled.div`
-  color: #025260;
+  background: linear-gradient(to right, #006778, #e0e0e0);
+  padding: 10px;
 `;
 
 export const Container = styled.div`
@@ -23,7 +23,7 @@ export const Container = styled.div`
 `;
 
 export const Paragraph = styled.p`
-  color: #025260;
+  color: white;
   font-family: Raleway, sans-serif;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -41,9 +41,9 @@ export const Title = styled.h2`
   line-height: 1.19;
   letter-spacing: 0.03em;
   font-weight: 700;
-  //   margin-top: 30px;
-
-  background-color: #025260;
+  padding: 10px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #006778, #e0e0e0);
   ${mq({
     fontSize: ['20px', '25px', '30px', '30px'],
   })};

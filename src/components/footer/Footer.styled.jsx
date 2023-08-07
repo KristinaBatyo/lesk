@@ -12,6 +12,7 @@ const mq = facepaint(
 );
 
 export const FooterStyled = styled.footer`
+  // padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,6 +22,7 @@ export const FooterStyled = styled.footer`
   background-color: #fff;
   ${mq({
     height: ['150px', '150px', '200px', '200px'],
+    padding: ['15px', '15px', '', '0'],
   })};
 `;
 export const Img = styled.img`

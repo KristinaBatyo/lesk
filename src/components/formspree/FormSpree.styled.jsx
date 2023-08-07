@@ -1,10 +1,6 @@
 import styled from '@emotion/styled';
 import facepaint from 'facepaint';
 
-
-
-// import backgroundImage from '../image/Presentation.jpg';
-
 const mq = facepaint(
   [
     '@media(max-width: 479px)',
@@ -15,20 +11,12 @@ const mq = facepaint(
   { literal: true }
 );
 
-
-export const ContactMessage = styled.p`
-  margin-top: 130px;
-  color: #025260;
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.14;
-  font-family: Raleway, sans-serif;
-  text-align: center;
-  text-shadow: 1px 1px 1px white, 2px 2px 1px #e6ba95;
-`;
-
 export const ContactContainer = styled.div`
-display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
   ${mq({
     minHeight: ['auto', '', '', '700px'],
   })};
@@ -39,19 +27,41 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   ${mq({
-    paddingTop: ['15px', '50px', '', '70px'],
     width: ['100%', '']
   })};
 `;
 
-export const ImgContainer = styled.div`
-position: relative;
+export const ImgContainer = styled.ul`
+display: flex;
+padding: 0;
 `;
+
+export const Item = styled.li`
+  list-style: none;
+  border-radius: 50%;
+  margin: 0;
+`;
+export const ItemTop = styled.li`
+  list-style: none;
+  border-radius: 50%;
+  padding-top: 50px;
+  margin: 0;
+`;
+
 export const Img = styled.img`
-  position: absolute;
+  height: auto;
+  border-radius: 50%;
+  ${mq({
+    width: ['90px', '100px', '200px'],
+  })};
 `;
-export const Img2 = styled.img`
-  position: absolute;
+export const ImgSecond = styled.img`
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+  ${mq({
+    width: ['90px', '100px', '200px'],
+  })};
 `;
 
 export const Title = styled.h2`
@@ -65,7 +75,8 @@ export const Title = styled.h2`
 `;
 
 export const Paragraph = styled.p`
-  color: #e6ba95;
+  color: white;
+  background-color: #e6ba95;
   font-weight: 500;
   line-height: 1.14;
   width: 90%;
@@ -75,61 +86,6 @@ export const Paragraph = styled.p`
     fontSize: ['14px', '14px', '18px', '20px'],
   })};
 `;
-
-export const FormName = styled.label`
-  color: white;
-  ${mq({
-    fontSize: ['12px', '14px', '20px', '20px'],
-  })};
-`;
-
-export const FormPhone = styled.label`
-  padding-top: 10px;
-  color: white;
-  ${mq({
-    fontSize: ['12px', '14px', '20px', '20px'],
-  })};
-`;
-export const EmailLabel = styled.label`
-  padding-top: 10px;
-  color: white;
-  ${mq({
-    fontSize: ['12px', '14px', '20px', '20px'],
-  })};
-`;
-export const DotazLabel = styled.label`
-  padding-top: 10px;
-  color: white;
-  ${mq({
-    fontSize: ['12px', '14px', '20px', '20px'],
-  })};
-`;
-
-
-export const NameInput = styled.input`
-  width: 90%;
-  margin: 0;
-  ${mq({
-    height: ['20px', '20px', '24px', '40px'],
-  })};
-`;
-
-export const PhoneInput = styled.input`
-  width: 90%;
-  margin: 0;
-  ${mq({
-    height: ['20px', '20px', '24px', '40px'],
-  })};
-`;
-export const EmailInput = styled.input`
-  width: 90%;
-  margin: 0;
-  ${mq({
-    height: ['20px', '20px', '24px', '40px'],
-  })};
-`;
-
-
     
 export const Form = styled.form`
   display: flex;
@@ -166,18 +122,13 @@ export const Button = styled.button`
   })};
 `;
 
-export const Select = styled.textarea`
-  width: 90%;
-  resize: none;
-  ${mq({
-    height: ['80px', '80px', '80px', '105px'],
-  })};
+export const ContactMessage = styled.p`
+  margin-top: 130px;
+  color: #025260;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.14;
+  font-family: Raleway, sans-serif;
+  text-align: center;
+  text-shadow: 1px 1px 1px white, 2px 2px 1px #e6ba95;
 `;
-
-// import image from '../image/imageclean.webp';
-// import image2 from '../image/maskingclean.webp';
-
-//      <ImgContainer>
-      //   <Img src={image} alt="uklidova firma" />
-      //   <Img2 src={image2} alt="uklidova firma" />
-      // </ImgContainer>

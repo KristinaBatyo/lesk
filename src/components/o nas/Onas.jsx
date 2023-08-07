@@ -34,10 +34,7 @@ const ONas = () => {
   return (
     <DivContainer id="onas">
       <ONasContainer>
-        <Img
-          src={uklid}
-          alt="Chcete si objednat uklid?"
-        />
+        <Img src={uklid} alt="Chcete si objednat uklid?" />
         <Container>
           <Title>Úklidová firma Praha</Title>
           <TextFlex>
@@ -71,43 +68,43 @@ const ONas = () => {
           <Title>Naši firmu budete chtít protože…</Title>
           <List>
             <Item>
-              <Check fill="#e6ba95" width="20px" /> nejdůležitější je pro nás
-              kvalitně odvedená práce
+              <Check fill="#e6ba95" width="20px" />{' '}
+              <p>Nejdůležitější je pro nás kvalitně odvedená práce</p>
             </Item>
             <Item>
               {' '}
-              <Money fill="#e6ba95" width="20px" /> razíme heslo, maximální
-              kvalita za rozumnou cenu
+              <Money fill="#e6ba95" width="20px" />{' '}
+              <p>Razíme heslo, maximální kvalita za rozumnou cenu</p>
             </Item>
             <Item>
               {' '}
               <User fill="#e6ba95" width="20px" />
-              disponujeme vyškoleným profesionálním personálem
+              <p>Disponujeme vyškoleným profesionálním personálem</p>
             </Item>
             <Item>
               {' '}
               <Number fill="#e6ba95" width="20px" />
-              přizpůsobíme se vašim požadavkům
+              <p>Přizpůsobíme se vašim požadavkům</p>
             </Item>
             <Item>
               {' '}
               <Eye fill="#e6ba95" width="20px" />
-              soukromí klientů je pro nás důležité
+              <p>Soukromí klientů je pro nás důležité</p>
             </Item>
             <Item>
               {' '}
               <Home fill="#e6ba95" width="20px" />
-              neseme odpovědnost za provedenou práci
+              <p>Neseme odpovědnost za provedenou práci</p>
             </Item>
             <Item>
               {' '}
               <Lab fill="#e6ba95" width="20px" />
-              používáme moderní úklidové a čistící prostředky
+              <p>Používáme moderní úklidové a čistící prostředky</p>
             </Item>
             <Item>
               {' '}
               <Heart fill="#e6ba95" width="20px" />
-              máme rádi naši práci
+              <p>Máme rádi naši práci</p>
             </Item>
           </List>
         </ListContainer>
