@@ -26,7 +26,7 @@ const Head = () => {
     { value: 'Nabizime pro vas', href: '#nabizime' },
     { value: 'Ceník Služeb', href: '#cenik' },
     { value: 'Recenze', href: '#recenze' },
-    { value: 'O nás', href: '#onás' },
+    { value: 'O nás', href: '#onas' },
 
     // { value: 'Магазин', href: '/mainss' },
   ];
